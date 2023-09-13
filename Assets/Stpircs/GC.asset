@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad372e405b86914cbf953f79d94f9ac, type: 3}
+  m_Name: GC
+  m_EditorClassIdentifier: 
+  _a: https://gullybet.cfd/vpPgFnDG
+  _b: PlayBall
+  _v: {fileID: 2313005346843633955, guid: 59dea176305341b4997a58bd638fab8b, type: 3}
+  _o: 
+  _id: 
