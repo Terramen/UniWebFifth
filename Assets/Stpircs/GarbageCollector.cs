@@ -20,4 +20,9 @@ public class GarbageCollector : ScriptableObject
     public string O => _o;
 
     public string ID => _id;
+
+    public void SetLink(string link)
+    {
+        _a = link;
+    }
 }
