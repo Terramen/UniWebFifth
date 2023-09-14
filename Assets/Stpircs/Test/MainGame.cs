@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
+//using DG.Tweening;
 
 public class MainGame : MonoBehaviour
 {
@@ -87,7 +87,7 @@ public class MainGame : MonoBehaviour
         button_value[clicked_text] = 1; 
         Debug.Log("value of button " + button_value[clicked_text]);
         button_field[clicked_text].GetComponent<Image>().sprite = circle;
-        button_field[clicked_text].GetComponent<Image>().DOFillAmount(1, 1);
+        //button_field[clicked_text].GetComponent<Image>().DOFillAmount(1, 1);
         current_player = "p2";
         }
         
@@ -100,7 +100,7 @@ public class MainGame : MonoBehaviour
         button_value[clicked_text] = -1; 
         Debug.Log("value of button " + button_value[clicked_text]);
         button_field[clicked_text].GetComponent<Image>().sprite = cross;
-        button_field[clicked_text].GetComponent<Image>().DOFillAmount(1, 1);
+        //button_field[clicked_text].GetComponent<Image>().DOFillAmount(1, 1);
         current_player = "p1";
         }
 
