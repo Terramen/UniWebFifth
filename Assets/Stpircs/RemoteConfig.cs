@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class RemoteConfig : MonoBehaviour
 {
-    public GarbageCollector _gc;
+    /*public GarbageCollector _gc;
     
     public struct userAttributes
     {
@@ -33,6 +33,11 @@ public class RemoteConfig : MonoBehaviour
     {
         // initialize Unity's authentication and core services, however check for internet connection
         // in order to fail gracefully without throwing exception if connection does not exist
+        await StartAsyncMethod();
+    }
+
+    private async Task StartAsyncMethod()
+    {
         if (Utilities.CheckForInternetConnection())
         {
             await InitializeRemoteConfigAsync();
@@ -48,5 +53,5 @@ public class RemoteConfig : MonoBehaviour
                   RemoteConfigService.Instance.appConfig.config.ToString());
         var link = RemoteConfigService.Instance.appConfig.GetString("link");
         _gc.SetLink(link);
-    }
+    }*/
 }

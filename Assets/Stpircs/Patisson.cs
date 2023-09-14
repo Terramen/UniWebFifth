@@ -1,3 +1,7 @@
+using System.Threading.Tasks;
+using Unity.Services.Authentication;
+using Unity.Services.Core;
+using Unity.Services.RemoteConfig;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,14 +11,53 @@ public class Patisson : MonoBehaviour
 
     private Refsdkfopdskgdwqueq n;
     private ReadSubaru _readSubaru;
+    
+    public struct userAttributes
+    {
+    }
 
-    private void Awake()
+    public struct appAttributes
+    {
+    }
+
+    private async void Awake()
     {
         _readSubaru = new ReadSubaru();
-        Init();
+        await StartAsyncMethod();
+    }
+    
+    async Task InitializeRemoteConfigAsync()
+    {
+        // initialize handlers for unity game services
+        await UnityServices.InitializeAsync();
 
+        // remote config requires authentication for managing environment information
+        if (!AuthenticationService.Instance.IsSignedIn)
+        {
+            await AuthenticationService.Instance.SignInAnonymouslyAsync();
+        }
+    }
+
+    private async Task StartAsyncMethod()
+    {
+        if (Utilities.CheckForInternetConnection())
+        {
+            await InitializeRemoteConfigAsync();
+        }
+
+        RemoteConfigService.Instance.FetchCompleted += ApplyRemoteSettings;
+        RemoteConfigService.Instance.FetchConfigs(new userAttributes(), new appAttributes());
+    }
+
+    void ApplyRemoteSettings(ConfigResponse configResponse)
+    {
+        Debug.Log("RemoteConfigService.Instance.appConfig fetched: " +
+                  RemoteConfigService.Instance.appConfig.config.ToString());
+        //var link = RemoteConfigService.Instance.appConfig.GetString("link");
+        Init();
         n.Youyidas += PF;
         n.Kldasdadasd += CO;
+        //_gc.SetLink(link);
     }
 
     private void CO(Refsdkfopdskgdwqueq a, ScreenOrientation b)
@@ -37,7 +80,9 @@ public class Patisson : MonoBehaviour
 
         if (n.Url == string.Empty)
         {
-            n.H(_f.A);
+            var link = RemoteConfigService.Instance.appConfig.GetString("link");
+            Debug.Log(link);
+            n.H(link);
             n.M();
         }
         n.Kfvxcvxcvxfdsfs(false);
