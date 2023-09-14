@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Oreowertisdfjsdfg
+public class Pprwoerweorosdfs
 {
     private Rect _rect;
  
-    public Oreowertisdfjsdfg()
+    public Pprwoerweorosdfs()
     {
         _rect = new Rect();
     }
  
-    public Rect G(ScreenOrientation a)
+    public Rect P(ScreenOrientation a)
     {
         float x = Screen.safeArea.x;
         float y = Screen.safeArea.y;
@@ -20,25 +20,25 @@ public class Oreowertisdfjsdfg
  
         if (h > w)
         {
-            G(0, y, w, h - y);
+            P(0, y, w, h - y);
         }
  
         else
         {
             if (a == ScreenOrientation.LandscapeRight)
             {
-                G(0, 0, w - y, h);
+                P(0, 0, w - y, h);
             }
             else
             {
-                G(y, 0, w - y, h);
+                P(y, 0, w - y, h);
             }
         }
  
         return _rect;
     }
  
-    private void G(float x, float y, float g, float f)
+    private void P(float x, float y, float g, float f)
     {
         _rect.x = x;
         _rect.y = y;

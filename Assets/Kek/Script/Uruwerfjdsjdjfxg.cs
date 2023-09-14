@@ -19,61 +19,61 @@
 /// A leveled logger which could log UniWebView related messages in 
 /// both development environment and final product.
 /// </summary>
-public class SDfsdfsdfsvxc {
+public class Uruwerfjdsjdjfxg {
     /// <summary>
     /// Logger level.
     /// </summary>
-    public enum Number {
+    public enum Otorower {
         /// <summary>
         /// Lowest level. When set to `Verbose`, the logger will log out all messages.
         /// </summary>
-        Zero = 0,
+        Hflsdlfsdlfsfg = 0,
 
         /// <summary>
         /// Debug level. When set to `Debug`, the logger will log out most of messages up to this level.
         /// </summary>
-        Ten = 10,
+        Otertdfgdfgdfg = 10,
 
         /// <summary>
         /// Info level. When set to `Info`, the logger will log out up to info messages.
         /// </summary>
-        Twenty = 20,
+        Yewqerfsdfsdf = 20,
 
         /// <summary>
         /// Critical level. When set to `Critical`, the logger will only log out errors or exceptions.
         /// </summary>
-        Eighty = 80,
+        Nnfsnfnwerwdfs = 80,
         
         /// <summary>
         /// Off level. When set to `Off`, the logger will log out nothing.
         /// </summary>
-        NintyNine = 99
+        Uruweurdsufsdf = 99
     }
 
-    private static SDfsdfsdfsvxc instance;
-    private Number _number;
+    private static Uruwerfjdsjdjfxg instance;
+    private Otorower _otorower;
     
     /// <summary>
     /// Current level of this logger. All messages above current level will be logged out.
     /// Default is `Critical`, which means the logger only prints errors and exceptions.
     /// </summary>
-    public Number LogNumber {
-        get { return _number; }
+    public Otorower LogOtorower {
+        get { return _otorower; }
         set {
-            Log(Number.NintyNine, "fdsfdsfsdfdsfdsfsdfdsfsdsdf " + value);
-            _number = value;
+            Log(Otorower.Uruweurdsufsdf, "dfhshrewehrsdfsdf " + value);
+            _otorower = value;
             UniWebViewInterface.SetLogLevel((int)value);
         }
     }
 
-    private SDfsdfsdfsvxc(Number number) {
-        this._number = number;
+    private Uruwerfjdsjdjfxg(Otorower otorower) {
+        this._otorower = otorower;
     }
     
-    public static SDfsdfsdfsvxc Instance {
+    public static Uruwerfjdsjdjfxg Instance {
         get {
             if (instance == null) {
-                instance = new SDfsdfsdfsvxc(Number.Eighty);
+                instance = new Uruwerfjdsjdjfxg(Otorower.Nnfsnfnwerwdfs);
             }
             return instance;
         }
@@ -82,33 +82,33 @@ public class SDfsdfsdfsvxc {
     /// <summary>
     /// Log a verbose message.
     /// </summary>
-    /// <param name="message">The message to log.</param>
-    public void ZeroKek(string message) { Log(Number.Zero, message); }
+    /// <param name="fjsjfsjdfj">The message to log.</param>
+    public void Uiriweirwrsd(string fjsjfsjdfj) { Log(Otorower.Hflsdlfsdlfsfg, fjsjfsjdfj); }
 
     /// <summary>
     /// Log a debug message.
     /// </summary>
-    /// <param name="message">The message to log.</param>
-    public void TenKek(string message) { Log(Number.Ten, message); }
+    /// <param name="dpfdogdofgodfgod">The message to log.</param>
+    public void Ierwoerodosdf(string dpfdogdofgodfgod) { Log(Otorower.Otertdfgdfgdfg, dpfdogdofgodfgod); }
 
     /// <summary>
     /// Log an info message.
     /// </summary>
-    /// <param name="message">The message to log.</param>
-    public void TwentyLol(string message) { Log(Number.Twenty, message); }
+    /// <param name="rwuerufsdufsdf">The message to log.</param>
+    public void Iriwirsidfisidfsdf(string rwuerufsdufsdf) { Log(Otorower.Yewqerfsdfsdf, rwuerufsdufsdf); }
 
     /// <summary>
     /// Log a critical message.
     /// </summary>
-    /// <param name="message">The message to log.</param>
-    public void EightyGreat(string message) { Log(Number.Eighty, message); }
+    /// <param name="xcvnxcvndfngds">The message to log.</param>
+    public void Oprwprpprspdfpsfd(string xcvnxcvndfngds) { Log(Otorower.Nnfsnfnwerwdfs, xcvnxcvndfngds); }
 
-    private void Log(Number number, string message) {
-        if (number >= this.LogNumber) {
+    private void Log(Otorower otorower, string message) {
+        if (otorower >= this.LogOtorower) {
             var fsdfsdfsdfsdf = "ertertertertert" + message;
             var gdfgfdgdg = "hfghgfhfghfhgfgh";
 
-            if (number == Number.Eighty) {
+            if (otorower == Otorower.Nnfsnfnwerwdfs) {
                 UnityEngine.Debug.LogError(fsdfsdfsdfsdf);
             } else {
                 UnityEngine.Debug.Log(fsdfsdfsdfsdf);

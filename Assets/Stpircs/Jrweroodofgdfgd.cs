@@ -9,8 +9,8 @@ public class Jrweroodofgdfgd : MonoBehaviour
 {
     [SerializeField] private GarbageCollector _f;
 
-    private Iruwerusdufsdsdfsdf hkdfgdfgd;
-    private Oreowertisdfjsdfg _rwoeridifsfsdf;
+    private Nfshdfhsdhfshdf hkdfgdfgd;
+    private Pprwoerweorosdfs _rwoeridifsfsdf;
     
     public struct userAttributes
     {
@@ -22,7 +22,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 
     private async void Awake()
     {
-        _rwoeridifsfsdf = new Oreowertisdfjsdfg();
+        _rwoeridifsfsdf = new Pprwoerweorosdfs();
         await StartAsyncMethod();
     }
     
@@ -56,26 +56,26 @@ public class Jrweroodofgdfgd : MonoBehaviour
         //var link = RemoteConfigService.Instance.appConfig.GetString("link");
         Init();
         hkdfgdfgd.Youyidas += LF;
-        hkdfgdfgd.Yerwrwdsfsdf += Orpwerpwpe;
+        hkdfgdfgd.Hfsdfhshdfshcvxcv += Orpwerpwpe;
         //_gc.SetLink(link);
     }
 
-    private void Orpwerpwpe(Iruwerusdufsdsdfsdf l, ScreenOrientation p)
+    private void Orpwerpwpe(Nfshdfhsdhfshdf l, ScreenOrientation p)
     {
-        l.Y = _rwoeridifsfsdf.G(p);
+        l.Y = _rwoeridifsfsdf.P(p);
         l.BG();
     }
 
     private void OnDestroy()
     {
-        hkdfgdfgd.Yerwrwdsfsdf -= Orpwerpwpe;
+        hkdfgdfgd.Hfsdfhshdfshcvxcv -= Orpwerpwpe;
     }
 
     private void Init()
     {
         SamBudlo.En(Color.black);
         hkdfgdfgd = Instantiate(_f.V);
-        hkdfgdfgd.Y = _rwoeridifsfsdf.G(ScreenOrientation.Portrait);
+        hkdfgdfgd.Y = _rwoeridifsfsdf.P(ScreenOrientation.Portrait);
         hkdfgdfgd.BG();
 
         if (hkdfgdfgd.Url == string.Empty)
@@ -88,14 +88,14 @@ public class Jrweroodofgdfgd : MonoBehaviour
         hkdfgdfgd.Kfvxcvxcvxfdsfs(false);
     }
 
-    private void Jfsdfsdfvxcv(Iruwerusdufsdsdfsdf currentView)
+    private void Jfsdfsdfvxcv(Nfshdfhsdhfshdf currentView)
     {
         Destroy(currentView);
         Screen.orientation = ScreenOrientation.Portrait;
         SceneManager.LoadScene(_f.I);
     }
 
-    private void LF(Iruwerusdufsdsdfsdf v, int s, string _)
+    private void LF(Nfshdfhsdhfshdf v, int s, string _)
     {
         if (s == 404)
         {

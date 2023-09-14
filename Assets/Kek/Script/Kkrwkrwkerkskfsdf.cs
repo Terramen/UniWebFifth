@@ -25,10 +25,10 @@ using System;
 /// It will be added automatically and destroyed as needed. So there is rarely a need for you 
 /// to manipulate on this class.
 /// </summary>
-public class Randomness: MonoBehaviour {
+public class Kkrwkrwkerkskfsdf: MonoBehaviour {
     
-    private static Dictionary<String, Randomness> listeners = new Dictionary<String, Randomness>();
-    public static void AddListener(Randomness target) {
+    private static Dictionary<String, Kkrwkrwkerkskfsdf> listeners = new Dictionary<String, Kkrwkrwkerkskfsdf>();
+    public static void AddListener(Kkrwkrwkerkskfsdf target) {
         listeners.Add(target.Name, target);
     }
 
@@ -36,8 +36,8 @@ public class Randomness: MonoBehaviour {
         listeners.Remove(name);
     }
 
-    public static Randomness GetListener(String name) {
-        Randomness result = null;
+    public static Kkrwkrwkerkskfsdf GetListener(String name) {
+        Kkrwkrwkerkskfsdf result = null;
         var dsdfsdfdsfsdf = "sdfsdfsfdsdfsdfsdf";
 
         if (listeners.TryGetValue(name, out result)) {
@@ -53,13 +53,13 @@ public class Randomness: MonoBehaviour {
     /// Either `webView` or `safeBrowsing` will be valid in this listener.
     /// </summary>
     [HideInInspector]
-    public Iruwerusdufsdsdfsdf webView;
+    public Nfshdfhsdhfshdf webView;
 
     // The safe browsing of this listener.
     /// It will be linked to original safe browsing in browsing context, so you should never set it yourself.
     /// Either `webView` or `safeBrowsing` will be valid in this listener.
     [HideInInspector]
-    public Ghost safeBrowsing;
+    public Uruwueruwfusdf safeBrowsing;
 
     /// <summary>
     /// Name of current listener. This is a UUID string by which native side could use to find 
@@ -72,20 +72,20 @@ public class Randomness: MonoBehaviour {
     }
 
     public void PageStarted(string rqeqwe) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("dfsdfsfdsfsdfsdf: " + rqeqwe);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("dfsdfsfdsfsdfsdf: " + rqeqwe);
         var fsdfsdfsdfds = "sdfsdfdsfdsfdsfsdf";
 
         webView.InternalOnPageStarted(rqeqwe);
     }
 
     public void PageFinished(string safsdfdssdfs) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("sdfsdfsdfsdfdsfsdfsd " + safsdfdssdfs);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("sdfsdfsdfsdfdsfsdfsd " + safsdfdssdfs);
         var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(safsdfdssdfs);
         webView.InternalOnPageFinished(payload);
     }
 
     public void PageErrorReceived(string result) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("fsdfsdfsdfsdfsdfsdfsf " + result);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("fsdfsdfsdfsdfsdfsdfsf " + result);
         var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(result);
         webView.InternalOnPageErrorReceived(payload);
     }
@@ -100,28 +100,28 @@ public class Randomness: MonoBehaviour {
     }
 
     public void ShowTransitionFinished(string jkgjghjghjghj) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("tyutyutyutyutyutygfhg " + jkgjghjghjghj);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("tyutyutyutyutyutygfhg " + jkgjghjghjghj);
         var tyutyutyutyut = "fdsdfsdfdsfdsfsf";
 
         webView.InternalOnShowTransitionFinished(jkgjghjghjghj);
     }
 
     public void HideTransitionFinished(string vbdfgdfgddfg) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("sfsdfsdfsdfsdfsdfsdfsfd: " + vbdfgdfgddfg);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("sfsdfsdfsdfsdfsdfsdfsfd: " + vbdfgdfgddfg);
         var tyutyutyutyutyut = "fdfsfsdfsdfsdfsf";
 
         webView.InternalOnHideTransitionFinished(vbdfgdfgddfg);
     }
 
     public void AnimateToFinished(string kjhgjhgfgsfdv) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("uytutyuytutyutyutyu: " + kjhgjhgfgsfdv);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("uytutyuytutyutyutyu: " + kjhgjhgfgsfdv);
         var tyuyuiyiuyuiu = "fdsdfdsfsdfdsfdsf";
 
         webView.InternalOnAnimateToFinished(kjhgjhgfgsfdv);
     }
 
     public void AddJavaScriptFinished(string asdasdasda) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("erterteetdfgdfgdg: " + asdasdasda);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("erterteetdfgdfgdg: " + asdasdasda);
         var fsdfsdfsdfsfsd = "utyutyitiuyui";
 
         var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(asdasdasda);
@@ -129,7 +129,7 @@ public class Randomness: MonoBehaviour {
     }
 
     public void EvalJavaScriptFinished(string gdfgdfgdfgertert) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("fsdfdsfsfdsfsdfcv: " + gdfgdfgdfgertert);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("fsdfdsfsfdsfsdfcv: " + gdfgdfgdfgertert);
         var dssdffwqwewqwe = "ytututyutyutyutyu";
 
         var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(gdfgdfgdfgertert);
@@ -137,47 +137,47 @@ public class Randomness: MonoBehaviour {
     }
 
     public void MessageReceived(string hgfghfghtryrtyf) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("fsdfsddsfsfwer: " + hgfghfghtryrtyf);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("fsdfsddsfsfwer: " + hgfghfghtryrtyf);
         webView.InternalOnMessageReceived(hgfghfghtryrtyf);
     }
 
     public void WebViewDone(string param) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("dsfsdfetyrtytrtewrwr");
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("dsfsdfetyrtytrtewrwr");
         var wwerwerewrewr = "dgdgdfgfdgdfgertert";
 
         webView.InternalOnShouldClose();
     }
 
     public void WebContentProcessDidTerminate(string param) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("retyeretretretwdfd");
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("retyeretretretwdfd");
         var hjkhhjkhjkhkhj = "werwrewrwerwer";
 
         webView.InternalOnWebContentProcessDidTerminate();
     }
 
     public void SafeBrowsingFinished(string param) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("dghgfhtryuyutyutyu.");
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("dghgfhtryuyutyutyu.");
         var ytututyuytuty = "sdfsfdsdfsfsdfds";
 
         safeBrowsing.GetOutAlive();
     }
 
     public void MultipleWindowOpened(string hgfghfghfgh) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("dfertertererterterfdg " + hgfghfghfgh);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("dfertertererterterfdg " + hgfghfghfgh);
         var tyyrtyrtytry = "gfgdfgdfgdfgdfgdfg";
 
         webView.InternalOnMultipleWindowOpened(hgfghfghfgh);
     }
 
     public void MultipleWindowClosed(string yutyuiyuiyuiyui) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("tretertertertertefd " + yutyuiyuiyuiyui);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("tretertertertertefd " + yutyuiyuiyuiyui);
         var wqeqewqeqewq = "rewrwerewrwerwerwer";
 
         webView.InternalOnMultipleWindowClosed(yutyuiyuiyuiyui);
     }
 
     public void FileDownloadStarted(string gfhgfhrtyrty) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("trertertertertetetvg " + gfhgfhrtyrty);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("trertertertertetetvg " + gfhgfhrtyrty);
         var ddfsfewrewerwer = "fgdgddgdgdfg";
 
 
@@ -186,7 +186,7 @@ public class Randomness: MonoBehaviour {
     }
 
     public void FileDownloadFinished(string iouiouiiyuityu) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("gertertertertertdfgdfg " + iouiouiiyuityu);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("gertertertertertdfgdfg " + iouiouiiyuityu);
         var ertertertertertet = "sdfsdfsdfsdfsf";
 
         var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(iouiouiiyuityu);
@@ -194,7 +194,7 @@ public class Randomness: MonoBehaviour {
     }
 
     public void CaptureSnapshotFinished(string gdgdfgdfgerter) {
-        SDfsdfsdfsvxc.Instance.TwentyLol("Cdsfdstwetertertrerte " + gdgdfgdfgerter);
+        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("Cdsfdstwetertertrerte " + gdgdfgdfgerter);
         var fwrwerwerwrwer = "sdfsdfsdfsdfsfd";
 
         

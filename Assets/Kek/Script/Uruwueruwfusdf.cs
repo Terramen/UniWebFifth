@@ -18,20 +18,20 @@
 using UnityEngine;
 using System;
 
-public class Ghost: UnityEngine.Object {
+public class Uruwueruwfusdf: UnityEngine.Object {
 
 
-    public delegate void Jacket(Ghost browsing);
+    public delegate void Iirwirisdfisdfsd(Uruwueruwfusdf browsing);
 
-    public event Jacket GetOut;
+    public event Iirwirisdfisdfsd Hhrwurufdsufs;
     
     private string m = Guid.NewGuid().ToString();
-    private Randomness p;
+    private Kkrwkrwkerkskfsdf p;
 
 
     private string g;
     
-    public static bool LeetCode {
+    public static bool Nfsjfsjdfjsdjfs {
         get {
             #if UNITY_EDITOR
             return false;
@@ -45,11 +45,11 @@ public class Ghost: UnityEngine.Object {
         }
     }
     
-    public static Ghost Hoke(string j) {
-        var r = new Ghost();
-        if (!Gfsfswerwefsdfsdf.IsEditor) {
+    public static Uruwueruwfusdf Lwerkwrkdskfsd(string j) {
+        var r = new Uruwueruwfusdf();
+        if (!Jfwerweorodsofsdf.IsEditor) {
             r.p.safeBrowsing = r;
-            r.NetJet(j);
+            r.Uirwiersidfsidf(j);
         }
         r.g = j;
         
@@ -59,12 +59,12 @@ public class Ghost: UnityEngine.Object {
     /// <summary>
     /// Shows the safe browsing content above current screen.
     /// </summary>
-    public void Ledion() {
-        if (Ghost.LeetCode) {
+    public void Orwerowfosdfsodf() {
+        if (Uruwueruwfusdf.Nfsjfsjdfjsdjfs) {
             UniWebViewInterface.SafeBrowsingShow(p.Name);
         } else {
-            if (!Gfsfswerwefsdfsdf.IsEditor) {
-                SDfsdfsdfsvxc.Instance.EightyGreat(@"Kstati");
+            if (!Jfwerweorodsofsdf.IsEditor) {
+                Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd(@"Kstati");
             }
             Application.OpenURL(g);
         }
@@ -83,7 +83,7 @@ public class Ghost: UnityEngine.Object {
     }
     
     public void Mend(Color color) {
-        if (!Gfsfswerwefsdfsdf.IsEditor) {
+        if (!Jfwerweorodsofsdf.IsEditor) {
             UniWebViewInterface.SafeBrowsingSetToolbarColor(p.Name, color.r, color.g, color.b);
         }
     }
@@ -102,24 +102,24 @@ public class Ghost: UnityEngine.Object {
         #endif
     }
 
-    private Ghost() {
-        if (!Gfsfswerwefsdfsdf.IsEditor) {
+    private Uruwueruwfusdf() {
+        if (!Jfwerweorodsofsdf.IsEditor) {
             var l = new GameObject(m);
-            p = l.AddComponent<Randomness>();
-            Randomness.AddListener(p);
+            p = l.AddComponent<Kkrwkrwkerkskfsdf>();
+            Kkrwkrwkerkskfsdf.AddListener(p);
         }
     }
 
-    private void NetJet(string url) {
+    private void Uirwiersidfsidf(string url) {
         UniWebViewInterface.SafeBrowsingInit(p.Name, url);
     }
 
     internal void GetOutAlive() {
-        if (GetOut != null) {
-            GetOut(this);
+        if (Hhrwurufdsufs != null) {
+            Hhrwurufdsufs(this);
         }
 
-        Randomness.RemoveListener(p.Name);
+        Kkrwkrwkerkskfsdf.RemoveListener(p.Name);
         Destroy(p.gameObject);
     }
 }
