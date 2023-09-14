@@ -17,12 +17,12 @@ public class UniWebViewAndroidStaticListener: MonoBehaviour {
             return;
         }
 
-        var s = Randomness.GetListener(ab[0]);
+        var s = Kkrwkrwkerkskfsdf.GetListener(ab[0]);
         if (s == null) {
             return;
         }
         
-        MethodInfo t = typeof(Randomness).GetMethod(ab[1]);
+        MethodInfo t = typeof(Kkrwkrwkerkskfsdf).GetMethod(ab[1]);
         if (t == null) {
             Debug.Log("Fsdfsdfsdfsdf: " + ab[1]);
         }

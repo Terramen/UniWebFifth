@@ -75,13 +75,13 @@ static class UniWebViewSettingsProvider {
 
         EditorGUI.indentLevel++;
         EditorGUILayout.PropertyField(settings.FindProperty("usesCleartextTraffic"));
-        DrawDetailLabel("fsfsdfsdfdsfdsfsfsd");
+        DrawDetailLabel("hjgjertertertert");
         
         EditorGUILayout.PropertyField(settings.FindProperty("writeExternalStorage"));
-        DrawDetailLabel("uykyjthhfgnbffghfg");
+        DrawDetailLabel("fsdfdsgdfgdfgertewrt");
 
         EditorGUILayout.PropertyField(settings.FindProperty("accessFineLocation"));
-        DrawDetailLabel("hmnvbndfhggergdfgfsgdfg");
+        DrawDetailLabel("fsfgertertydfgfghfyrtyrt");
         EditorGUI.indentLevel--;
         EditorGUILayout.EndVertical();
 
@@ -91,11 +91,11 @@ static class UniWebViewSettingsProvider {
         EditorGUI.indentLevel++;
 
         EditorGUILayout.PropertyField(settings.FindProperty("addsKotlin"));
-        DrawDetailLabel("dfgdfhgfhjghjtyrtht");
+        DrawDetailLabel("iuutyurrtyetwrewer");
         EditorGUILayout.PropertyField(settings.FindProperty("addsAndroidBrowser"));
-        DrawDetailLabel("erterteyrtuytyfdgdfg");
+        DrawDetailLabel("vcxvbcvbvcbnfghrhtrh");
         EditorGUILayout.PropertyField(settings.FindProperty("enableJetifier"));
-        DrawDetailLabel("hjghjhkuyityutyyurtyrthfdhdfgh");
+        DrawDetailLabel("rwerwererdfgdfhfghrty");
 
         EditorGUILayout.EndVertical();
         

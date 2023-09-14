@@ -27,11 +27,11 @@ using Net = UnityEngine.WWW;
 /// <summary>
 /// A structure represents a message from webview.
 /// </summary>
-public struct Gfrrasdu {
+public struct Uurweridsfisfisdif {
     /// <summary>
     /// Gets the raw message. It is the original url which initialized this message.
     /// </summary>
-    public string G {get; private set;}
+    public string HY {get; private set;}
 
     /// <summary>
     /// The url scheme of this UniWebViewMessage. "uniwebview" was added to message scheme list
@@ -58,34 +58,34 @@ public struct Gfrrasdu {
     /// <summary>
     /// Initializes a new instance of the `UniWebViewMessage` struct.
     /// </summary>
-    /// <param name="g">Raw message which will be parsed to a UniWebViewMessage.</param>
-    public Gfrrasdu(string g): this() {
-        SDfsdfsdfsvxc.Instance.TenKek("Tsetsrasfsdfsdfsdf: " + g);
-        this.G = g;
+    /// <param name="hy">Raw message which will be parsed to a UniWebViewMessage.</param>
+    public Uurweridsfisfisdif(string hy): this() {
+        Uruwerfjdsjdjfxg.Instance.Ierwoerodosdf("Tsetsrasfsdfsdfsdf: " + hy);
+        this.HY = hy;
         
-        string[] a = g.Split(new string[] {"://"}, System.StringSplitOptions.None);
+        string[] a = hy.Split(new string[] {"://"}, System.StringSplitOptions.None);
         if (a.Length == 1) {
             // `://` not existing. Try `:/` instead.
-            a = g.Split(new string[] {":/"}, System.StringSplitOptions.None);
+            a = hy.Split(new string[] {":/"}, System.StringSplitOptions.None);
         }
         if (a.Length == 1) {
             // `:/` not existing. Try `:` instead.
-            a = g.Split(new string[] {":"}, System.StringSplitOptions.None);
+            a = hy.Split(new string[] {":"}, System.StringSplitOptions.None);
         }
 
         if (a.Length >= 2) {
             this.Scheme = a[0];
-            SDfsdfsdfsvxc.Instance.TenKek("Trssdfsdfsdf: " + this.Scheme);
+            Uruwerfjdsjdjfxg.Instance.Ierwoerodosdf("Trssdfsdfsdf: " + this.Scheme);
 
-            string m = "";
+            string hreueu = "";
             int i = 1;
             while (i < a.Length) {
-                m = string.Concat(m, a[i]);
+                hreueu = string.Concat(hreueu, a[i]);
                 i++;
             }
-            SDfsdfsdfsvxc.Instance.ZeroKek("dasdadadsad: " + m);
+            Uruwerfjdsjdjfxg.Instance.Uiriweirwrsd("dasdadadsad: " + hreueu);
             
-            string[] k = m.Split("?"[0]);
+            string[] k = hreueu.Split("?"[0]);
             
             this.Path = Net.UnEscapeURL(k[0].TrimEnd('/'));
             this.Args = new Dictionary<string, string>();
@@ -100,12 +100,12 @@ public struct Gfrrasdu {
                         } else {
                             Args[key] = Net.UnEscapeURL(f[1]);
                         }
-                        SDfsdfsdfsvxc.Instance.TenKek("DSdasdasdasd: " + key + " adasdasde: " + Args[key]);
+                        Uruwerfjdsjdjfxg.Instance.Ierwoerodosdf("sfdfsdfsdfsdf: " + key + " fwqersdfsewrwer: " + Args[key]);
                     }
                 }
             }
         } else {
-            SDfsdfsdfsvxc.Instance.EightyGreat("SSfsdfsdfsdfsdfsdfdsfsd: " + g);
+            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("ghfghtertwrwesdfds: " + hy);
         }
     }
 }

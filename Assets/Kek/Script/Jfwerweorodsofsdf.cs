@@ -20,7 +20,7 @@ using System.IO;
 /// <summary>
 /// Provides some helper utility methods for UniWebView.
 /// </summary>
-public class Gfsfswerwefsdfsdf {
+public class Jfwerweorodsofsdf {
     /// <summary>
     /// Get the local streaming asset path for a given file path related to the StreamingAssets folder.
     /// 
@@ -36,7 +36,7 @@ public class Gfsfswerwefsdfsdf {
 #elif UNITY_ANDROID && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         return Path.Combine("file:///android_asset/", path);
 #else
-        SDfsdfsdfsvxc.Instance.EightyGreat("The current build target is not supported.");
+        Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("The current build target is not supported.");
         return string.Empty;
 #endif
     }

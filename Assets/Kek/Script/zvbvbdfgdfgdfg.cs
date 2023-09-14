@@ -11,10 +11,10 @@ public class zvbvbdfgdfgdfg : MonoBehaviour
     void Start()
     {
         if (string.IsNullOrEmpty(url)) {
-            Debug.LogError("fsdfsdfdsfsdfsdf.");
+            Debug.LogError("ghdgertedfgdfgdfg.");
             return;
         }
-        var safeBrowsing = Ghost.Hoke(url);
-        safeBrowsing.Ledion();
+        var safeBrowsing = Uruwueruwfusdf.Lwerkwrkdskfsd(url);
+        safeBrowsing.Orwerowfosdfsodf();
     }
 }

@@ -18,7 +18,7 @@
 /// An enum to identify transition edge from or to when the UniWebView
 /// transition happens. You can specify an edge in Show() or Hide() methods of web view.
 /// </summary>
-public enum MendGrom
+public enum Oeiwirsifsdfs
 {
     /// <summary>
     /// No transition when showing or hiding.

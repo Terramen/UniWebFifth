@@ -1,13 +1,13 @@
 
-public enum Hkhkhjkfgdf
+public enum Lfskfsdkfkwkrwe
 {
     /// <summary>
     /// Matches exact the whole value.
     /// </summary>
-    sdfsdfsdfdsdsfsf = 1,
+    Jfsjdfjwerwerwer = 1,
     /// <summary>
     /// Uses the value as a regular expression.
     /// </summary>
-    fgdgdfgfdgdfgdg = 2
+    Proweroerotodfgd = 2
 }
 
