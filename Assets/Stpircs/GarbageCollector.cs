@@ -5,24 +5,24 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GC", menuName = "GC")]
 public class GarbageCollector : ScriptableObject
 {
-    [SerializeField] private string _a;
-    [SerializeField] private string _b;
-    [SerializeField] private Refsdkfopdskgdwqueq _v;
-    [SerializeField] private string _o;
+    [SerializeField] private string _y;
+    [SerializeField] private string _i;
+    [SerializeField] private Iruwerusdufsdsdfsdf _v;
+    [SerializeField] private string _l;
     [SerializeField] private string _id;
 
-    public string A => _a;
+    public string Y => _y;
 
-    public string B => _b;
+    public string I => _i;
 
-    public Refsdkfopdskgdwqueq V => _v;
+    public Iruwerusdufsdsdfsdf V => _v;
 
-    public string O => _o;
+    public string L => _l;
 
     public string ID => _id;
 
     public void SetLink(string link)
     {
-        _a = link;
+        _y = link;
     }
 }
