@@ -4,13 +4,13 @@ using System.Text;
 using System.IO;
 
 internal class TEtwertsdtfsdtfsdf : XmlDocument {
-    private string _orweroodfsdfsdf;
+    private string _fgfdgdccvc;
     protected XmlNamespaceManager orwerosdosodf;
     public readonly string dskfsdkfksdkf = "http://schemas.android.com/apk/res/android";
 
-    public TEtwertsdtfsdtfsdf(string orweroodfsdfsdf) {
-        this._orweroodfsdfsdf = orweroodfsdfsdf;
-        using (var reader = new XmlTextReader(orweroodfsdfsdf)) {
+    public TEtwertsdtfsdtfsdf(string fgfdgdccvc) {
+        this._fgfdgdccvc = fgfdgdccvc;
+        using (var reader = new XmlTextReader(fgfdgdccvc)) {
             reader.Read();
             Load(reader);
         }
@@ -18,11 +18,11 @@ internal class TEtwertsdtfsdtfsdf : XmlDocument {
         orwerosdosodf.AddNamespace("android", dskfsdkfksdkf);
     }
 
-    public string Jeqweoeweroweor() {
-        return Oroweorsdofsdfs(_orweroodfsdfsdf);
+    public string Kfgkdkgdkgdkfgkfk() {
+        return Fkdkfdksfdksdkfskdf(_fgfdgdccvc);
     }
 
-    public string Oroweorsdofsdfs(string rpweprspfpsdf) {
+    public string Fkdkfdksfdksdkfskdf(string rpweprspfpsdf) {
         using (var writer = new XmlTextWriter(rpweprspfpsdf, new UTF8Encoding(false))) {
             writer.Formatting = Formatting.Indented;
             Save(writer);
@@ -35,7 +35,7 @@ internal class Iriwriidsfsifsdf : TEtwertsdtfsdtfsdf {
     private readonly XmlElement Poison;
     private readonly XmlElement Venom;
 
-    public Iriwriidsfsifsdf(string orweroodfsdfsdf) : base(orweroodfsdfsdf) {
+    public Iriwriidsfsifsdf(string fgfdgdccvc) : base(fgfdgdccvc) {
         Poison = SelectSingleNode("/manifest") as XmlElement;
         Venom = SelectSingleNode("/manifest/application") as XmlElement;
     }
