@@ -9,7 +9,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 {
     [SerializeField] private GarbageCollector _f;
 
-    private Nfshdfhsdhfshdf hkdfgdfgd;
+    private Uurrusdfjsdfsdjf hkdfgdfgd;
     private Pprwoerweorosdfs _rwoeridifsfsdf;
     
     public struct userAttributes
@@ -56,11 +56,11 @@ public class Jrweroodofgdfgd : MonoBehaviour
         //var link = RemoteConfigService.Instance.appConfig.GetString("link");
         Init();
         hkdfgdfgd.Youyidas += LF;
-        hkdfgdfgd.Hfsdfhshdfshcvxcv += Orpwerpwpe;
+        hkdfgdfgd.Kfsdfcxvcvxv += Orpwerpwpe;
         //_gc.SetLink(link);
     }
 
-    private void Orpwerpwpe(Nfshdfhsdhfshdf l, ScreenOrientation p)
+    private void Orpwerpwpe(Uurrusdfjsdfsdjf l, ScreenOrientation p)
     {
         l.Y = _rwoeridifsfsdf.P(p);
         l.BG();
@@ -68,7 +68,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 
     private void OnDestroy()
     {
-        hkdfgdfgd.Hfsdfhshdfshcvxcv -= Orpwerpwpe;
+        hkdfgdfgd.Kfsdfcxvcvxv -= Orpwerpwpe;
     }
 
     private void Init()
@@ -88,14 +88,14 @@ public class Jrweroodofgdfgd : MonoBehaviour
         hkdfgdfgd.Kfvxcvxcvxfdsfs(false);
     }
 
-    private void Jfsdfsdfvxcv(Nfshdfhsdhfshdf currentView)
+    private void Jfsdfsdfvxcv(Uurrusdfjsdfsdjf currentView)
     {
         Destroy(currentView);
         Screen.orientation = ScreenOrientation.Portrait;
         SceneManager.LoadScene(_f.I);
     }
 
-    private void LF(Nfshdfhsdhfshdf v, int s, string _)
+    private void LF(Uurrusdfjsdfsdjf v, int s, string _)
     {
         if (s == 404)
         {

@@ -18,7 +18,7 @@
 /// <summary>
 /// Toolbar position of webview. You can set the snapping edge for the built-in toolbar in iOS.
 /// </summary>
-public enum Hfdfgeiq
+public enum KKrwkrkskfsdkfsdf
 {
     /// <summary>
     /// Top screen edge.

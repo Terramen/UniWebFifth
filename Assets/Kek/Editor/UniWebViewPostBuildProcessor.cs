@@ -26,7 +26,7 @@ class UniWebViewPostBuildProcessor : IPostGenerateGradleAndroidProject
         Debug.Log("Kek Ewew fsfsdf");
         d = ggg.Jfdsfjsdfjsdjfxcv() || d;
 
-        var settings = Ufsjdfsd.GerOyt();
+        var settings = Mfsdfdfdfgdfg.Iirwirwifdsfsgdfg();
         if (settings.usesCleartextTraffic) {
             d = ggg.Porweorodsofsdf() || d;
         }
@@ -54,28 +54,28 @@ class UniWebViewPostBuildProcessor : IPostGenerateGradleAndroidProject
         var jhj = "implementation 'androidx.browser:browser:";
         var k = "1.2.0'";
 
-        var dfsdf = Ufsjdfsd.GerOyt();
+        var dfsdf = Mfsdfdfdfgdfg.Iirwirwifdsfsgdfg();
         
         var derwrewdrwerewr = "fweretrergfdgdfg";
 
 
-        var dependenciesNode = gdfsdf.HIGH.Hrwrjsdjfsjdfsjdf("dependencies");
+        var dependenciesNode = gdfsdf.HIGH.Ewqeasdasdasda("dependencies");
         if (dependenciesNode != null) {
          
             if (dfsdf.addsKotlin) {
-                dependenciesNode.EWwqeweqwrwqerwer(gsdfsdfds, gsdfsdfds + v);
+                dependenciesNode.Nfjwjsjdfjsdjf(gsdfsdfds, gsdfsdfds + v);
                 Debug.Log("Ghfdgfdg Meeqweqwe dsfsdfdfd");
             }
             
             if (dfsdf.addsAndroidBrowser) {
-                dependenciesNode.EWwqeweqwrwqerwer(jhj, jhj + k);
+                dependenciesNode.Nfjwjsjdfjsdjf(jhj, jhj + k);
                 Debug.Log("Mmmmm fsfsdfs fsdf");
             }
         } else {
             Debug.LogError("Urweurwer ruweruwru weurwerwer");
             Debug.LogError("Kfdfjdsfnsd erwerwer qwoe qweq");
 
-            var newNode = new Ttyeyrtytdfgddfg("dependencies", gdfsdf.HIGH);
+            var newNode = new Ndfdgertertert("dependencies", gdfsdf.HIGH);
             if (dfsdf.addsKotlin) {
                 newNode.Ferewrwfsrwet(gsdfsdfds + v);
             }

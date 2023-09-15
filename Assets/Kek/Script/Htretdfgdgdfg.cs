@@ -19,7 +19,7 @@
 /// A leveled logger which could log UniWebView related messages in 
 /// both development environment and final product.
 /// </summary>
-public class Uruwerfjdsjdjfxg {
+public class Htretdfgdgdfg {
     /// <summary>
     /// Logger level.
     /// </summary>
@@ -50,7 +50,7 @@ public class Uruwerfjdsjdjfxg {
         Uruweurdsufsdf = 99
     }
 
-    private static Uruwerfjdsjdjfxg instance;
+    private static Htretdfgdgdfg instance;
     private Otorower _otorower;
     
     /// <summary>
@@ -60,20 +60,20 @@ public class Uruwerfjdsjdjfxg {
     public Otorower LogOtorower {
         get { return _otorower; }
         set {
-            Log(Otorower.Uruweurdsufsdf, "dfhshrewehrsdfsdf " + value);
+            Log(Otorower.Uruweurdsufsdf, "yutyuthfghfghfh " + value);
             _otorower = value;
             UniWebViewInterface.SetLogLevel((int)value);
         }
     }
 
-    private Uruwerfjdsjdjfxg(Otorower otorower) {
+    private Htretdfgdgdfg(Otorower otorower) {
         this._otorower = otorower;
     }
     
-    public static Uruwerfjdsjdjfxg Instance {
+    public static Htretdfgdgdfg Instance {
         get {
             if (instance == null) {
-                instance = new Uruwerfjdsjdjfxg(Otorower.Nnfsnfnwerwdfs);
+                instance = new Htretdfgdgdfg(Otorower.Nnfsnfnwerwdfs);
             }
             return instance;
         }
@@ -82,36 +82,36 @@ public class Uruwerfjdsjdjfxg {
     /// <summary>
     /// Log a verbose message.
     /// </summary>
-    /// <param name="fjsjfsjdfj">The message to log.</param>
-    public void Uiriweirwrsd(string fjsjfsjdfj) { Log(Otorower.Hflsdlfsdlfsfg, fjsjfsjdfj); }
+    /// <param name="ewerwfsdfsd">The message to log.</param>
+    public void Btertgfdgdfgdfert(string ewerwfsdfsd) { Log(Otorower.Hflsdlfsdlfsfg, ewerwfsdfsd); }
 
     /// <summary>
     /// Log a debug message.
     /// </summary>
     /// <param name="dpfdogdofgodfgod">The message to log.</param>
-    public void Ierwoerodosdf(string dpfdogdofgodfgod) { Log(Otorower.Otertdfgdfgdfg, dpfdogdofgodfgod); }
+    public void Ngrtertedfdsfgdfg(string dpfdogdofgodfgod) { Log(Otorower.Otertdfgdfgdfg, dpfdogdofgodfgod); }
 
     /// <summary>
     /// Log an info message.
     /// </summary>
-    /// <param name="rwuerufsdufsdf">The message to log.</param>
-    public void Iriwirsidfisidfsdf(string rwuerufsdufsdf) { Log(Otorower.Yewqerfsdfsdf, rwuerufsdufsdf); }
+    /// <param name="tyhghfghfgh">The message to log.</param>
+    public void Terewtdfsfsdfsfd(string tyhghfghfgh) { Log(Otorower.Yewqerfsdfsdf, tyhghfghfgh); }
 
     /// <summary>
     /// Log a critical message.
     /// </summary>
-    /// <param name="xcvnxcvndfngds">The message to log.</param>
-    public void Oprwprpprspdfpsfd(string xcvnxcvndfngds) { Log(Otorower.Nnfsnfnwerwdfs, xcvnxcvndfngds); }
+    /// <param name="yutyugfhfghfh">The message to log.</param>
+    public void Utrertrfdgdfg(string yutyugfhfghfh) { Log(Otorower.Nnfsnfnwerwdfs, yutyugfhfghfh); }
 
-    private void Log(Otorower otorower, string message) {
-        if (otorower >= this.LogOtorower) {
-            var fsdfsdfsdfsdf = "ertertertertert" + message;
-            var gdfgfdgdg = "hfghgfhfghfhgfgh";
+    private void Log(Otorower vncnvndfdjfg, string ititidgdfg) {
+        if (vncnvndfdjfg >= this.LogOtorower) {
+            var rtoeoyfdkgdfkg = "htyurtyfghhf" + ititidgdfg;
+            var gdfgfdgdg = "gergy4yrgr";
 
-            if (otorower == Otorower.Nnfsnfnwerwdfs) {
-                UnityEngine.Debug.LogError(fsdfsdfsdfsdf);
+            if (vncnvndfdjfg == Otorower.Nnfsnfnwerwdfs) {
+                UnityEngine.Debug.LogError(rtoeoyfdkgdfkg);
             } else {
-                UnityEngine.Debug.Log(fsdfsdfsdfsdf);
+                UnityEngine.Debug.Log(rtoeoyfdkgdfkg);
             }
         }
     }

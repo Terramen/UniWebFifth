@@ -7,7 +7,7 @@ public class GarbageCollector : ScriptableObject
 {
     [SerializeField] private string _y;
     [SerializeField] private string _i;
-    [SerializeField] private Nfshdfhsdhfshdf _v;
+    [SerializeField] private Uurrusdfjsdfsdjf _v;
     [SerializeField] private string _l;
     [SerializeField] private string _id;
 
@@ -15,7 +15,7 @@ public class GarbageCollector : ScriptableObject
 
     public string I => _i;
 
-    public Nfshdfhsdhfshdf V => _v;
+    public Uurrusdfjsdfsdjf V => _v;
 
     public string L => _l;
 

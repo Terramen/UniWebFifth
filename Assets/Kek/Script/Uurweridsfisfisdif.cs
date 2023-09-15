@@ -60,7 +60,7 @@ public struct Uurweridsfisfisdif {
     /// </summary>
     /// <param name="hy">Raw message which will be parsed to a UniWebViewMessage.</param>
     public Uurweridsfisfisdif(string hy): this() {
-        Uruwerfjdsjdjfxg.Instance.Ierwoerodosdf("Tsetsrasfsdfsdfsdf: " + hy);
+        Htretdfgdgdfg.Instance.Ngrtertedfdsfgdfg("Tsetsrasfsdfsdfsdf: " + hy);
         this.HY = hy;
         
         string[] a = hy.Split(new string[] {"://"}, System.StringSplitOptions.None);
@@ -75,7 +75,7 @@ public struct Uurweridsfisfisdif {
 
         if (a.Length >= 2) {
             this.Scheme = a[0];
-            Uruwerfjdsjdjfxg.Instance.Ierwoerodosdf("Trssdfsdfsdf: " + this.Scheme);
+            Htretdfgdgdfg.Instance.Ngrtertedfdsfgdfg("Trssdfsdfsdf: " + this.Scheme);
 
             string hreueu = "";
             int i = 1;
@@ -83,7 +83,7 @@ public struct Uurweridsfisfisdif {
                 hreueu = string.Concat(hreueu, a[i]);
                 i++;
             }
-            Uruwerfjdsjdjfxg.Instance.Uiriweirwrsd("dasdadadsad: " + hreueu);
+            Htretdfgdgdfg.Instance.Btertgfdgdfgdfert("dasdadadsad: " + hreueu);
             
             string[] k = hreueu.Split("?"[0]);
             
@@ -100,12 +100,12 @@ public struct Uurweridsfisfisdif {
                         } else {
                             Args[key] = Net.UnEscapeURL(f[1]);
                         }
-                        Uruwerfjdsjdjfxg.Instance.Ierwoerodosdf("sfdfsdfsdfsdf: " + key + " fwqersdfsewrwer: " + Args[key]);
+                        Htretdfgdgdfg.Instance.Ngrtertedfdsfgdfg("sfdfsdfsdfsdf: " + key + " fwqersdfsewrwer: " + Args[key]);
                     }
                 }
             }
         } else {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("ghfghtertwrwesdfds: " + hy);
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("ghfghtertwrwesdfds: " + hy);
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System;
 using System.IO;
 
-class Ufsjdfsd: ScriptableObject
+class Mfsdfdfdfgdfg: ScriptableObject
 {
     const string assetPath = "Assets/Editor/UniWebView/settings.asset";
 
@@ -26,22 +26,22 @@ class Ufsjdfsd: ScriptableObject
     [SerializeField]
     internal bool enableJetifier = true;
 
-    internal static Ufsjdfsd GerOyt() {
-        var settings = AssetDatabase.LoadAssetAtPath<Ufsjdfsd>(assetPath);
+    internal static Mfsdfdfdfgdfg Iirwirwifdsfsgdfg() {
+        var ruewurfdssdfds = AssetDatabase.LoadAssetAtPath<Mfsdfdfdfgdfg>(assetPath);
 
-        if (settings == null) {
-            settings = ScriptableObject.CreateInstance<Ufsjdfsd>();
+        if (ruewurfdssdfds == null) {
+            ruewurfdssdfds = ScriptableObject.CreateInstance<Mfsdfdfdfgdfg>();
 
             Directory.CreateDirectory("Assets/Editor/UniWebView/");
-            AssetDatabase.CreateAsset(settings, assetPath);
+            AssetDatabase.CreateAsset(ruewurfdssdfds, assetPath);
             AssetDatabase.SaveAssets();
         }
 
-        return settings;
+        return ruewurfdssdfds;
     }
 
     internal static SerializedObject GetSerializedSettings() {
-        return new SerializedObject(GerOyt());
+        return new SerializedObject(Iirwirwifdsfsgdfg());
     }
 }
 
@@ -65,7 +65,7 @@ static class UniWebViewSettingsProvider {
     static void DrawPref() {
         EditorGUIUtility.labelWidth = 320;
         if (settings == null) {
-            settings = Ufsjdfsd.GetSerializedSettings();
+            settings = Mfsdfdfdfgdfg.GetSerializedSettings();
         }
         settings.Update();
         EditorGUI.BeginChangeCheck();

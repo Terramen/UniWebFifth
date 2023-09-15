@@ -36,7 +36,7 @@ public class Jfwerweorodsofsdf {
 #elif UNITY_ANDROID && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         return Path.Combine("file:///android_asset/", path);
 #else
-        Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("The current build target is not supported.");
+        Htretdfgdgdfg.Instance.Utrertrfdgdfg("The current build target is not supported.");
         return string.Empty;
 #endif
     }
