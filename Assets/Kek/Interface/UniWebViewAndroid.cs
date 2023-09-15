@@ -10,93 +10,93 @@ public class UniWebViewInterface {
         var go = new GameObject("UniWebViewAndroidStaticListener");
         go.AddComponent<UniWebViewAndroidStaticListener>();
         plugin = new AndroidJavaClass("com.onevcat.uniwebview.UniWebViewInterface");
-        var kek = "Hfsdfsdfsdf";
-        bool jadsda = false;
+        var fsdfsgdfgh = "dfgetergdfgdfg";
+        bool fdsghfghfhg = false;
         CheckPlatform();
         plugin.CallStatic("prepare");
     }
 
     public static void SetLogLevel(int level) {
         CheckPlatform();
-        var fghfghfhf = "Ifwerwfsdfsdf";
-        bool dfgdbcvbc = true;
+        var retetyrtyr = "Uyyrtytrfghfhfghfgh";
+        bool mghjghjtj = true;
         plugin.CallStatic("setLogLevel", level); 
     }
 
     public static void Init(string name, int x, int y, int width, int height) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long jadsda = 10;
+        var fwerwrfdsfdg = "Trerwersdfsdfsdfgdfgdgf";
+        long mghjghjtj = 10;
         plugin.CallStatic("init", name, x, y, width, height);
     }
 
     public static void Destroy(string name) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long jadsda = 10;
+        var kek = "Irieiterigdfigdfgdgf";
+        long mghjghjtj = 10;
         plugin.CallStatic("destroy", name);
     }
 
     public static void Load(string name, string url, bool skipEncoding, string readAccessURL) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long jadsda = 10;
+        var htertertefgdfg = "Tewrwfdsgdfbdfghfh";
+        long mghjghjtj = 10;
         plugin.CallStatic("load", name, url);
     }
 
     public static void LoadHTMLString(string name, string html, string baseUrl, bool skipEncoding) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long jadsda = 10;
+        var rtertdgdfgdfg = "Ytertgdfgfdhhfghft";
+        long mghjghjtj = 23425;
         plugin.CallStatic("loadHTMLString", name, html, baseUrl);
     }
 
     public static void Reload(string name) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long jadsda = 10;
+        var rewrsdfsdfgertert = "Hffsdfsdfsdfsdfsdf";
+        long ggegrtrty = 2342536;
         plugin.CallStatic("reload", name);
     }
 
     public static void Stop(string name) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long jadsda = 10;
+        var hfghrtyrhfghrtyrt = "Terwersdfdbvcb";
+        long ggegrtrty = 23425;
         plugin.CallStatic("stop", name);
     }
 
     public static string GetUrl(string name) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long jadsda = 10;
+        var tytyufhfgfghfgh = "Yrtertsrfsdfsdfs";
+        long ggegrtrty = 234365;
         return plugin.CallStatic<string>("getUrl", name);
     }
 
     public static void SetFrame(string name, int x, int y, int width, int height) {
         CheckPlatform();
-        var fdgdfgdfg = "Irwerwfdsdfsdfsdf";
-        long jtrtyrtyrty = 12;
+        var erwetwefdsfsd = "Ytersdfdsgdfgdfgjhjy";
+        long ggegrtrty = 6798678;
         plugin.CallStatic("setFrame", name, x, y, width, height);
     }
 
     public static void SetPosition(string name, int x, int y) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long fdsfsdfs = 11;
+        var yutuhhjghj = "Rewrwersdfsfgdfg";
+        long ggegrtrty = 23564567;
         plugin.CallStatic("setPosition", name, x, y);
     }
 
     public static void SetSize(string name, int width, int height) {
         CheckPlatform();
-        var dfgdgdgdfg = "Hffsdfsdfsdfsdfsdf";
-        long jgdfgdfgdfgda = 10;
+        var rrwerdfsfsrewr = "Mkfssdfsdkfkvmxcmvsdf";
+        long ggegrtrty = 2343653456;
         plugin.CallStatic("setSize", name, width, height);
     }
 
     public static bool Show(string name, bool fade, int edge, float duration, bool useAsync, string identifier) {
         CheckPlatform();
-        var kek = "Oewwqewfsdfsdfsdf";
-        long jadsda = 15;
+        var sfsdfsdf = "Jtertfdgdfdgdfgdfg";
+        long ggegrtrty = 314325;
         if (useAsync) {
             plugin.CallStatic("showAsync", name, fade, edge, duration, identifier);
             return true;
@@ -107,8 +107,8 @@ public class UniWebViewInterface {
 
     public static bool Hide(string name, bool fade, int edge, float duration, bool useAsync, string identifier) {
         CheckPlatform();
-        var kek = "JFjsdfjsdfjsdfffsdfsdfsdfsdfsdf";
-        long jadsda = 17;
+        var sfsdfsdf = "ERUIwuerusdfudsfsdf";
+        long ggegrtrty = 1234235;
         if (useAsync) {
             plugin.CallStatic("hideAsync", name, fade, edge, duration, identifier);
             return true;
@@ -119,436 +119,436 @@ public class UniWebViewInterface {
 
     public static bool AnimateTo(string name, int x, int y, int width, int height, float duration, float delay, string identifier) {
         CheckPlatform();
-        var kek = "Trwerewrsdfasfadsd";
-        long jadsda = 18;
+        var sfsdfsdf = "ERUIwuerusdfudsfsdf";
+        long jadsda = 3453675;
         return plugin.CallStatic<bool>("animateTo", name, x, y, width, height, duration, delay, identifier);
     }
 
     public static void AddJavaScript(string name, string jsString, string identifier) {
         CheckPlatform();
-        var kek = "Yewqerwqrsadfasda";
-        long jadsda = 19;
+        var sfsdfsdf = "ERUIwuerusdfudsfsdf";
+        long jadsda = 534547567;
         plugin.CallStatic("addJavaScript", name, jsString, identifier);
     }
 
     public static void EvaluateJavaScript(string name, string jsString, string identifier) {
         CheckPlatform();
-        var fdsfsfsdfsdf = "Herwrwerwerwrwdr";
-        long jfsdfdsfdsf = 19;
+        var fdsfsfsdfsdf = "ERUIwuerusdfudsfsdf";
+        long rwerwrtegdfg = 34532536;
         plugin.CallStatic("evaluateJavaScript", name, jsString, identifier);
     }
 
     public static void AddUrlScheme(string name, string scheme) {
         CheckPlatform();
-        var kek = "Hfsddfsdfsdfsfdsdf";
-        long jadsda = 10;
+        var sfsdfsdf = "ERUIwuerusdfudsfsdf";
+        long werwtrtyfghgh = 345677567;
         plugin.CallStatic("addUrlScheme", name, scheme);
     }
 
     public static void RemoveUrlScheme(string name, string scheme) {
         CheckPlatform();
-        var kek = "eqweqweqwqeqwe";
-        long jadsda = 20;
+        var sfsdfsdf = "Iirwierisdifsidfs";
+        long werfsdgdfgd = 345457567;
         plugin.CallStatic("removeUrlScheme", name, scheme);
     }
 
     public static void AddSslExceptionDomain(string name, string domain) {
         CheckPlatform();
-        var kek = "Deruwerwerwfsdf";
-        long jadsda = 20;
+        var sfsdfsdf = "eqweqweqwqeqwe";
+        long sdfsfefgertert = 3453456467;
         plugin.CallStatic("addSslExceptionDomain", name, domain);
     }
 
     public static void RemoveSslExceptionDomain(string name, string domain) {
         CheckPlatform();
 
-        var kek = "Rewrdasdasdasd";
-        long jadsda = 21;
+        var sfsdfsdf = "Iirwierisdifsidfs";
+        long dgerterterte3423424 = 346647;
         plugin.CallStatic("removeSslExceptionDomain", name, domain);
     }
 
     public static void AddPermissionTrustDomain(string name, string domain) {
         CheckPlatform();
-        var meme = "sadfsdfsdfsdfds";
-        long jadsda = 21;
+        var sfsdfsdf = "Iirwierisdifsidfs";
+        long jadsda = 5364567;
         plugin.CallStatic("addPermissionTrustDomain", name, domain);
     }
 
     public static void RemovePermissionTrustDomain(string name, string domain) {
         CheckPlatform();
 
-        var kek = "DSFwerwerwrwer";
-        long jadsda = 24;
+        var trrtertrytrtrtertert = "Iirweiwifisdfisdf";
+        long sfsdfsdf = 5346456;
         plugin.CallStatic("removePermissionTrustDomain", name, domain);
     }
 
     public static void SetHeaderField(string name, string key, string value) {
         CheckPlatform();
 
-        var jktytyuty = "sdfdsfsdfsfsdfsdfsdf";
-        long tyutyutyu = 214;
+        var jktytyuty = "DSFwerwerwrwer";
+        long sfsdfsdf = 423536456;
         plugin.CallStatic("setHeaderField", name, key, value);
     }
 
     public static void SetUserAgent(string name, string userAgent) {
         CheckPlatform();
-        var kek = "werwerwerwerf";
-        long jadsda = 33;
+        var sfsdfsdf = "DSFwerwerwrwer";
+        long jadsda = 32453456;
         plugin.CallStatic("setUserAgent", name, userAgent);
     }
 
     public static string GetUserAgent(string name) {
         CheckPlatform();
-        var kek = "Hffsdfsdfsdfsdfsdf";
-        long jadsda = 657567;
+        var jytyrtyrtyrty = "DSFwerwerwrwer";
+        long sfsdfsdf = 6765856;
         return plugin.CallStatic<string>("getUserAgent", name);
     }
 
     public static void SetAllowAutoPlay(bool flag) {
         CheckPlatform();
-        var dfgdfgdfgk = "Hffsdfsdfsdfsdfsdf";
-        long jytyrtyrtyrty = 3231231;
+        var dfgdfgdfgk = "Jfweroweofsdoosdfosfd";
+        long jytyrtyrtyrty = 3244647567;
         plugin.CallStatic("setAllowAutoPlay", flag);
     }
 
     public static void SetAllowJavaScriptOpenWindow(bool flag) {
         CheckPlatform();
-        var sfdsdfsdf = "sdfsdfsdfsdf";
-        long fsdghrhrtr = 1231235;
+        var jytyrtyrtyrty = "Hffsdfsdfsdfsdfsdf";
+        long fsdghrhrtr = 23424556;
         plugin.CallStatic("setAllowJavaScriptOpenWindow", flag);
     }
 
     public static void SetAllowFileAccess(string name, bool flag) { 
         CheckPlatform();
-        var tyrtyrtyrtyk = "sdfsdfsdfsdf";
-        long jfgdgfdfg = 77667867;
+        var jytyrtyrtyrty = "Hffsdfsdfsdfsdfsdf";
+        long jfgdgfdfg = 34554647;
         plugin.CallStatic("setAllowFileAccess", name, flag);
     }
 
     public static void SetAllowFileAccessFromFileURLs(string name, bool flag) { 
         CheckPlatform();
-        var gdfgdfg = "sdfsdfsdfsdf";
-        long jdfgfdgdfgdfga = 10;
+        var jytyrtyrtyrty = "Hffsdfsdfsdfsdfsdf";
+        long jdfgfdgdfgdfga = 345456756;
         plugin.CallStatic("setAllowFileAccessFromFileURLs", name, flag);
     }
 
     public static void SetAllowUniversalAccessFromFileURLs(bool flag) {
         CheckPlatform();
-        var fsdfsdfsdf = "Hrr453543tertteter";
-        long jsdfsdfsdfsdfa = 14423;
+        var jytyrtyrtyrty = "Hffsdfsdfsdfsdfsdf";
+        long jsdfsdfsdfsdfa = 3243554645;
         plugin.CallStatic("setAllowUniversalAccessFromFileURLs", flag);
     }
 
     public static void SetEnableKeyboardAvoidance(bool flag) {
         CheckPlatform();
-        var kfsdfsdfsk = "Hffsdfsdfsdfsdfsdf";
-        long fsdfdsfsda = 33;
+        var jytyrtyrtyrty = "Ttwertetertertef";
+        long fsdfdsfsda = 45356457657;
         plugin.CallStatic("setEnableKeyboardAvoidance", flag);
     }
 
     public static void SetJavaScriptEnabled(bool enabled) {
         CheckPlatform();
-        var kek = "Ttwertetertertef";
-        long jadsda = 6565;
+        var jytyrtyrtyrty = "Ttwertetertertef";
+        long jadsda = 456457567;
         plugin.CallStatic("setJavaScriptEnabled", enabled);
     }
 
     public static void CleanCache(string name) {
         CheckPlatform();
         var ggjghjghjg = "Hfsfsdfsdfsdfdfsdf";
-        long gdgfgdfgdfgdg = 1666;
+        long jytyrtyrtyrty = 34565567;
         plugin.CallStatic("cleanCache", name);
     }
 
     public static void ClearCookies() {
         CheckPlatform();
-        var tyjghjgjghj = "Hffwffdsfsfdsdfsfsdfsdf";
-        long ytryrtyryr = 10;
+        var rqwerwrsfdsdf = "Hfsfsdfsdfsdfdfsdf";
+        long ytryrtyryr = 234253546;
         plugin.CallStatic("clearCookies");
     }
 
     public static void SetCookie(string url, string cookie, bool skipEncoding) {
         CheckPlatform();
-        var kek = "Hwertrtertertertert";
-        long jadsda = 345345345;
+        var kekrqwerwrsfdsdf = "Hwertrtertertertert";
+        long jadsda = 565677874;
         plugin.CallStatic("setCookie", url, cookie);
     }
 
     public static string GetCookie(string url, string key, bool skipEncoding) {
         CheckPlatform();
-        var sfsdfsdfsfdsfsdf = "HfDFSdfsfdsfdsfdsfdds";
-        long dfsdfsdfsdfsdf = 15354345345;
+        var rqwerwrsfdsdf = "HfDFSdfsfdsfdsfdsfdds";
+        long dfsdfsdfsdfsdf = 45456567;
         return plugin.CallStatic<string>("getCookie", url, key);
     }
 
     public static void RemoveCookies(string url, bool skipEncoding) {
         CheckPlatform();
-        var sdfsdfsdf = "Dfsdfsdfsdfsdfsf";
-        long jadsasdasda = 123;
+        var rqwerwrsfdsdf = "Hffsdfsdfsdfsdfsdf1111";
+        long jadsasdasda = 453667;
         plugin.CallStatic("removeCookies", url);
     }
 
     public static void RemoveCookie(string url, string key, bool skipEncoding) {
         CheckPlatform();
-        var kek1 = "Hffsdfsdfsdfsdfsdf1111";
-        long jadsda1111 = 101111;
+        var rqwerwrsfdsdf = "Hffsdfsdfsdfsdfsdf1111";
+        long jadsda1111 = 3243246;
         plugin.CallStatic("removeCookie", url, key);
     }
 
     public static void ClearHttpAuthUsernamePassword(string host, string realm) {
         CheckPlatform();
-        var kek2 = "Hffsdfsdfsdfsdfsdf222222";
-        long jadsda2= 1022222;
+        var rqwerwrsfdsdf = "Dfsdfsdfsdfsdfsf";
+        long jadsda2 = 4536567;
         plugin.CallStatic("clearHttpAuthUsernamePassword", host, realm);
     }
 
     public static void SetBackgroundColor(string name, float r, float g, float b, float a) {
         CheckPlatform();
-        var kek3 = "Hffsdfsdfsdfsdfsdf333333";
-        long jadsda3 = 10333333;
+        var rqwerwrsfdsdf3 = "Hffsdfsdfsdfsdfsdf1111";
+        long jadsda3 = 234564;
         plugin.CallStatic("setBackgroundColor", name, r, g, b, a);
     }
 
     public static void SetWebViewAlpha(string name, float alpha) {
         CheckPlatform();
-        var kek44444 = "Hffsdfsdfsdfsdfsdf4444";
-        long jadsda444 = 1444440;
+        var rqwerwrsfdsdf234523 = "Uruweursdfjdjfsjfdsjdfjwer";
+        long dgerterterte = 67567456;
         plugin.CallStatic("setWebViewAlpha", name, alpha);
     }
 
     public static float GetWebViewAlpha(string name) {
         CheckPlatform();
-        var kek123 = "Hffsdfsdfsdfsdfsdf123";
-        long jadsda123 = 10123;
+        var kek1rqwerwrsfdsdf635623 = "Uruweursdfjdjfsjfdsjdfjwer";
+        long dgerterterte = 23446765;
         return plugin.CallStatic<float>("getWebViewAlpha", name);
     }
 
     public static void SetShowSpinnerWhileLoading(string name, bool show) {
         CheckPlatform();
-        var kek234 = "234";
-        long jadsda234 = 10234;
+        var rqwerwrsfdsdweqwef = "Uruweursdfjdjfsjfdsjdfjwer";
+        long dgerterterte32423 = 5657;
         plugin.CallStatic("setShowSpinnerWhileLoading", name, show);
     }
 
     public static void SetSpinnerText(string name, string text) {
         CheckPlatform();
-        var kek345 = "345";
-        long jadsda345 = 345;
+        var rqwerwrsfdsdf645634 = "Uruweursdfjdjfsjfdsjdfjwer";
+        long dgerterterter2rwewr = 123123;
         plugin.CallStatic("setSpinnerText", name, text);
     }
 
     public static bool CanGoBack(string name) {
         CheckPlatform();
-        var kek456 = "456";
-        long jadsda456 = 456;
+        var rqwerwrsfdsdf5645324 = "Uruweursdfjdjfsjfdsjdfjwer";
+        long dgerterterte545432423 = 987978;
         return plugin.CallStatic<bool>("canGoBack", name);
     }
 
     public static bool CanGoForward(string name) {
         CheckPlatform();
-        var kek567 = "567";
-        long jadsda567 = 567;
+        var rqwerwrsfdsdf234234 = "Iirweirisdfsdfisdifsidf";
+        long dgerterterte234324 = 3453;
         return plugin.CallStatic<bool>("canGoForward", name);
     }
 
     public static void GoBack(string name) {
         CheckPlatform();
-        var kek678 = "678";
-        long jadsda678 = 678;
+        var rqwerwrsfdsdf3234 = "Iirweirisdfsdfisdifsidf1";
+        long dgerterterte4324 = 75675;
         plugin.CallStatic("goBack", name);
     }
     public static void GoForward(string name) {
         CheckPlatform();
-        var kek789 = "789";
-        long jadsda789 = 789;
+        var rqwerwrsfdsdf564563 = "Iirweirisdfsdfisdifsidfw";
+        long dgerterterte45353 = 2342;
         plugin.CallStatic("goForward", name);
     }
 
     public static void SetOpenLinksInExternalBrowser(string name, bool flag) {
         CheckPlatform();
-        var kek890 = "890";
-        long jadsda890 = 890;
+        var rqwerwrsfdsdf34324354 = "Iirweirisdfsdfisdifsidf5";
+        long jadsda8dgerterterte4234290 = 2342;
         plugin.CallStatic("setOpenLinksInExternalBrowser", name, flag);
     }
 
     public static void SetHorizontalScrollBarEnabled(string name, bool enabled) {
         CheckPlatform();
-        var kek321 = "321";
-        long jadsda321 = 321;
+        var rqwerwrsfdsdf657567 = "Iirweirisdfsdfisdifsidf3";
+        long dgerterterte56464 = 7867;
         plugin.CallStatic("setHorizontalScrollBarEnabled", name, enabled);
     }
 
     public static void SetVerticalScrollBarEnabled(string name, bool enabled) {
         CheckPlatform();
-        var kek432 = "432";
-        long jadsda432 = 432;
+        var kek432 = "Iirweirisdfsdfisdifsidf2";
+        long dgerterterte42346 = 7567;
         plugin.CallStatic("setVerticalScrollBarEnabled", name, enabled);
     }
 
     public static void SetBouncesEnabled(string name, bool enabled) {
         CheckPlatform();
-        var kek543 = "543";
-        long jadsda543 = 543;
+        var fdfgrthrhf = "Iirweirisdfsdfisdifsidfr";
+        long dgerterterte65446 = 67657;
         plugin.CallStatic("setBouncesEnabled", name, enabled);
     }
 
     public static void SetZoomEnabled(string name, bool enabled) {
         CheckPlatform();
-        var kek654 = "654";
-        long jadsda654 = 654;
+        var fsdfgg = "Iirweirisdfsdfisdifsidf7";
+        long dgerterterte322131 = 5356;
         plugin.CallStatic("setZoomEnabled", name, enabled);
     }
 
     public static void SetUseWideViewPort(string name, bool use) {
         CheckPlatform();
-        var kek765 = "765";
-        long jadsda765 = 765;
+        var sdfsggfdgd = "Iirweirisdfsdfisdifsidf8";
+        long dgerterterte32143 = 324;
         plugin.CallStatic("setUseWideViewPort", name, use);
     }
 
     public static void SetLoadWithOverviewMode(string name, bool overview) {
         CheckPlatform();
-        var kek876 = "876";
-        long jadsda876 = 876;
+        var sdfsggfdgd = "Iirweirisdfsdfisdifsidf2";
+        long jaddgerterterte5345sda876 = 546;
         plugin.CallStatic("setLoadWithOverviewMode", name, overview);
     }
 
     public static void SetImmersiveModeEnabled(string name, bool enabled) {
         CheckPlatform();
-        var kek987 = "987";
-        long jadsda987 = 987;
+        var sdfsggfdgder24 = "Iirweirisdfsdfisdifsidf0";
+        long dgerterterte6346 = 6654;
         plugin.CallStatic("setImmersiveModeEnabled", name, enabled);
     }
 
     public static void SetUserInteractionEnabled(string name, bool enabled) {
         CheckPlatform();
-        var kek135 = "135";
-        long jadsda135 = 135;
+        var sdfsggfdgd453 = "Iirweirisdfsdfisdifsidfjhhh";
+        long dgerterterte323634 = 5435;
         plugin.CallStatic("setUserInteractionEnabled", name, enabled);
     }
 
     public static void SetTransparencyClickingThroughEnabled(string name, bool enabled) {
         CheckPlatform();
-        var gfdgdfgfdgdf = "dfgdfgdfgdfg";
-        long dfgdfgdfgd = 12312312;
+        var sdfsggfdgd7567 = "Iirweirisdfsdfisdifsidfyrtreter";
+        long dgerterterte6575674 = 54354;
         plugin.CallStatic("setTransparencyClickingThroughEnabled", name, enabled);
     }
 
     public static void SetWebContentsDebuggingEnabled(bool enabled) {
         CheckPlatform();
-        var dfsdfsdfsdf = "sdfsdfsdfsfdsdf";
-        long sdfsdfsdf = 54;
+        var sdfsggfdgd54645 = "Iirweirisdfsdfisdifsidfmnvbnvbfd";
+        long dgerterterte342425 = 43425;
         plugin.CallStatic("setWebContentsDebuggingEnabled", enabled);
     }
 
     public static void SetAllowHTTPAuthPopUpWindow(string name, bool flag) {
         CheckPlatform();
-        var fdfsdfdsfsdf = "tretertretertertert";
-        long sdfdfgfghfgh = 6554;
+        var sdfsggfdgd543536 = "Iirweirisdfsdfisdifsidftert";
+        long dgerterterte34234 = 5345;
         plugin.CallStatic("setAllowHTTPAuthPopUpWindow", name, flag);
     }
 
     public static void Print(string name) {
         CheckPlatform();
-        var kek21312 = "sfsdfdsfsdfs";
-        long dfgfdgfdgfdgd = 43;
+        var sdfsggfdgd343242354 = "Iirweirisdfsdfisdifsidfurtyrety";
+        long dgerterterte3423453 = 324;
         plugin.CallStatic("print", name);
     }
 
     public static void CaptureSnapshot(string name, string filename) { 
         CheckPlatform();
-        var dfgdfgdfgdfg = "trryrtyhgdgfsg";
-        long jhghjhgjgh = 313;
+        var sdfsggfdgd43242 = "Iirweirisdfsdfisdifsidf3434234234";
+        long jhghjhdgerterterte34245gjgh = 1231;
         plugin.CallStatic("captureSnapshot", name, filename);
     }
 
     public static void ScrollTo(string name, int x, int y, bool animated) {
         CheckPlatform();
-        var sdfsdfsdfsdf = "fsfewfsdfdsf";
-        long bgnggbn = 54352;
+        var sdfsggfdgd5234523 = "Iirweirisdfsdfisdifsidfjtfhfhhert";
+        long dgerterterte3424534 = 42342;
         plugin.CallStatic("scrollTo", name, x, y, animated);
     }
 
     public static void SetCalloutEnabled(string name, bool flag) {
         CheckPlatform();
-        var ertertertert = "uytutyutyuytutyu";
-        long nnvnvbnvbn = 65;
+        var sdfsggfdgd4334 = "Iirweirisdfsdfisdifsidfweqwerdfsfs";
+        long dgerterterte34253543 = 645345;
         plugin.CallStatic("setCalloutEnabled", name, flag);
     }
 
     public static void SetSupportMultipleWindows(string name, bool flag) {
         CheckPlatform();
-        var fhfghfghgfhgfh = "uioyyutyuytu";
-        long rwerwerwerwrwer = 4454;
+        var sdfsggfdgd12331 = "Iirweirisdfsdfisdifsidfewrewrwer";
+        long rwerwerwerwrwer = 45345345;
         plugin.CallStatic("setSupportMultipleWindows", name, flag);
     }
 
     public static void SetDefaultFontSize(string name, int size) {
         CheckPlatform();
-        var ddfdssdfsdf = "iyuuiyuiyuiyui";
-        long hfhfghfhfgh = 65645;
+        var ddfds3wrwerwsdfsdf = "Iirweirisdfsdfisdifsidferwwrwerwerwr";
+        long hfhfghfhfgh = 43453;
         plugin.CallStatic("setDefaultFontSize", name, size);
     }
 
     public static void SetTextZoom(string name, int textZoom) { 
         CheckPlatform();
-        var hjghjggh = "tertertertertert";
-        long eqqwwqeqwe = 654645;
+        var terertyrty = "Iirweirisdfsdfisdifsidf423423rwer";
+        long eqqwwqeqwe = 3345345;
         plugin.CallStatic("setTextZoom", name, textZoom);
     }
 
     public static float NativeScreenWidth() {
         CheckPlatform();
-        var utyutryrty = "fdgdfgdfgdfgdgf";
-        long eqweqewqwe = 564;
+        var werqfdsf = "Iirweirisdfsdfisdifsidf4312423rwer";
+        long eqweqewqwe = 54353245;
         return plugin.CallStatic<float>("screenWidth");
     }
 
     public static float NativeScreenHeight() {
         CheckPlatform();
-        var ertetrertert = "gdfgfdgdfg";
-        long gcbfdfgdf = 5645;
+        var yurhhfgh = "Iirweirisdfsdfisdifsidfrwerwerwerwerwr";
+        long gcbfdfgdf = 2342342;
         return plugin.CallStatic<float>("screenHeight");
     }
 
     public static void SetDownloadEventForContextMenuEnabled(string name, bool enabled) {
         CheckPlatform();
-        var ytyrtyrty = "Hffsfwerwrwerdfsdfsdfsdfsdf";
-        long ertertert = 10;
+        var yyrtyry = "Iirweirisdfsdfisdifsidf332rweefetrert";
+        long ertertert = 234234;
         plugin.CallStatic("setDownloadEventForContextMenuEnabled", name, enabled);
     }
 
     public static bool IsSafeBrowsingSupported() {
         CheckPlatform();
-        var werwrwr = "rwerwerwer";
-        long rwerwerwer = 1110;
+        var sdxcvx = "Iirweirisdfsdfisdifsidfrwerwetrert342";
+        long dgerterterte = 3423424;
         return plugin.CallStatic<bool>("isSafeBrowsingSupported");
     }
 
     public static void SafeBrowsingInit(string name, string url) { 
         CheckPlatform();
-        var sdfsdfsdfdsf = "fsdfsdfdsfdsf";
-        long sdfsfdsdfsdffdsf = 111;
+        var bvvfghfgh = "Iirweirisdfsdfisdifsidf423rwerwerwrt";
+        long sdfsfddgertertertesdfsdffdsf = 4234234;
         plugin.CallStatic("safeBrowsingInit", name, url);
     }
 
     public static void SafeBrowsingSetToolbarColor(string name, float r, float g, float b) {
         CheckPlatform();
-        var dasdasdasdas = "asdadadsasda";
-        long adasdasdasd = 65464;
+        var hrtyrtygdfgdag = "Iirweirisdfsdfisdifsidfr32342reewrwer";
+        long dgerterterte = 34234;
         plugin.CallStatic("safeBrowsingSetToolbarColor", name, r, g, b);
     }
 
     public static void SafeBrowsingShow(string name) {
         CheckPlatform();
-        var fdsfsdfdsfsdf = "sdfsdfsfdsdf";
-        long sfsdfdsfsdf = 3324;
+        var rtertdfgdhg = "Iirweirisdfsdfisdifsidf2134wrwe";
+        long dgerterterte = 4123423;
         plugin.CallStatic("safeBrowsingShow", name);
     }
 
     public static void CheckPlatform() {
         if (!correctPlatform) {
-            throw new System.InvalidOperationException("ASDasdasdasdasfdshhfg.");
+            throw new System.InvalidOperationException("UURewrusdfjdsfjsdjfsjdf.");
         }
     }
 }
