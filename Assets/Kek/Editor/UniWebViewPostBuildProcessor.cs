@@ -9,36 +9,36 @@ class UniWebViewPostBuildProcessor : IPostGenerateGradleAndroidProject
 {
     public int callbackOrder { get { return 1; } }
     public void OnPostGenerateGradleAndroidProject(string path) {
-        Debug.Log("Da da ya");
-        Httwerwwey(path);
+        Debug.Log("Da da gfdfgerterte");
+        Yrtertgdfgdfg(path);
         Trerwrwerw(path);
         YouAwake(path);
         var fdsfsdfsdfsd = "fsdfsdfsdfdsf";
 
     }
 
-    private void Httwerwwey(string l) {
+    private void Yrtertgdfgdfg(string l) {
         var manifestFilePath = Genshin(l);
-        var ggg = new NewJewerly(manifestFilePath);
+        var ggg = new Iriwriidsfsifsdf(manifestFilePath);
         
         var d = false;
         
         Debug.Log("Kek Ewew fsfsdf");
-        d = ggg.Turn() || d;
+        d = ggg.Jfdsfjsdfjsdjfxcv() || d;
 
         var settings = Ufsjdfsd.GerOyt();
         if (settings.usesCleartextTraffic) {
-            d = ggg.Hunter() || d;
+            d = ggg.Porweorodsofsdf() || d;
         }
         if (settings.writeExternalStorage) {
-            d = ggg.Endpoint() || d;
+            d = ggg.Refsdfsdfsdf() || d;
         }
         if (settings.accessFineLocation) {
-            d = ggg.Lift() || d;
+            d = ggg.Ytertsdfsdfsdf() || d;
         }
 
         if (d) {
-            ggg.Fendral();
+            ggg.Jeqweoeweroweor();
         }
 
         var re = "rwrwerwerwerwer";
@@ -56,34 +56,34 @@ class UniWebViewPostBuildProcessor : IPostGenerateGradleAndroidProject
 
         var dfsdf = Ufsjdfsd.GerOyt();
         
-        var sfsdfsdfsdfsdfsdf = "sdfdsfdsfdsfsdf";
+        var derwrewdrwerewr = "fweretrergfdgdfg";
 
 
-        var dependenciesNode = gdfsdf.HIGH.Momentum("dependencies");
+        var dependenciesNode = gdfsdf.HIGH.Hrwrjsdjfsjdfsjdf("dependencies");
         if (dependenciesNode != null) {
          
             if (dfsdf.addsKotlin) {
-                dependenciesNode.Unbroken(gsdfsdfds, gsdfsdfds + v);
+                dependenciesNode.EWwqeweqwrwqerwer(gsdfsdfds, gsdfsdfds + v);
                 Debug.Log("Ghfdgfdg Meeqweqwe dsfsdfdfd");
             }
             
             if (dfsdf.addsAndroidBrowser) {
-                dependenciesNode.Unbroken(jhj, jhj + k);
+                dependenciesNode.EWwqeweqwrwqerwer(jhj, jhj + k);
                 Debug.Log("Mmmmm fsfsdfs fsdf");
             }
         } else {
             Debug.LogError("Urweurwer ruweruwru weurwerwer");
             Debug.LogError("Kfdfjdsfnsd erwerwer qwoe qweq");
 
-            var newNode = new YourDeathIsHere("dependencies", gdfsdf.HIGH);
+            var newNode = new Ttyeyrtytdfgddfg("dependencies", gdfsdf.HIGH);
             if (dfsdf.addsKotlin) {
-                newNode.Grave(gsdfsdfds + v);
+                newNode.Ferewrwfsrwet(gsdfsdfds + v);
             }
             if (dfsdf.addsAndroidBrowser) {
-                newNode.Grave(jhj + k);
+                newNode.Ferewrwfsrwet(jhj + k);
             }
-            newNode.Grave("implementation(name: 'UniWebView', ext:'aar')");
-            gdfsdf.HIGH.TryAgain(newNode);
+            newNode.Ferewrwfsrwet("implementation(name: 'UniWebView', ext:'aar')");
+            gdfsdf.HIGH.Orowerosdofosdf(newNode);
         }
         gdfsdf.Trim();
         

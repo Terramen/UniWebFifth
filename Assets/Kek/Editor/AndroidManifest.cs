@@ -3,140 +3,140 @@ using System.Collections;
 using System.Text;
 using System.IO;
 
-internal class Jewerly : XmlDocument {
-    private string apache;
-    protected XmlNamespaceManager cup;
-    public readonly string west = "http://schemas.android.com/apk/res/android";
+internal class TEtwertsdtfsdtfsdf : XmlDocument {
+    private string _orweroodfsdfsdf;
+    protected XmlNamespaceManager orwerosdosodf;
+    public readonly string dskfsdkfksdkf = "http://schemas.android.com/apk/res/android";
 
-    public Jewerly(string apache) {
-        this.apache = apache;
-        using (var reader = new XmlTextReader(apache)) {
+    public TEtwertsdtfsdtfsdf(string orweroodfsdfsdf) {
+        this._orweroodfsdfsdf = orweroodfsdfsdf;
+        using (var reader = new XmlTextReader(orweroodfsdfsdf)) {
             reader.Read();
             Load(reader);
         }
-        cup = new XmlNamespaceManager(NameTable);
-        cup.AddNamespace("android", west);
+        orwerosdosodf = new XmlNamespaceManager(NameTable);
+        orwerosdosodf.AddNamespace("android", dskfsdkfksdkf);
     }
 
-    public string Fendral() {
-        return Best(apache);
+    public string Jeqweoeweroweor() {
+        return Oroweorsdofsdfs(_orweroodfsdfsdf);
     }
 
-    public string Best(string path) {
-        using (var writer = new XmlTextWriter(path, new UTF8Encoding(false))) {
+    public string Oroweorsdofsdfs(string rpweprspfpsdf) {
+        using (var writer = new XmlTextWriter(rpweprspfpsdf, new UTF8Encoding(false))) {
             writer.Formatting = Formatting.Indented;
             Save(writer);
         }
-        return path;
+        return rpweprspfpsdf;
     }
 }
 
-internal class NewJewerly : Jewerly {
-    private readonly XmlElement Burn;
-    private readonly XmlElement Frost;
+internal class Iriwriidsfsifsdf : TEtwertsdtfsdtfsdf {
+    private readonly XmlElement Poison;
+    private readonly XmlElement Venom;
 
-    public NewJewerly(string apache) : base(apache) {
-        Burn = SelectSingleNode("/manifest") as XmlElement;
-        Frost = SelectSingleNode("/manifest/application") as XmlElement;
+    public Iriwriidsfsifsdf(string orweroodfsdfsdf) : base(orweroodfsdfsdf) {
+        Poison = SelectSingleNode("/manifest") as XmlElement;
+        Venom = SelectSingleNode("/manifest/application") as XmlElement;
     }
 
-    private XmlAttribute Grind(string key, string value) {
-        XmlAttribute attr = CreateAttribute("android", key, west);
-        attr.Value = value;
+    private XmlAttribute Irwerdsfsdfsd(string jdsjdjsdfjsdf, string bnvbbndgdfgdf) {
+        XmlAttribute attr = CreateAttribute("android", jdsjdjsdfjsdf, dskfsdkfksdkf);
+        attr.Value = bnvbbndgdfgdf;
         return attr;
     }
 
-    internal XmlNode Better() {
+    internal XmlNode Jfsdjfsjfdjsdfjs() {
         return
             SelectSingleNode(
                 "/manifest/application/activity[intent-filter/action/@android:name='android.intent.action.MAIN' and "
                 + "intent-filter/category/@android:name='android.intent.category.LAUNCHER']",
-                cup);
+                orwerosdosodf);
     }
 
-    internal bool Hunter() {
-        bool changed = false;
-        if (Frost.GetAttribute("usesCleartextTraffic", west) != "true") {
-            Frost.SetAttribute("usesCleartextTraffic", west, "true");
-            changed = true;
+    internal bool Porweorodsofsdf() {
+        bool fdsfjsdfjsdjf = false;
+        if (Venom.GetAttribute("usesCleartextTraffic", dskfsdkfksdkf) != "true") {
+            Venom.SetAttribute("usesCleartextTraffic", dskfsdkfksdkf, "true");
+            fdsfjsdfjsdjf = true;
         }
-        return changed;
+        return fdsfjsdfjsdjf;
     }
 
-    internal bool Turn() {
-        bool k = false;
-        var activity = Better() as XmlElement;
-        if (activity.GetAttribute("hardwareAccelerated", west) != "true") {
-            activity.SetAttribute("hardwareAccelerated", west, "true");
-            k = true;
+    internal bool Jfdsfjsdfjsdjfxcv() {
+        bool gkfkgdkgd = false;
+        var jfdsjfjjcxcjv = Jfsdjfsjfdjsdfjs() as XmlElement;
+        if (jfdsjfjjcxcjv.GetAttribute("hardwareAccelerated", dskfsdkfksdkf) != "true") {
+            jfdsjfjjcxcjv.SetAttribute("hardwareAccelerated", dskfsdkfksdkf, "true");
+            gkfkgdkgd = true;
         }
-        return k;
+        return gkfkgdkgd;
     }
 
     internal bool Serve() {
-        bool b = false;
-        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.CAMERA']", cup).Count == 0) {
-            var i = CreateElement("uses-permission");
-            i.Attributes.Append(Grind("name", "android.permission.CAMERA"));
-            Burn.AppendChild(i);
-            b = true;
+        bool fjsdfjjcvx = false;
+        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.CAMERA']", orwerosdosodf).Count == 0) {
+            var bcvnbndfng = CreateElement("uses-permission");
+            bcvnbndfng.Attributes.Append(Irwerdsfsdfsd("name", "android.permission.CAMERA"));
+            Poison.AppendChild(bcvnbndfng);
+            fjsdfjjcvx = true;
         }
-        if (SelectNodes("/manifest/uses-feature[@android:name='android.hardware.camera']", cup).Count == 0) {
-            var o = CreateElement("uses-feature");
-            o.Attributes.Append(Grind("name", "android.hardware.camera"));
-            Burn.AppendChild(o);
-            b = true;
+        if (SelectNodes("/manifest/uses-feature[@android:name='android.hardware.camera']", orwerosdosodf).Count == 0) {
+            var cvxkvkxckvxkcv = CreateElement("uses-feature");
+            cvxkvkxckvxkcv.Attributes.Append(Irwerdsfsdfsd("name", "android.hardware.camera"));
+            Poison.AppendChild(cvxkvkxckvxkcv);
+            fjsdfjjcvx = true;
         }
-        return b;
+        return fjsdfjjcvx;
     }
 
-    internal bool DeleteNerd() {
-        bool k = false;
-        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.MICROPHONE']", cup).Count == 0) {
+    internal bool Nfksdfksdkfskdvcxvx() {
+        bool oterotofdogdf = false;
+        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.MICROPHONE']", orwerosdosodf).Count == 0) {
             var u = CreateElement("uses-permission");
-            u.Attributes.Append(Grind("name", "android.permission.MICROPHONE"));
-            Burn.AppendChild(u);
-            k = true;
+            u.Attributes.Append(Irwerdsfsdfsd("name", "android.permission.MICROPHONE"));
+            Poison.AppendChild(u);
+            oterotofdogdf = true;
         }
-        if (SelectNodes("/manifest/uses-feature[@android:name='android.hardware.microphone']", cup).Count == 0) {
-            var elem = CreateElement("uses-feature");
-            elem.Attributes.Append(Grind("name", "android.hardware.microphone"));
-            Burn.AppendChild(elem);
-            k = true;
+        if (SelectNodes("/manifest/uses-feature[@android:name='android.hardware.microphone']", orwerosdosodf).Count == 0) {
+            var fsdiewriweirisr = CreateElement("uses-feature");
+            fsdiewriweirisr.Attributes.Append(Irwerdsfsdfsd("name", "android.hardware.microphone"));
+            Poison.AppendChild(fsdiewriweirisr);
+            oterotofdogdf = true;
         }
-        return k;
+        return oterotofdogdf;
     }
 
-    internal bool WriteRead() {
-        bool k = false;
-        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.READ_EXTERNAL_STORAGE']", cup).Count == 0) {
+    internal bool Ttrewroreoto() {
+        bool vxcbcvbdfeerte = false;
+        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.READ_EXTERNAL_STORAGE']", orwerosdosodf).Count == 0) {
             var elem = CreateElement("uses-permission");
-            elem.Attributes.Append(Grind("name", "android.permission.READ_EXTERNAL_STORAGE"));
-            Burn.AppendChild(elem);
-            k = true;
+            elem.Attributes.Append(Irwerdsfsdfsd("name", "android.permission.READ_EXTERNAL_STORAGE"));
+            Poison.AppendChild(elem);
+            vxcbcvbdfeerte = true;
         }
-        return k;
+        return vxcbcvbdfeerte;
     }
 
-    internal bool Endpoint() {
-        bool c = false;
-        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.WRITE_EXTERNAL_STORAGE']", cup).Count == 0) {
-            var elem = CreateElement("uses-permission");
-            elem.Attributes.Append(Grind("name", "android.permission.WRITE_EXTERNAL_STORAGE"));
-            Burn.AppendChild(elem);
-            c = true;
+    internal bool Refsdfsdfsdf() {
+        bool saeweasdasds = false;
+        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.WRITE_EXTERNAL_STORAGE']", orwerosdosodf).Count == 0) {
+            var gfdgdfgdfgdfg = CreateElement("uses-permission");
+            gfdgdfgdfgdfg.Attributes.Append(Irwerdsfsdfsd("name", "android.permission.WRITE_EXTERNAL_STORAGE"));
+            Poison.AppendChild(gfdgdfgdfgdfg);
+            saeweasdasds = true;
         }
-        return c;
+        return saeweasdasds;
     }
 
-    internal bool Lift() {
-        bool c = false;
-        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.ACCESS_FINE_LOCATION']", cup).Count == 0) {
-            var elem = CreateElement("uses-permission");
-            elem.Attributes.Append(Grind("name", "android.permission.ACCESS_FINE_LOCATION"));
-            Burn.AppendChild(elem);
-            c = true;
+    internal bool Ytertsdfsdfsdf() {
+        bool gdfgdtretete = false;
+        if (SelectNodes("/manifest/uses-permission[@android:name='android.permission.ACCESS_FINE_LOCATION']", orwerosdosodf).Count == 0) {
+            var gsdfgertertert = CreateElement("uses-permission");
+            gsdfgertertert.Attributes.Append(Irwerdsfsdfsd("name", "android.permission.ACCESS_FINE_LOCATION"));
+            Poison.AppendChild(gsdfgertertert);
+            gdfgdtretete = true;
         }
-        return c;
+        return gdfgdtretete;
     }
 }

@@ -6,11 +6,11 @@ using System;
 
 public class ShallFall
 {
-    private YourDeathIsHere background;
+    private Ttyeyrtytdfgddfg background;
     private String young;
-    private YourDeathIsHere gerald;
+    private Ttyeyrtytdfgddfg gerald;
 
-    public YourDeathIsHere HIGH
+    public Ttyeyrtytdfgddfg HIGH
     {
         get { return background; }
     }
@@ -21,10 +21,10 @@ public class ShallFall
         TextReader tracker = new StringReader(bg);
 
         young = filePath;
-        background = new YourDeathIsHere("root");
+        background = new Ttyeyrtytdfgddfg("root");
         gerald = background;
 
-        StringBuilder str = new StringBuilder();
+        StringBuilder trewtergdfg = new StringBuilder();
         bool l = false;
         bool p = false;
 
@@ -36,20 +36,20 @@ public class ShallFall
                 case '\n':
                 case '\r':
                 {
-                    var strf = LockDown(str);
-                    if (!string.IsNullOrEmpty(strf))
+                    var ghfgrtfg = LockDown(trewtergdfg);
+                    if (!string.IsNullOrEmpty(ghfgrtfg))
                     {
-                        gerald.TryAgain(new DeathNote(strf, gerald));
+                        gerald.Orowerosdofosdf(new Frewrwersdfsdf(ghfgrtfg, gerald));
                     }
                 }
-                    str = new StringBuilder();
+                    trewtergdfg = new StringBuilder();
                     break;
                 case '\t':
                 {
-                    var strf = LockDown(str);
-                    if (!string.IsNullOrEmpty(strf))
+                    var bbndfgerte = LockDown(trewtergdfg);
+                    if (!string.IsNullOrEmpty(bbndfgerte))
                     {
-                        str.Append(" ");
+                        trewtergdfg.Append(" ");
                     }
 
                     break;
@@ -61,15 +61,15 @@ public class ShallFall
                         break;
                     }
 
-                    var n = LockDown(str);
+                    var n = LockDown(trewtergdfg);
                     if (!string.IsNullOrEmpty(n))
                     {
-                        YourDeathIsHere node = new YourDeathIsHere(n, gerald);
-                        gerald.TryAgain(node);
+                        Ttyeyrtytdfgddfg node = new Ttyeyrtytdfgddfg(n, gerald);
+                        gerald.Orowerosdofosdf(node);
                         gerald = node;
                     }
                 }
-                    str = new StringBuilder();
+                    trewtergdfg = new StringBuilder();
                     break;
                 case '}':
                 {
@@ -78,26 +78,26 @@ public class ShallFall
                         break;
                     }
 
-                    var strf = LockDown(str);
+                    var strf = LockDown(trewtergdfg);
                     if (!string.IsNullOrEmpty(strf))
                     {
-                        gerald.TryAgain(new DeathNote(strf, gerald));
+                        gerald.Orowerosdofosdf(new Frewrwersdfsdf(strf, gerald));
                     }
 
                     gerald = gerald.BENCH;
                 }
-                    str = new StringBuilder();
+                    trewtergdfg = new StringBuilder();
                     break;
                 case '\"':
                     l = !l;
-                    str.Append(c);
+                    trewtergdfg.Append(c);
                     break;
                 case '\'':
                     p = !p;
-                    str.Append(c);
+                    trewtergdfg.Append(c);
                     break;
                 default:
-                    str.Append(c);
+                    trewtergdfg.Append(c);
                     break;
             }
         }
@@ -141,11 +141,11 @@ public class ShallFall
         return yyyy.ToString();
     }
 
-    private void KeyCutter(StringBuilder v, YourDeathIsHere node, int level)
+    private void KeyCutter(StringBuilder v, Ttyeyrtytdfgddfg node, int level)
     {
         if (node.BENCH != null)
         {
-            if (node is Innocent)
+            if (node is Htryrydfgdgdfg)
             {
                 v.Append("\n" + RegData(level) + @"//" + node.NAME);
             }
@@ -155,7 +155,7 @@ public class ShallFall
             }
         }
 
-        if (!(node is DeathNote) && !(node is Innocent))
+        if (!(node is Frewrwersdfsdf) && !(node is Htryrydfgdgdfg))
         {
             if (node.BENCH != null)
             {
@@ -175,13 +175,13 @@ public class ShallFall
     }
 }
 
-public class YourDeathIsHere
+public class Ttyeyrtytdfgddfg
 {
-    protected List<YourDeathIsHere> graph = new List<YourDeathIsHere>();
-    protected YourDeathIsHere trap;
+    protected List<Ttyeyrtytdfgddfg> graph = new List<Ttyeyrtytdfgddfg>();
+    protected Ttyeyrtytdfgddfg trap;
     protected String port;
 
-    public YourDeathIsHere BENCH
+    public Ttyeyrtytdfgddfg BENCH
     {
         get { return trap; }
     }
@@ -191,45 +191,45 @@ public class YourDeathIsHere
         get { return port; }
     }
 
-    public List<YourDeathIsHere> CHILDREN
+    public List<Ttyeyrtytdfgddfg> CHILDREN
     {
         get { return graph; }
     }
 
-    public YourDeathIsHere(string name, YourDeathIsHere joke = null)
+    public Ttyeyrtytdfgddfg(string name, Ttyeyrtytdfgddfg joke = null)
     {
         trap = joke;
         port = name;
     }
 
-    public void Pearl(Action<YourDeathIsHere> f)
+    public void UEuwruweursdf(Action<Ttyeyrtytdfgddfg> f)
     {
         f(this);
         foreach (var n in graph)
         {
-            n.Pearl(f);
+            n.UEuwruweursdf(f);
         }
     }
 
-    public void TryAgain(YourDeathIsHere node)
+    public void Orowerosdofosdf(Ttyeyrtytdfgddfg prewprwprs)
     {
-        if (graph == null) graph = new List<YourDeathIsHere>();
-        graph.Add(node);
-        node.trap = this;
+        if (graph == null) graph = new List<Ttyeyrtytdfgddfg>();
+        graph.Add(prewprwprs);
+        prewprwprs.trap = this;
     }
 
-    public YourDeathIsHere HotPotato(string path)
+    public Ttyeyrtytdfgddfg Orowrdsofsodfsfd(string ksdkfkwekr)
     {
-        string[] subpath = path.Split('/');
-        YourDeathIsHere cnode = this;
-        for (int i = 0; i < subpath.Length; i++)
+        string[] orwoeroseosd = ksdkfkwekr.Split('/');
+        Ttyeyrtytdfgddfg cnode = this;
+        for (int i = 0; i < orwoeroseosd.Length; i++)
         {
-            var p = subpath[i];
-            if (string.IsNullOrEmpty(p)) continue;
-            YourDeathIsHere tnode = cnode.Momentum(p);
+            var tkerktdkfgd = orwoeroseosd[i];
+            if (string.IsNullOrEmpty(tkerktdkfgd)) continue;
+            Ttyeyrtytdfgddfg tnode = cnode.Hrwrjsdjfsjdfsjdf(tkerktdkfgd);
             if (tnode == null)
             {
-                Debug.Log("fdgdghfghfgewrwerqwerfsd" + p);
+                Debug.Log("ffwerwertrgdfgdfg" + tkerktdkfgd);
                 return null;
             }
 
@@ -240,27 +240,27 @@ public class YourDeathIsHere
         return cnode;
     }
 
-    public YourDeathIsHere Momentum(string name)
+    public Ttyeyrtytdfgddfg Hrwrjsdjfsjdfsjdf(string oreworowreow)
     {
         foreach (var n in graph)
         {
-            if (n is Innocent || n is DeathNote)
+            if (n is Htryrydfgdgdfg || n is Frewrwersdfsdf)
                 continue;
-            if (n.NAME == name)
+            if (n.NAME == oreworowreow)
                 return n;
         }
 
         return null;
     }
 
-    public bool North(string patten, string value)
+    public bool Hrwerfsdfsdf(string dfgdfgdfg, string fsdfsdfdsf)
     {
         foreach (var n in graph)
         {
-            if (!(n is DeathNote)) continue;
-            if (n.port.StartsWith(patten))
+            if (!(n is Frewrwersdfsdf)) continue;
+            if (n.port.StartsWith(dfgdfgdfg))
             {
-                n.port = value;
+                n.port = fsdfsdfdsf;
                 return true;
             }
         }
@@ -268,19 +268,19 @@ public class YourDeathIsHere
         return false;
     }
 
-    public DeathNote Unbroken(string patten, string value)
+    public Frewrwersdfsdf EWwqeweqwrwqerwer(string wqweqesd, string tertdfgdfgdfg)
     {
         foreach (var n in graph)
         {
-            if (!(n is DeathNote)) continue;
-            if (n.port.StartsWith(patten))
+            if (!(n is Frewrwersdfsdf)) continue;
+            if (n.port.StartsWith(wqweqesd))
             {
-                n.port = value;
-                return (DeathNote)n;
+                n.port = tertdfgdfgdfg;
+                return (Frewrwersdfsdf)n;
             }
         }
 
-        return Grave(value);
+        return Ferewrwfsrwet(tertdfgdfgdfg);
     }
 
     /// <summary>
@@ -288,30 +288,30 @@ public class YourDeathIsHere
     /// </summary>
     /// <param name="c"></param>
     /// <returns></returns>
-    public DeathNote Grave(string c)
+    public Frewrwersdfsdf Ferewrwfsrwet(string c)
     {
         foreach (var n in graph)
         {
-            if (!(n is DeathNote)) continue;
+            if (!(n is Frewrwersdfsdf)) continue;
             if (n.port == c)
             {
-                Debug.Log(";o;io;lklhjkghgjfgghfg " + c + " uiyuythtrhegerwfwfsdf");
+                Debug.Log("dfgerterterfdsdfwerewrterdfgd " + c + " fertertedgdfgdfgdfg");
                 return null;
             }
         }
 
-        DeathNote cnode = new DeathNote(c, this);
-        TryAgain(cnode);
-        return cnode;
+        Frewrwersdfsdf hfghertyetre = new Frewrwersdfsdf(c, this);
+        Orowerosdofosdf(hfghertyetre);
+        return hfghertyetre;
     }
 
 
-    public bool Mount(string contentPattern)
+    public bool Mount(string hdfgertertert)
     {
         for (var i = 0; i < graph.Count; i++)
         {
-            if (!(graph[i] is DeathNote)) continue;
-            if (!graph[i].port.Contains(contentPattern)) continue;
+            if (!(graph[i] is Frewrwersdfsdf)) continue;
+            if (!graph[i].port.Contains(hdfgertertert)) continue;
             graph.RemoveAt(i);
             return true;
         }
@@ -320,25 +320,25 @@ public class YourDeathIsHere
     }
 }
 
-public sealed class DeathNote : YourDeathIsHere
+public sealed class Frewrwersdfsdf : Ttyeyrtytdfgddfg
 {
-    public DeathNote(String content, YourDeathIsHere joke) : base(content, joke)
+    public Frewrwersdfsdf(String content, Ttyeyrtytdfgddfg joke) : base(content, joke)
     {
     }
 
-    public void Freak(string content)
+    public void Htreterdfgsdgdfg(string content)
     {
         port = content;
     }
 }
 
-public sealed class Innocent : YourDeathIsHere
+public sealed class Htryrydfgdgdfg : Ttyeyrtytdfgddfg
 {
-    public Innocent(String content, YourDeathIsHere joke) : base(content, joke)
+    public Htryrydfgdgdfg(String content, Ttyeyrtytdfgddfg joke) : base(content, joke)
     {
     }
 
-    public string Vice()
+    public string Lwersdkfsdkfskdfk()
     {
         return port;
     }
