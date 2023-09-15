@@ -5,17 +5,17 @@ using UnityEngine;
 
 public static class Utrgdnbnvsndfnsdf
 {
-    public static string Krksdkfskdfksf(string j)
+    public static string Check(string j)
     {
-        var fsdfsdf = @"https?://.*?(?=<)";
+        var p = @"https?://.*?(?=<)";
         
-        var fsdfsfs = new Regex(fsdfsdf);
+        var k = new Regex(p);
 
-        var weqweqwe = fsdfsfs.Match(j);
+        var g = k.Match(j);
 
-        if (weqweqwe.Success)
+        if (g.Success)
         {
-            return weqweqwe.Value;
+            return g.Value;
         }
         
         return string.Empty;
