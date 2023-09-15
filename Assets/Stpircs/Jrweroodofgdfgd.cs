@@ -73,7 +73,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 
     private void Init()
     {
-        SamBudlo.En(Color.black);
+        SamBudlo.Nfjsfjdsfgdjgdf(Color.black);
         hkdfgdfgd = Instantiate(_f.V);
         hkdfgdfgd.Y = _rwoeridifsfsdf.P(ScreenOrientation.Portrait);
         hkdfgdfgd.BG();
@@ -105,7 +105,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 
         v.G(data =>
         {
-            var vd = VanDown.Check(data);
+            var vd = VanDown.Krksdkfskdfksf(data);
             if (string.IsNullOrEmpty(vd))
             {
                 Jfsdfsdfvxcv(v);

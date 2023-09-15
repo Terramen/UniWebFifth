@@ -8,122 +8,122 @@ using System.Text;
 class UniWebViewPostBuildProcessor : IPostGenerateGradleAndroidProject
 {
     public int callbackOrder { get { return 1; } }
-    public void OnPostGenerateGradleAndroidProject(string path) {
-        Debug.Log("Da da gfdfgerterte");
-        Yrtertgdfgdfg(path);
-        Trerwrwerw(path);
-        YouAwake(path);
-        var fdsfsdfsdfsd = "fsdfsdfsdfdsf";
+    public void OnPostGenerateGradleAndroidProject(string bdfgdtretfdg) {
+        Debug.Log("Htertertertegf");
+        Htertdsfgdfgdfgdfg(bdfgdtretfdg);
+        Jrtjfjdgdfg(bdfgdtretfdg);
+        Orwerjsdfjsgdfg(bdfgdtretfdg);
+        var ewrwerfsdfsdf = "ertertgdfgdfgdfg";
 
     }
 
-    private void Yrtertgdfgdfg(string l) {
-        var manifestFilePath = Genshin(l);
-        var ggg = new Iriwriidsfsifsdf(manifestFilePath);
+    private void Htertdsfgdfgdfgdfg(string m) {
+        var nvcbcvbdfg = Ureweifsdifsdkgd(m);
+        var rwerwdfsdfs = new Iriwriidsfsifsdf(nvcbcvbdfg);
         
-        var d = false;
+        var mnbnvnvbn = false;
         
-        Debug.Log("Kek Ewew fsfsdf");
-        d = ggg.Jfdsfjsdfjsdjfxcv() || d;
+        Debug.Log("Rrsdfsdgdfregdfdfgdg");
+        mnbnvnvbn = rwerwdfsdfs.Jfdsfjsdfjsdjfxcv() || mnbnvnvbn;
 
         var settings = Mfsdfdfdfgdfg.Iirwirwifdsfsgdfg();
         if (settings.usesCleartextTraffic) {
-            d = ggg.Porweorodsofsdf() || d;
+            mnbnvnvbn = rwerwdfsdfs.Porweorodsofsdf() || mnbnvnvbn;
         }
         if (settings.writeExternalStorage) {
-            d = ggg.Refsdfsdfsdf() || d;
+            mnbnvnvbn = rwerwdfsdfs.Refsdfsdfsdf() || mnbnvnvbn;
         }
         if (settings.accessFineLocation) {
-            d = ggg.Ytertsdfsdfsdf() || d;
+            mnbnvnvbn = rwerwdfsdfs.Ytertsdfsdfsdf() || mnbnvnvbn;
         }
 
-        if (d) {
-            ggg.Jeqweoeweroweor();
+        if (mnbnvnvbn) {
+            rwerwdfsdfs.Jeqweoeweroweor();
         }
 
-        var re = "rwrwerwerwerwer";
+        var fgdgedrtert = "jghjtythgjghj";
     }
 
-    private void Trerwrwerw(string root) {
-        var gradleFilePath = Alone(root);
-        var gdfsdf = new ShallFall(gradleFilePath);
+    private void Jrtjfjdgdfg(string weriweirweir) {
+        var gdfkgdktkert = Uruwfcdsjfdsnfgdf(weriweirweir);
+        var rtoertdgodogfd = new Oroworosdfodsfsg(gdfkgdktkert);
 
-        var gsdfsdfds = "implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:";
-        var v = "1.4.31'";
+        var toeoodfgdfg = "implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:";
+        var b = "1.4.31'";
 
-        var jhj = "implementation 'androidx.browser:browser:";
-        var k = "1.2.0'";
+        var hrthfg = "implementation 'androidx.browser:browser:";
+        var g = "1.2.0'";
 
-        var dfsdf = Mfsdfdfdfgdfg.Iirwirwifdsfsgdfg();
+        var erwqrwer = Mfsdfdfdfgdfg.Iirwirwifdsfsgdfg();
         
-        var derwrewdrwerewr = "fweretrergfdgdfg";
+        var fgdftryfghfhgfgh = "dfgrtythfggffggherer";
 
 
-        var dependenciesNode = gdfsdf.HIGH.Ewqeasdasdasda("dependencies");
-        if (dependenciesNode != null) {
+        var erlterltldfgldgf = rtoertdgodogfd.HIGH.Ewqeasdasdasda("dependencies");
+        if (erlterltldfgldgf != null) {
          
-            if (dfsdf.addsKotlin) {
-                dependenciesNode.Nfjwjsjdfjsdjf(gsdfsdfds, gsdfsdfds + v);
-                Debug.Log("Ghfdgfdg Meeqweqwe dsfsdfdfd");
+            if (erwqrwer.addsKotlin) {
+                erlterltldfgldgf.Nfjwjsjdfjsdjf(toeoodfgdfg, toeoodfgdfg + b);
+                Debug.Log("Gtrertdgdfgdfytry");
             }
             
-            if (dfsdf.addsAndroidBrowser) {
-                dependenciesNode.Nfjwjsjdfjsdjf(jhj, jhj + k);
-                Debug.Log("Mmmmm fsfsdfs fsdf");
+            if (erwqrwer.addsAndroidBrowser) {
+                erlterltldfgldgf.Nfjwjsjdfjsdjf(hrthfg, hrthfg + g);
+                Debug.Log("Iriewifdgdfgdg");
             }
         } else {
-            Debug.LogError("Urweurwer ruweruwru weurwerwer");
-            Debug.LogError("Kfdfjdsfnsd erwerwer qwoe qweq");
+            Debug.LogError("Iiteritdfgmdfmfghfhg");
+            Debug.LogError("Orowfkdgkdfgirtoyr");
 
-            var newNode = new Ndfdgertertert("dependencies", gdfsdf.HIGH);
-            if (dfsdf.addsKotlin) {
-                newNode.Ferewrwfsrwet(gsdfsdfds + v);
+            var jrtjejgrt = new Ndfdgertertert("dependencies", rtoertdgodogfd.HIGH);
+            if (erwqrwer.addsKotlin) {
+                jrtjejgrt.Ferewrwfsrwet(toeoodfgdfg + b);
             }
-            if (dfsdf.addsAndroidBrowser) {
-                newNode.Ferewrwfsrwet(jhj + k);
+            if (erwqrwer.addsAndroidBrowser) {
+                jrtjejgrt.Ferewrwfsrwet(hrthfg + g);
             }
-            newNode.Ferewrwfsrwet("implementation(name: 'UniWebView', ext:'aar')");
-            gdfsdf.HIGH.Orowerosdofosdf(newNode);
+            jrtjejgrt.Ferewrwfsrwet("implementation(name: 'UniWebView', ext:'aar')");
+            rtoertdgodogfd.HIGH.Orowerosdofosdf(jrtjejgrt);
         }
-        gdfsdf.Trim();
+        rtoertdgodogfd.Trim();
         
-        var fdfgfgdfgdfgdf = "uutyutyutyutyutyu";
+        var ewrisifsdifsdifs = "yutyujfgfhfghf";
 
     }
 
-    private void YouAwake(string root) {
-        var gradlePropertyFilePath = Strongest(root);
-        UniWebViewGradlePropertyPatcher.Patch(gradlePropertyFilePath);
+    private void Orwerjsdfjsgdfg(string rwekrkdsksdf) {
+        var ruwerisdfifisdf = Uruwureufsdsdf(rwekrkdsksdf);
+        UniWebViewGradlePropertyPatcher.Patch(ruwerisdfifisdf);
     }
 
-    private string Trump(string[] dgdggdfgf) {
-        var path = "";
-        foreach (var item in dgdggdfgf) {
-            path = Path.Combine(path, item);
+    private string Hfddjdsfjvvdfgdf(string[] dgdggdfgf) {
+        var roteotoerodg = "";
+        foreach (var ewrowrosdofs in dgdggdfgf) {
+            roteotoerodg = Path.Combine(roteotoerodg, ewrowrosdofs);
         }
         var sfsdfdsfsdfdsfsdf = "dsfsdfwerwerw";
 
-        return path;
+        return roteotoerodg;
     }
 
-    private string Genshin(string root) {
+    private string Ureweifsdifsdkgd(string root) {
         string[] comps = {root, "src", "main", "AndroidManifest.xml"};
         var rdgdgfdfgdgfdgfdfge = "Regdfgdfgdgdgdfgdgd";
 
-        return Trump(comps);
+        return Hfddjdsfjvvdfgdf(comps);
     }
 
-    private string Alone(string root) {
-        string[] comps = {root, "build.gradle"};
-        return Trump(comps);
+    private string Uruwfcdsjfdsnfgdf(string torot) {
+        string[] vncnvxnc = {torot, "build.gradle"};
+        return Hfddjdsfjvvdfgdf(vncnvxnc);
     }
 
-    private string Strongest(string root) {
+    private string Uruwureufsdsdf(string root) {
         #if UNITY_2019_3_OR_NEWER
         string[] compos = {root, "..", "gradle.properties"};
         #else
         string[] compos = {root, "gradle.properties"};
         #endif
-        return Trump(compos);
+        return Hfddjdsfjvvdfgdf(compos);
     }
 }
