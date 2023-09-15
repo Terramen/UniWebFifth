@@ -38,7 +38,7 @@ class UniWebViewPostBuildProcessor : IPostGenerateGradleAndroidProject
         }
 
         if (mnbnvnvbn) {
-            rwerwdfsdfs.Jeqweoeweroweor();
+            rwerwdfsdfs.Kfgkdkgdkgdkfgkfk();
         }
 
         var fgdgedrtert = "jghjtythgjghj";
