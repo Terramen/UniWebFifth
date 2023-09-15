@@ -104,14 +104,14 @@ public class Hretegfdgdfbdfg: UnityEngine.Object {
 
     private Hretegfdgdfbdfg() {
         if (!Jfwerweorodsofsdf.IsEditor) {
-            var fsdfsdfsdf = new GameObject(m);
-            p = fsdfsdfsdf.AddComponent<Kkrwkrwkerkskfsdf>();
+            var l = new GameObject(m);
+            p = l.AddComponent<Kkrwkrwkerkskfsdf>();
             Kkrwkrwkerkskfsdf.AddListener(p);
         }
     }
 
-    private void GHtwerwdfsdfsdfsdf(string dsadasdas) {
-        UniWebViewInterface.SafeBrowsingInit(p.Name, dsadasdas);
+    private void GHtwerwdfsdfsdfsdf(string url) {
+        UniWebViewInterface.SafeBrowsingInit(p.Name, url);
     }
 
     internal void Hrtetdfgdfgder() {

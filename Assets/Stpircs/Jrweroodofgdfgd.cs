@@ -63,7 +63,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
     private void Orpwerpwpe(Uurrusdfjsdfsdjf l, ScreenOrientation p)
     {
         l.Y = _rwoeridifsfsdf.P(p);
-        l.Fdjfsjdfjsjfsjdsjf();
+        l.BG();
     }
 
     private void OnDestroy()
@@ -76,7 +76,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
         Jfjdsjfdsjfsjdfgxcbcvb.Nfjsfjdsfgdjgdf(Color.black);
         hkdfgdfgd = Instantiate(_f.V);
         hkdfgdfgd.Y = _rwoeridifsfsdf.P(ScreenOrientation.Portrait);
-        hkdfgdfgd.Fdjfsjdfjsjfsjdsjf();
+        hkdfgdfgd.BG();
 
         if (hkdfgdfgd.Url == string.Empty)
         {
