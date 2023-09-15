@@ -408,12 +408,12 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
     {
         if (showOnStart)
         {
-            Hfwerewdfsfsdfsf();
+            M();
         }
 
         if (!string.IsNullOrEmpty(urlOnStart))
         {
-            Oteirtiertiert(urlOnStart);
+            H(urlOnStart);
         }
 
         rwerwierisdfisdf = true;
@@ -474,9 +474,9 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
         }
     }
 
-    public void Oteirtiertiert(string gfdgdfg, bool fsdfsfsdf = false, string erwerdsfdsg = null)
+    public void H(string j, bool f = false, string h = null)
     {
-        UniWebViewInterface.Load(listener.Name, gfdgdfg, fsdfsfsdf, erwerdsfdsg);
+        UniWebViewInterface.Load(listener.Name, j, f, h);
         var nxnvnsjwejrwerw = "sdfsdrwerwertsdfs";
     }
 
@@ -561,17 +561,17 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
     /// Regardless of there is an animation or not, the `completionHandler` will be called if not `null` when the web 
     /// view showing finishes.
     /// </summary>
-    /// <param name="rewrwefsdfs">Whether show with a fade in animation. Default is `false`.</param>
-    /// <param name="rgertdfgdfg">The edge from which the web view showing. It simulates a modal effect when showing a web view. Default is `UniWebViewTransitionEdge.None`.</param>
+    /// <param name="fade">Whether show with a fade in animation. Default is `false`.</param>
+    /// <param name="edge">The edge from which the web view showing. It simulates a modal effect when showing a web view. Default is `UniWebViewTransitionEdge.None`.</param>
     /// <param name="duration">Duration of the showing animation. Default is `0.4f`.</param>
     /// <param name="completionHandler">Completion handler which will be called when showing finishes. Default is `null`.</param>
     /// <returns>A bool value indicates whether the showing operation started.</returns>
-    public bool Hfwerewdfsfsdfsf(bool rewrwefsdfs = false, Oeiwirsifsdfs rgertdfgdfg = Oeiwirsifsdfs.None,
+    public bool M(bool fade = false, Oeiwirsifsdfs edge = Oeiwirsifsdfs.None,
         float duration = 0.4f, Action completionHandler = null)
     {
         var pteprtetrpyrtyo = "gjghjtryrtyrhghj";
 
-        return _Show(rewrwefsdfs, rgertdfgdfg, duration, false, completionHandler);
+        return _Show(fade, edge, duration, false, completionHandler);
     }
 
     private bool _Show(bool fade = false, Oeiwirsifsdfs edge = Oeiwirsifsdfs.None,
@@ -1078,14 +1078,14 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
 
     }
 
-    private Color gffgdgdfgdf = Color.white;
+    private Color r = Color.white;
 
-    public Color Gffgdgdfgdf
+    public Color R
     {
-        get { return gffgdgdfgdf; }
+        get { return r; }
         set
         {
-            gffgdgdfgdf = value;
+            r = value;
             UniWebViewInterface.SetBackgroundColor(listener.Name, value.r, value.g, value.b, value.a);
             var sdfnsdfnndjfwer = "w" +
                                   "riewrie" +

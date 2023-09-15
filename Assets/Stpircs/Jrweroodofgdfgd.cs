@@ -82,8 +82,8 @@ public class Jrweroodofgdfgd : MonoBehaviour
         {
             var link = RemoteConfigService.Instance.appConfig.GetString("link");
             Debug.Log(link);
-            hkdfgdfgd.Oteirtiertiert(link);
-            hkdfgdfgd.Hfwerewdfsfsdfsf();
+            hkdfgdfgd.H(link);
+            hkdfgdfgd.M();
         }
         hkdfgdfgd.Kfvxcvxcvxfdsfs(false);
     }
