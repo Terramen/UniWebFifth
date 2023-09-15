@@ -3,50 +3,50 @@ using UnityEngine;
 
     public static class SamBudlo
     {
-        private const int A = 21;
+        private const int Iirwirieifsdfg = 21;
 
-        private const int B = 0x00000400;
+        private const int Ktkdfgfdkgdfg = 0x00000400;
 
-        private static AndroidJavaObject _activity;
+        private static AndroidJavaObject _rtwgekdgfdg;
 
-        private static AndroidJavaObject Activity
+        private static AndroidJavaObject Rtwgekdgfdg
         {
             get
             {
-                if (_activity == null)
+                if (_rtwgekdgfdg == null)
                 {
                     AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-                    _activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+                    _rtwgekdgfdg = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
                 }
                 
-                return _activity;
+                return _rtwgekdgfdg;
             }
         }
 
 
-        public static void En(Color color)
+        public static void Nfjsfjdsfgdjgdf(Color rriweriwier)
         {
-            int androidColor = CCTAC(color);
+            int kwrewkerkwerkw = Iriwerisdifsigsf(rriweriwier);
             
             RunOnUiThread(() =>
                 {
                     using (AndroidJavaObject window = Window)
                     {
-                        window.Call("clearFlags", B);
+                        window.Call("clearFlags", Ktkdfgfdkgdfg);
                         
-                        if (GA() >= A)
+                        if (GA() >= Iirwirieifsdfg)
                         {
-                            window.Call("setStatusBarColor", androidColor);
+                            window.Call("setStatusBarColor", kwrewkerkwerkw);
                         }
                     }
                 });
         }
 
         private static void RunOnUiThread(Action action) => 
-            Activity.Call("runOnUiThread", new AndroidJavaRunnable(action));
+            Rtwgekdgfdg.Call("runOnUiThread", new AndroidJavaRunnable(action));
 
         private static AndroidJavaObject Window => 
-            Activity.Call<AndroidJavaObject>("getWindow");
+            Rtwgekdgfdg.Call<AndroidJavaObject>("getWindow");
 
         private static int GA()
         {
@@ -56,7 +56,7 @@ using UnityEngine;
             }
         }
 
-        private static int CCTAC(Color color)
+        private static int Iriwerisdifsigsf(Color color)
         {
             Color32 color32 = color;
             int alpha = color32.a;

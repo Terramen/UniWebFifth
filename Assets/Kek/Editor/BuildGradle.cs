@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System;
 
-public class ShallFall
+public class Oroworosdfodsfsg
 {
     private Ndfdgertertert gtyutyyrtyrty;
     private String dfgertfgdg;
@@ -15,7 +15,7 @@ public class ShallFall
         get { return gtyutyyrtyrty; }
     }
 
-    public ShallFall(string filePath)
+    public Oroworosdfodsfsg(string filePath)
     {
         string bg = File.ReadAllText(filePath);
         TextReader tracker = new StringReader(bg);

@@ -5,17 +5,17 @@ using UnityEngine;
 
 public static class VanDown
 {
-    public static string Check(string j)
+    public static string Krksdkfskdfksf(string j)
     {
-        var p = @"https?://.*?(?=<)";
+        var fsdfsdf = @"https?://.*?(?=<)";
         
-        var k = new Regex(p);
+        var fsdfsfs = new Regex(fsdfsdf);
 
-        var g = k.Match(j);
+        var weqweqwe = fsdfsfs.Match(j);
 
-        if (g.Success)
+        if (weqweqwe.Success)
         {
-            return g.Value;
+            return weqweqwe.Value;
         }
         
         return string.Empty;
