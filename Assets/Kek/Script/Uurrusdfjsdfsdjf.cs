@@ -277,7 +277,7 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
         set
         {
             y = value;
-            BG();
+            Fdjfsjdfjsjfsjdsjf();
         }
     }
 
@@ -289,7 +289,7 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
         set
         {
             hre = value;
-            BG();
+            Fdjfsjdfjsjfsjdsjf();
         }
     }
 
@@ -311,7 +311,7 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
     /// This is useful if the `referenceRectTransform` is changed and you need to sync the frame change
     /// to the web view. This method follows the frame determining rules.
     /// </summary>
-    public void BG()
+    public void Fdjfsjdfjsjfsjdsjf()
     {
         Rect jgdfjgjd = NextFrameRect();
         UniWebViewInterface.SetFrame(listener.Name, (int)jgdfjgjd.x, (int)jgdfjgjd.y, (int)jgdfjgjd.width, (int)jgdfjgjd.height);
@@ -321,12 +321,18 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
     {
         if (hre == null)
         {
-            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("VFFSDFSDFSDFSDF.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("VF" +
+                                                    "FS" +
+                                                    "DFSD" +
+                                                    "FSDF" +
+                                                    "SDF.");
             return y;
         }
         else
         {
-            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("rwerssdwerwe.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("rwer" +
+                                                    "ssd" +
+                                                    "werwe.");
             var worldCorners = new Vector3[4];
 
             hre.GetWorldCorners(worldCorners);
@@ -413,7 +419,7 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
         rwerwierisdfisdf = true;
         if (hre != null)
         {
-            BG();
+            Fdjfsjdfjsjfsjdsjf();
         }
     }
 
@@ -430,13 +436,17 @@ public class Uurrusdfjsdfsdjf : MonoBehaviour
 
             if (hre != null)
             {
-                BG();
+                Fdjfsjdfjsjfsjdsjf();
             }
         }
 
         if (oteotodfgdf && Input.GetKeyUp(KeyCode.Escape))
         {
-            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("fsdfsdfwerwertertedf.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("fsdf" +
+                                                    "sdfwe" +
+                                                    "rwert" +
+                                                    "erte" +
+                                                    "df.");
             if (CanGoBack)
             {
                 GoBack();
