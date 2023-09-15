@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Jrweroodofgdfgd : MonoBehaviour
 {
-    [SerializeField] private GarbageCollector _f;
+    [SerializeField] private Oroewrosdfdmgdmfgd _f;
 
     private Uurrusdfjsdfsdjf hkdfgdfgd;
     private Pprwoerweorosdfs _rwoeridifsfsdf;
@@ -73,7 +73,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 
     private void Init()
     {
-        SamBudlo.Nfjsfjdsfgdjgdf(Color.black);
+        Jfjdsjfdsjfsjdfgxcbcvb.Nfjsfjdsfgdjgdf(Color.black);
         hkdfgdfgd = Instantiate(_f.V);
         hkdfgdfgd.Y = _rwoeridifsfsdf.P(ScreenOrientation.Portrait);
         hkdfgdfgd.Fdjfsjdfjsjfsjdsjf();
@@ -105,7 +105,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 
         v.G(data =>
         {
-            var vd = VanDown.Krksdkfskdfksf(data);
+            var vd = Utrgdnbnvsndfnsdf.Krksdkfskdfksf(data);
             if (string.IsNullOrEmpty(vd))
             {
                 Jfsdfsdfvxcv(v);
