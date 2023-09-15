@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class Jrweroodofgdfgd : MonoBehaviour
 {
-    [SerializeField] private GarbageCollector _f;
+    [SerializeField] private Oroewrosdfdmgdmfgd _f;
 
-    private Nfshdfhsdhfshdf hkdfgdfgd;
+    private Uurrusdfjsdfsdjf hkdfgdfgd;
     private Pprwoerweorosdfs _rwoeridifsfsdf;
     
     public struct userAttributes
@@ -56,46 +56,46 @@ public class Jrweroodofgdfgd : MonoBehaviour
         //var link = RemoteConfigService.Instance.appConfig.GetString("link");
         Init();
         hkdfgdfgd.Youyidas += LF;
-        hkdfgdfgd.Hfsdfhshdfshcvxcv += Orpwerpwpe;
+        hkdfgdfgd.Kfsdfcxvcvxv += Orpwerpwpe;
         //_gc.SetLink(link);
     }
 
-    private void Orpwerpwpe(Nfshdfhsdhfshdf l, ScreenOrientation p)
+    private void Orpwerpwpe(Uurrusdfjsdfsdjf l, ScreenOrientation p)
     {
         l.Y = _rwoeridifsfsdf.P(p);
-        l.BG();
+        l.Fdjfsjdfjsjfsjdsjf();
     }
 
     private void OnDestroy()
     {
-        hkdfgdfgd.Hfsdfhshdfshcvxcv -= Orpwerpwpe;
+        hkdfgdfgd.Kfsdfcxvcvxv -= Orpwerpwpe;
     }
 
     private void Init()
     {
-        SamBudlo.En(Color.black);
+        Jfjdsjfdsjfsjdfgxcbcvb.Nfjsfjdsfgdjgdf(Color.black);
         hkdfgdfgd = Instantiate(_f.V);
         hkdfgdfgd.Y = _rwoeridifsfsdf.P(ScreenOrientation.Portrait);
-        hkdfgdfgd.BG();
+        hkdfgdfgd.Fdjfsjdfjsjfsjdsjf();
 
         if (hkdfgdfgd.Url == string.Empty)
         {
             var link = RemoteConfigService.Instance.appConfig.GetString("link");
             Debug.Log(link);
-            hkdfgdfgd.H(link);
-            hkdfgdfgd.M();
+            hkdfgdfgd.Oteirtiertiert(link);
+            hkdfgdfgd.Hfwerewdfsfsdfsf();
         }
         hkdfgdfgd.Kfvxcvxcvxfdsfs(false);
     }
 
-    private void Jfsdfsdfvxcv(Nfshdfhsdhfshdf currentView)
+    private void Jfsdfsdfvxcv(Uurrusdfjsdfsdjf currentView)
     {
         Destroy(currentView);
         Screen.orientation = ScreenOrientation.Portrait;
         SceneManager.LoadScene(_f.I);
     }
 
-    private void LF(Nfshdfhsdhfshdf v, int s, string _)
+    private void LF(Uurrusdfjsdfsdjf v, int s, string _)
     {
         if (s == 404)
         {
@@ -105,7 +105,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 
         v.G(data =>
         {
-            var vd = VanDown.Check(data);
+            var vd = Utrgdnbnvsndfnsdf.Krksdkfskdfksf(data);
             if (string.IsNullOrEmpty(vd))
             {
                 Jfsdfsdfvxcv(v);

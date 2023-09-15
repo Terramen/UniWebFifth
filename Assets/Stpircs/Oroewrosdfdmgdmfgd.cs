@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GC", menuName = "GC")]
-public class GarbageCollector : ScriptableObject
+public class Oroewrosdfdmgdmfgd : ScriptableObject
 {
     [SerializeField] private string _y;
     [SerializeField] private string _i;
