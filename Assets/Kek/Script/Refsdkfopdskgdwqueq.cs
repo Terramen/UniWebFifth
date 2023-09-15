@@ -24,21 +24,21 @@ using System;
 /// Main class of UniWebView. Any `GameObject` instance with this script can represent a webview object in the scene. 
 /// Use this class to create, load, show and interact with a general-purpose web view.
 /// </summary>
-public class Refsdkfopdskgdwqueq : MonoBehaviour
+public class Uurrusdfjsdfsdjf : MonoBehaviour
 {
     /// <summary>
     /// Delegate for page started event.
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="url">The url which the web view is about to load.</param>
-    public delegate void Sfsfsddfsdfsdf(Refsdkfopdskgdwqueq webView, string url);
+    public delegate void Htwerdfsdfsdfsf(Uurrusdfjsdfsdjf webView, string url);
 
     /// <summary>
     /// Raised when the web view starts loading a url.
     /// 
     /// This event will be invoked for both url loading with `Load` method or by a link navigating from page.
     /// </summary>
-    public event Sfsfsddfsdfsdf OnPageStarted;
+    public event Htwerdfsdfsdfsf OnPageStarted;
 
     /// <summary>
     /// Delegate for page finished event.
@@ -46,7 +46,9 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="statusCode">HTTP status code received from response.</param>
     /// <param name="url">The url which the web view loaded.</param>
-    public delegate void SDfsdfsdffs(Refsdkfopdskgdwqueq webView, int statusCode, string url);
+    public delegate void SDfsdfsdffs(Uurrusdfjsdfsdjf webView,
+        int statusCode,
+        string url);
 
     /// <summary>
     /// Raised when the web view finished to load a url successfully.
@@ -66,20 +68,24 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// It can be different from systems and platforms.
     /// </param>
     /// <param name="errorMessage">The error message which indicates the error.</param>
-    public delegate void Hfddfgdfgdfg(Refsdkfopdskgdwqueq webView, int errorCode, string errorMessage);
+    public delegate void HDfgertdfgdfgdfg(Uurrusdfjsdfsdjf bvcbcvgdfgerte,
+        int cvbcvggdfg,
+        string erterteterdf);
 
     /// <summary>
     /// Raised when an error encountered during the loading process. 
     /// Such as the "host not found" error or "no Internet connection" error will raise this event.
     /// </summary>
-    public event Hfddfgdfgdfg OnPageErrorReceived;
+    public event HDfgertdfgdfgdfg OnPageErrorReceived;
 
     /// <summary>
     /// Delegate for page progress changed event.
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="progress">A value indicates the loading progress of current page. It is a value between 0.0f and 1.0f.</param>
-    public delegate void SDFsFDSdfsdfsdf(Refsdkfopdskgdwqueq webView, float progress);
+    public delegate void SDFsFDSdfsdfsdf(
+        Uurrusdfjsdfsdjf webView,
+        float progress);
 
     /// <summary>
     /// Raised when the loading progress value changes in current web view.
@@ -91,7 +97,9 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="message">Message received from web view.</param>
-    public delegate void SDFSdfsdfdfdf(Refsdkfopdskgdwqueq webView, Gfrrasdu message);
+    public delegate void Ppreewtoerodfogd(
+        Uurrusdfjsdfsdjf webView,
+        Uurweridsfisfisdif message);
 
     /// <summary>
     /// Raised when a message from web view is received. 
@@ -103,14 +111,15 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// "uniwebview://" scheme is default in the list, so a clicking on link starting with "uniwebview://"
     /// will raise this event, if it is not removed.
     /// </summary>
-    public event SDFSdfsdfdfdf Hdgfgfsdgdfgdfg;
+    public event Ppreewtoerodfogd Ktkertkdfgdfg;
 
     /// <summary>
     /// Delegate for should close event.
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <returns>Whether the web view should be closed and destroyed.</returns>
-    public delegate bool Shfhfghfghfdgf(Refsdkfopdskgdwqueq webView);
+    public delegate bool Memrwekrsdkfksdf(
+        Uurrusdfjsdfsdjf dskfksfksfd);
 
     /// <summary>
     /// Raised when the web view is about to close itself.
@@ -120,33 +129,35 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// be closed and destroyed. You can also clean all related resources you created (such as a reference to
     /// the web view) in this event.
     /// </summary>
-    public event Shfhfghfghfdgf Jhfdhdgdfdgd;
+    public event Memrwekrsdkfksdf Yrersdfsdfs;
 
     /// <summary>
     /// Delegate for orientation changed event.
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="p">The screen orientation for current state.</param>
-    public delegate void ghfghfgghdfgdfg(Refsdkfopdskgdwqueq webView, ScreenOrientation p);
+    public delegate void Prepwperpdsfpdsf(
+        Uurrusdfjsdfsdjf webView,
+        ScreenOrientation p);
 
     /// <summary>
     /// Raised when the screen orientation is changed. It is a good time to set the web view frame if you 
     /// need to support multiple orientations in your game.
     /// </summary>
-    public event ghfghfgghdfgdfg Kldasdadasd;
+    public event Prepwperpdsfpdsf Kfsdfcxvcvxv;
 
     /// <summary>
     /// Delegate for content loading terminated event.
     /// </summary>
     /// <param name="v">The web view component which raises this event.</param>
-    public delegate void Tsfsdfsdfsdf(Refsdkfopdskgdwqueq v);
+    public delegate void Rewqweaseadasd(Uurrusdfjsdfsdjf eqewsadads);
 
     /// <summary>
     /// Raised when on iOS, when system calls `webViewWebContentProcessDidTerminate` method. 
     /// It is usually due to a low memory when loading the web content and leave you a blank white screen. 
     /// You need to free as much as memory you could and then do a page reload.
     /// </summary>
-    public event Tsfsdfsdfsdf Iyreyertersdfds;
+    public event Rewqweaseadasd Prwprdspfsdfsdf;
 
     /// <summary>
     /// Delegate for file download task starting event.
@@ -154,12 +165,15 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// <param name="d">The web view component which raises this event.</param>
     /// <param name="f">The remote URL of this download task. This is also the download URL for the task.</param>
     /// <param name="l">The file name which user chooses to use.</param>
-    public delegate void EWrrwrwerwer(Refsdkfopdskgdwqueq d, string f, string l);
+    public delegate void EWweqweadasdasd(
+        Uurrusdfjsdfsdjf d,
+        string f,
+        string l);
 
     /// <summary>
     /// Raised when a file download task starts.
     /// </summary>
-    public event EWrrwrwerwer Rwqewrwerwsdfs;
+    public event EWweqweadasdasd Qweqeeasdasdas;
 
     /// <summary>
     /// Delegate for file download task finishing event.
@@ -176,12 +190,15 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// The file path of the downloaded file. On iOS, the downloader file is in a temporary folder of your app sandbox.
     /// On Android, it is in the "Download" folder of your app.
     /// </param>
-    public delegate void Hsfsdfsdfsdf(Refsdkfopdskgdwqueq v, int j, string r, string l);
+    public delegate void Trwerdfsdfsf(Uurrusdfjsdfsdjf vdfs,
+        int trewrsdfsd,
+        string werwrsdfsdf,
+        string yiyuhjffgh);
 
     /// <summary>
     /// Raised when a file download task finishes with either an error or success.
     /// </summary>
-    public event Hsfsdfsdfsdf OnFileDownloadFinished;
+    public event Trwerdfsdfsf OnFileDownloadFinished;
 
     /// <summary>
     /// Delegate for capturing snapshot finished event.
@@ -195,34 +212,41 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// <param name="d">
     /// An accessible disk path to the captured snapshot image. If an error happens, it is an empty string.
     /// </param>
-    public delegate void Wsdfsdfsdfsf(Refsdkfopdskgdwqueq v, int t, string d);
+    public delegate void Wqeqwesadasdasd(
+        Uurrusdfjsdfsdjf v,
+        int t,
+        string d);
 
     /// <summary>
     /// Raised when an image captured and stored in a cache path on disk.
     /// </summary>
-    public event Wsdfsdfsdfsf Ddadasdasdas;
+    public event Wqeqwesadasdasd Prpwerppdsfps;
 
     /// <summary>
     /// Delegate for multiple window opening event.
     /// </summary>
     /// <param name="v">The web view component which opens the new multiple (pop-up) window.</param>
     /// <param name="m">The identifier of the opened new window.</param>
-    public delegate void Zgblfgflgfgh(Refsdkfopdskgdwqueq v, string m);
+    public delegate void Nrjwerjsdjfsdf(
+        Uurrusdfjsdfsdjf v,
+        string m);
 
     /// <summary>
     /// Raised when a new window is opened. This happens when you enable the `SetSupportMultipleWindows` and open a
     /// new pop-up window.
     /// </summary>
-    public event Zgblfgflgfgh Trqweqweq;
+    public event Nrjwerjsdjfsdf Utewtdfgdfgdg;
 
-    public delegate void Mdgddfddfgdfg(Refsdkfopdskgdwqueq v, string hdfh);
+    public delegate void Nshfshfshdfhsdf(
+        Uurrusdfjsdfsdjf v,
+        string kkjkhkfhfghk);
 
-    public event Mdgddfddfgdfg Hfsdfsdfs;
+    public event Nshfshfshdfhsdf Oroweorosdofsdf;
 
     private string id = Guid.NewGuid().ToString();
-    private Randomness listener;
+    private Kkrwkrwkerkskfsdf listener;
 
-    private bool jhjj;
+    private bool fnsdfnsdfsddfsj;
 
     [SerializeField]
 #pragma warning disable 0649
@@ -235,7 +259,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     [SerializeField] private bool useToolbar;
 
 
-    [SerializeField] private Hfdfgeiq toolbarPosition;
+    [SerializeField] private KKrwkrkskfsdkfsdf toolbarPosition;
 
 #pragma warning restore 0649
 
@@ -253,7 +277,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
         set
         {
             y = value;
-            BG();
+            Fdjfsjdfjsjfsjdsjf();
         }
     }
 
@@ -265,13 +289,13 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
         set
         {
             hre = value;
-            BG();
+            Fdjfsjdfjsjfsjdsjf();
         }
     }
 
-    private bool ljjgh;
+    private bool rwerwierisdfisdf;
 
-    private bool bgbsd = true;
+    private bool oteotodfgdf = true;
 
     /// <summary>
     /// The url of current loaded web page.
@@ -287,22 +311,28 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// This is useful if the `referenceRectTransform` is changed and you need to sync the frame change
     /// to the web view. This method follows the frame determining rules.
     /// </summary>
-    public void BG()
+    public void Fdjfsjdfjsjfsjdsjf()
     {
-        Rect rect = NextFrameRect();
-        UniWebViewInterface.SetFrame(listener.Name, (int)rect.x, (int)rect.y, (int)rect.width, (int)rect.height);
+        Rect jgdfjgjd = NextFrameRect();
+        UniWebViewInterface.SetFrame(listener.Name, (int)jgdfjgjd.x, (int)jgdfjgjd.y, (int)jgdfjgjd.width, (int)jgdfjgjd.height);
     }
 
     Rect NextFrameRect()
     {
         if (hre == null)
         {
-            SDfsdfsdfsvxc.Instance.TwentyLol("SADdfsfdsdfsdfsd.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("VF" +
+                                                    "FS" +
+                                                    "DFSD" +
+                                                    "FSDF" +
+                                                    "SDF.");
             return y;
         }
         else
         {
-            SDfsdfsdfsvxc.Instance.TwentyLol("bfgdfgdsfgsdfsdfTfsdfsfsdf.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("rwer" +
+                                                    "ssd" +
+                                                    "werwe.");
             var worldCorners = new Vector3[4];
 
             hre.GetWorldCorners(worldCorners);
@@ -327,8 +357,8 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
                     var camera = canvas.worldCamera;
                     if (camera == null)
                     {
-                        SDfsdfsdfsvxc.Instance.EightyGreat(@"adasdasdasda.");
-                        SDfsdfsdfsvxc.Instance.TwentyLol("dadasbvfdbdfdfgsdfsfs.");
+                        Htretdfgdgdfg.Instance.Utrertrfdgdfg(@"ddfdfgdgrtyty.");
+                        Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("tertryuyfghfghfgh.");
                     }
                     else
                     {
@@ -341,13 +371,13 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
                     break;
             }
 
-            float gff = (float)UniWebViewInterface.NativeScreenWidth() / (float)Screen.width;
-            float kj = (float)UniWebViewInterface.NativeScreenHeight() / (float)Screen.height;
+            float hfhdshfs = (float)UniWebViewInterface.NativeScreenWidth() / (float)Screen.width;
+            float yortoyro = (float)UniWebViewInterface.NativeScreenHeight() / (float)Screen.height;
 
-            float x = topLeft.x * gff;
-            float y = (Screen.height - topLeft.y) * kj;
-            float width = (bottomRight.x - topLeft.x) * gff;
-            float height = (topLeft.y - bottomRight.y) * kj;
+            float x = topLeft.x * hfhdshfs;
+            float y = (Screen.height - topLeft.y) * yortoyro;
+            float width = (bottomRight.x - topLeft.x) * hfhdshfs;
+            float height = (topLeft.y - bottomRight.y) * yortoyro;
             return new Rect(x, y, width, height);
         }
     }
@@ -355,10 +385,10 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     void Awake()
     {
         var iu = new GameObject(id);
-        listener = iu.AddComponent<Randomness>();
+        listener = iu.AddComponent<Kkrwkrwkerkskfsdf>();
         iu.transform.parent = transform;
         listener.webView = this;
-        Randomness.AddListener(listener);
+        Kkrwkrwkerkskfsdf.AddListener(listener);
 
         Rect rect;
         if (fullScreen)
@@ -371,48 +401,52 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
         }
 
         UniWebViewInterface.Init(listener.Name, (int)rect.x, (int)rect.y, (int)rect.width, (int)rect.height);
-        jhjj = Screen.height >= Screen.width;
+        fnsdfnsdfsddfsj = Screen.height >= Screen.width;
     }
 
     void Start()
     {
         if (showOnStart)
         {
-            M();
+            Hfwerewdfsfsdfsf();
         }
 
         if (!string.IsNullOrEmpty(urlOnStart))
         {
-            H(urlOnStart);
+            Oteirtiertiert(urlOnStart);
         }
 
-        ljjgh = true;
+        rwerwierisdfisdf = true;
         if (hre != null)
         {
-            BG();
+            Fdjfsjdfjsjfsjdsjf();
         }
     }
 
     void Update()
     {
         var newIsPortrait = Screen.height >= Screen.width;
-        if (jhjj != newIsPortrait)
+        if (fnsdfnsdfsddfsj != newIsPortrait)
         {
-            jhjj = newIsPortrait;
-            if (Kldasdadasd != null)
+            fnsdfnsdfsddfsj = newIsPortrait;
+            if (Kfsdfcxvcvxv != null)
             {
-                Kldasdadasd(this, Screen.orientation);
+                Kfsdfcxvcvxv(this, Screen.orientation);
             }
 
             if (hre != null)
             {
-                BG();
+                Fdjfsjdfjsjfsjdsjf();
             }
         }
 
-        if (bgbsd && Input.GetKeyUp(KeyCode.Escape))
+        if (oteotodfgdf && Input.GetKeyUp(KeyCode.Escape))
         {
-            SDfsdfsdfsvxc.Instance.TwentyLol("fsdgfdhdfbcvcxvcxvsdfwef.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("fsdf" +
+                                                    "sdfwe" +
+                                                    "rwert" +
+                                                    "erte" +
+                                                    "df.");
             if (CanGoBack)
             {
                 GoBack();
@@ -426,30 +460,30 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
 
     void OnEnable()
     {
-        if (ljjgh)
+        if (rwerwierisdfisdf)
         {
-            _Show(useAsync: true);
+            _Show(fdsfsdfsdf: true);
         }
     }
 
     void OnDisable()
     {
-        if (ljjgh)
+        if (rwerwierisdfisdf)
         {
             _Hide(useAsync: true);
         }
     }
 
-    public void H(string j, bool f = false, string h = null)
+    public void Oteirtiertiert(string gfdgdfg, bool fsdfsfsdf = false, string erwerdsfdsg = null)
     {
-        UniWebViewInterface.Load(listener.Name, j, f, h);
-        var dsfdfgdfgdfgdf = "dfgdfgdfgdfgdfg";
+        UniWebViewInterface.Load(listener.Name, gfdgdfg, fsdfsfsdf, erwerdsfdsg);
+        var nxnvnsjwejrwerw = "sdfsdrwerwertsdfs";
     }
 
     public void LoadHTMLString(string htmlString, string baseUrl, bool skipEncoding = false)
     {
         UniWebViewInterface.LoadHTMLString(listener.Name, htmlString, baseUrl, skipEncoding);
-        var dfgdfgdfgdfgdfg = "sadsdasdasdasd";
+        var ouyouotoghg = "hjktjtyurhfgfnbv";
     }
 
     /// <summary>
@@ -458,7 +492,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void Reload()
     {
         UniWebViewInterface.Reload(listener.Name);
-        var ghgfgghjhgjtj = "fdsfdsfdsfdsfsdfsf";
+        var yirtyirtyirtirr = "nvhfhrtyrhfghryhtr";
     }
 
     /// <summary>
@@ -467,7 +501,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void Stop()
     {
         UniWebViewInterface.Stop(listener.Name);
-        var rwrwerwerewr = "ddfgfdgdfgdfgdgf";
+        var rwyerywtyerte = "nvbngfhfhtryr";
     }
 
     /// <summary>
@@ -492,7 +526,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void GoBack()
     {
         UniWebViewInterface.GoBack(listener.Name);
-        var fdsfsdfdsfdsfs = "hfghfghgfhfgh";
+        var ntrtfdghfghfgh = "urytyeterdfgdgbc";
 
     }
 
@@ -502,7 +536,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void GoForward()
     {
         UniWebViewInterface.GoForward(listener.Name);
-        var terretertretr = "dadadsadasdasd";
+        var nngffhfghtryrutyu = "oipiouioyihjkj";
 
     }
 
@@ -513,7 +547,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void SetOpenLinksInExternalBrowser(bool flag)
     {
         UniWebViewInterface.SetOpenLinksInExternalBrowser(listener.Name, flag);
-        var gjgjghjghjghjghj = "dasdasdsadsaasd";
+        var wirwieriwiriwdr = "ggdfeftretdfgdfg";
 
     }
 
@@ -527,48 +561,48 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// Regardless of there is an animation or not, the `completionHandler` will be called if not `null` when the web 
     /// view showing finishes.
     /// </summary>
-    /// <param name="fade">Whether show with a fade in animation. Default is `false`.</param>
-    /// <param name="edge">The edge from which the web view showing. It simulates a modal effect when showing a web view. Default is `UniWebViewTransitionEdge.None`.</param>
+    /// <param name="rewrwefsdfs">Whether show with a fade in animation. Default is `false`.</param>
+    /// <param name="rgertdfgdfg">The edge from which the web view showing. It simulates a modal effect when showing a web view. Default is `UniWebViewTransitionEdge.None`.</param>
     /// <param name="duration">Duration of the showing animation. Default is `0.4f`.</param>
     /// <param name="completionHandler">Completion handler which will be called when showing finishes. Default is `null`.</param>
     /// <returns>A bool value indicates whether the showing operation started.</returns>
-    public bool M(bool fade = false, MendGrom edge = MendGrom.None,
+    public bool Hfwerewdfsfsdfsf(bool rewrwefsdfs = false, Oeiwirsifsdfs rgertdfgdfg = Oeiwirsifsdfs.None,
         float duration = 0.4f, Action completionHandler = null)
     {
-        var dasdasdasdasfsdf = "yrtyrtytrytryrty";
+        var pteprtetrpyrtyo = "gjghjtryrtyrhghj";
 
-        return _Show(fade, edge, duration, false, completionHandler);
+        return _Show(rewrwefsdfs, rgertdfgdfg, duration, false, completionHandler);
     }
 
-    private bool _Show(bool fade = false, MendGrom edge = MendGrom.None,
-        float duration = 0.4f, bool useAsync = false, Action completionHandler = null)
+    private bool _Show(bool fade = false, Oeiwirsifsdfs edge = Oeiwirsifsdfs.None,
+        float asfsdfsdfsdf = 0.4f, bool fdsfsdfsdf = false, Action werwerwerwer = null)
     {
-        var wrewrwerwerwer = "hjjjghhjhgjghjhgj";
+        var uuytuthgfhfghf = "nvnfghfghrfhtryr";
 
-        var identifier = Guid.NewGuid().ToString();
-        var showStarted = UniWebViewInterface.Show(listener.Name, fade, (int)edge, duration, useAsync, identifier);
-        if (showStarted && completionHandler != null)
+        var fdfsdfsdfsdf = Guid.NewGuid().ToString();
+        var rjewrwerisdifsdf = UniWebViewInterface.Show(listener.Name, fade, (int)edge, asfsdfsdfsdf, fdsfsdfsdf, fdfsdfsdfsdf);
+        if (rjewrwerisdifsdf && werwerwerwer != null)
         {
-            var hasAnimation = (fade || edge != MendGrom.None);
-            if (hasAnimation)
+            var gfdgdfgdfg = (fade || edge != Oeiwirsifsdfs.None);
+            if (gfdgdfgdfg)
             {
-                n_.Add(identifier, completionHandler);
+                n_.Add(fdfsdfsdfsdf, werwerwerwer);
             }
             else
             {
-                completionHandler();
+                werwerwerwer();
             }
         }
 
-        if (showStarted && useToolbar)
+        if (rjewrwerisdifsdf && useToolbar)
         {
-            var top = (toolbarPosition == Hfdfgeiq.Top);
+            var top = (toolbarPosition == KKrwkrkskfsdkfsdf.Top);
             SetShowToolbar(true, false, top, fullScreen);
         }
 
-        var fsfsdfdsfsdf = "gdfdfgdfgdfgfdgdfg";
+        var toertieiteirtert = "fghftyfdghtryety";
 
-        return showStarted;
+        return rjewrwerisdifsdf;
     }
 
     /// <summary>
@@ -586,13 +620,13 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// <param name="duration">Duration of hiding animation. Default is `0.4f`.</param>
     /// <param name="completionHandler">Completion handler which will be called when hiding finishes. Default is `null`.</param>
     /// <returns>A bool value indicates whether the hiding operation started.</returns>
-    public bool Hide(bool fade = false, MendGrom edge = MendGrom.None,
+    public bool Hide(bool fade = false, Oeiwirsifsdfs edge = Oeiwirsifsdfs.None,
         float duration = 0.4f, Action completionHandler = null)
     {
         return _Hide(fade, edge, duration, false, completionHandler);
     }
 
-    public bool _Hide(bool fade = false, MendGrom edge = MendGrom.None,
+    public bool _Hide(bool fade = false, Oeiwirsifsdfs edge = Oeiwirsifsdfs.None,
         float duration = 0.4f, bool useAsync = false, Action completionHandler = null)
     {
         var ngghjghjghghj = "ffsdfdsfsdfsdfd";
@@ -601,7 +635,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
         var hideStarted = UniWebViewInterface.Hide(listener.Name, fade, (int)edge, duration, useAsync, identifier);
         if (hideStarted && completionHandler != null)
         {
-            var hasAnimation = (fade || edge != MendGrom.None);
+            var hasAnimation = (fade || edge != Oeiwirsifsdfs.None);
             if (hasAnimation)
             {
                 n_.Add(identifier, completionHandler);
@@ -614,11 +648,11 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
 
         if (hideStarted && useToolbar)
         {
-            var top = (toolbarPosition == Hfdfgeiq.Top);
+            var top = (toolbarPosition == KKrwkrkskfsdkfsdf.Top);
             SetShowToolbar(false, false, top, fullScreen);
         }
         
-        var gank = "Gank";
+        var iwetietierit = "Htrtertwtrtwer";
 
 
         return hideStarted;
@@ -635,7 +669,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public bool AnimateTo(Rect frame, float duration, float delay = 0.0f, Action completionHandler = null)
     {
         
-        var ewqeqwewqeqwe = "sfdsfdsfsdfdsfdsf";
+        var rrrerwer = "gdfgreterte";
 
         var identifier = Guid.NewGuid().ToString();
         var animationStarted = UniWebViewInterface.AnimateTo(listener.Name,
@@ -649,7 +683,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
             }
         }
 
-        var meme = "Meme";
+        var hfhtyrhfgh = "Gggggg";
 
         return animationStarted;
     }
@@ -668,7 +702,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
             p_.Add(identifier, completionHandler);
         }
         
-        var wwewerewrerw = "hjgjghjhgjghj";
+        var jgjyturrty = "tertetfgdrtetege";
     }
 
     /// <summary>
@@ -678,11 +712,17 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     /// <param name="completionHandler">Called when evaluating JavaScript operation finishes. Default is `null`.</param>
     public void EvaluateJavaScript(string jsString, Action<UniWebViewNativeResultPayload> completionHandler = null)
     {
-        var hfhfhfghfghf = "werwerwerwerwer";
+        var nbvfghrtyrtyrt = "iyiuyiyutyugfjghj";
 
         
         var identifier = Guid.NewGuid().ToString();
+        
+        
+        
         UniWebViewInterface.EvaluateJavaScript(listener.Name, jsString, identifier);
+        
+        
+        
         if (completionHandler != null)
         {
             p_.Add(identifier, completionHandler);
@@ -693,19 +733,27 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
         if (v == null)
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("hdfgdfgdfgdfdglk.");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("yr" +
+                                                 "tyu" +
+                                                 "rtuhf" +
+                                                 "bbvgfh.");
             return;
         }
 
         if (v.Contains("://"))
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("KSDfksdofsdof");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("fghf" +
+                                                 "" +
+                                                 "ghtryr" +
+                                                 "tyg" +
+                                                 "fg");
             return;
         }
 
         UniWebViewInterface.AddUrlScheme(listener.Name, v);
         
-        var yutututytyu = "fsfsdfdsfdsfdsfds";
+        var nvbngfhrtyrtrhfg = "hfghty" +
+                               "rtythfgh";
 
     }
 
@@ -717,19 +765,27 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
         if (scheme == null)
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("DFKSDfjsldfs.");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("Hte" +
+                                                 "rtertdfgdbcrte" +
+                                                 "rtert.");
             return;
         }
 
         if (scheme.Contains("://"))
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("KEKERKWRKWEKRweergefgd");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("uruyut" +
+                                                 "yutyu" +
+                                                 "tyutyfh" +
+                                                 "fghfgh");
             return;
         }
 
         UniWebViewInterface.RemoveUrlScheme(listener.Name, scheme);
         
-        var oouiouiouiouio = "fdssdfdsfdsfsdf";
+        var rtertfdvcbcfg = "bnhf" +
+                            "hrty" +
+                            "rtyfgh" +
+                            "fghf";
 
     }
 
@@ -744,20 +800,36 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
         if (h == null)
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("fsdfsfdsdf");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("dfg" +
+                                                 "" +
+                                                 "" +
+                                                 "" +
+                                                 "" +
+                                                 "ert" +
+                                                 "dfgdf" +
+                                                 "bcv" +
+                                                 "bc");
             return;
         }
 
         if (h.Contains("://"))
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("sfsdfsdfsdfsdf");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("hry" +
+                                                 "rty" +
+                                                 "rhgfh" +
+                                                 "fg" +
+                                                 "hf");
             return;
         }
 
         UniWebViewInterface.AddSslExceptionDomain(listener.Name, h);
         
-        var asdasdsadasdad = "gdfdfgdfgdfgdfgdfg";
-
+        var bdfgrtetertfdgdfg = "gd" +
+                                "fg" +
+                                "reter" +
+                                "terg" +
+                                "fdgd";
+        
     }
 
     /// <summary>
@@ -768,18 +840,31 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
         if (i == null)
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("hjkhjghjgfhfgcvbn");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("v" +
+                                                 "gdft" +
+                                                 "ertd" +
+                                                 "fg" +
+                                                 "dfg" +
+                                                 "dfg");
             return;
+            
         }
 
         if (i.Contains("://"))
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("fgnfghfghfghrhrthrt");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("t" +
+                                                 "erter" +
+                                                 "tyrt" +
+                                                 "yrf" +
+                                                 "hfgh");
             return;
         }
 
         UniWebViewInterface.RemoveSslExceptionDomain(listener.Name, i);
-        var uyiyuiyuiyuiyui = "sdfsdfsdfdsfsdf";
+        var gdfgdtretert = "uty" +
+                           "utyue" +
+                           "rter" +
+                           "tete";
 
     }
 
@@ -787,26 +872,43 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
         if (key == null)
         {
-            SDfsdfsdfsvxc.Instance.EightyGreat("fsdfdsgfghfghjghmbyrtrte");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("rer" +
+                                                 "werwe" +
+                                                 "rwerd" +
+                                                 "fsfsdr" +
+                                                 "ewrw");
             return;
         }
 
         UniWebViewInterface.SetHeaderField(listener.Name, key, value);
-        var wrwerwerwrwr = "fsdfsdfdsfsdf";
-
+        var mnbnmbnfghfghbnvbn = "hty" +
+                                 "erte" +
+                                 "rtrwtf" +
+                                 "gd" +
+                                 "fgdfg";
     }
 
     public void SetUserAgent(string agent)
     {
         UniWebViewInterface.SetUserAgent(listener.Name, agent);
-        var fsdfdsfsdfsf = "tertertertert";
+        var uiyuiyuiddfgvbcvb = "bcv" +
+                                "bcv" +
+                                "bfdgerg" +
+                                "er" +
+                                "gdfg";
 
     }
 
     public string GetUserAgent()
     {
         return UniWebViewInterface.GetUserAgent(listener.Name);
-        var eqweqweqweq = "gfgdfgdfgdfgd";
+        var eqweqweqweq = "gfgdfg" +
+                          "dfg" +
+                          "" +
+                          "" +
+                          "" +
+                          "" +
+                          "dfgd";
 
     }
 
@@ -822,7 +924,11 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public static void SetAllowAutoPlay(bool flag)
     {
         UniWebViewInterface.SetAllowAutoPlay(flag);
-        var hjhgjghjghjghjg = "fsfsdfdsfdsfsd";
+        var fhfghrtyryrgh = "ggd" +
+                            "fgrty" +
+                            "rhfghf" +
+                            "g" +
+                            "hfh";
 
     }
 
@@ -836,21 +942,32 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void SetAllowFileAccess(bool flag)
     {
         UniWebViewInterface.SetAllowFileAccess(listener.Name, flag);
-        var eretrertertr = "dsfsdfsfsfsdf";
+        var hgjghjtyurhrt = "gd" +
+                            "" +
+                            "" +
+                            "" +
+                            "" +
+                            "ty";
 
     }
 
     public void SetAllowFileAccessFromFileURLs(bool flag)
     {
         UniWebViewInterface.SetAllowFileAccessFromFileURLs(listener.Name, flag);
-        var jyytutyutyuty = "fdsfsdfsdfdsf";
+        var jyytutyutyuty = "fdsfsd" +
+                            "fsd" +
+                            "fds" +
+                            "f";
 
     }
 
     public static void SetAllowUniversalAccessFromFileURLs(bool flag)
     {
         UniWebViewInterface.SetAllowUniversalAccessFromFileURLs(flag);
-        var rwr23234243 = "egdfgdfgdfgdfgdg";
+        var rwr23234243 = "egdfg" +
+                          "dfg" +
+                          "dfgd" +
+                          "fgdg";
 
     }
 
@@ -862,80 +979,121 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
 #endif
     }
 
-    public static void SetJavaScriptEnabled(bool h)
+    public static void SetJavaScriptEnabled(bool g)
     {
-        UniWebViewInterface.SetJavaScriptEnabled(h);
-        var fdsdfwerwerwr = "fsfdsfsdfdsfsdfsdf";
+        UniWebViewInterface.SetJavaScriptEnabled(g);
+        var bnghhtyutryutet = "fdgh" +
+                              "rtyrtye" +
+                              "terte" +
+                              "rt";
 
     }
 
 
-    public static void SetAllowJavaScriptOpenWindow(bool uy)
+    public static void SetAllowJavaScriptOpenWindow(bool gdgdgdf)
     {
-        UniWebViewInterface.SetAllowJavaScriptOpenWindow(uy);
-        var dasdqweqe = "fdgfdgdfgdfgdfg";
+        UniWebViewInterface.SetAllowJavaScriptOpenWindow(gdgdgdf);
+        var fgdfgertgdfgd = "iyiy" +
+                            "" +
+                            "uituryt" +
+                            "ghfg" +
+                            "" +
+                            "vfb";
 
     }
 
     public void CleanCache()
     {
         UniWebViewInterface.CleanCache(listener.Name);
-        var hhtryrtyerte = "dsfsdfdsfdsfscv";
+        var ytryrtyrtyrutyu = "bvbc" +
+                              "bvcbd" +
+                              "fge" +
+                              "dge";
 
     }
 
     public static void ClearCookies()
     {
         UniWebViewInterface.ClearCookies();
-        var uyuyiuthrth = "dffsdfwrwer";
-
+        var orwoerofosdfsdf = "fdsf" +
+                              "sd" +
+                              "fewr" +
+                              "tertge";
+        
     }
 
     public static void SetCookie(string url, string cookie, bool absd = false)
     {
         UniWebViewInterface.SetCookie(url, cookie, absd);
-        var fdsfdsfsdffd = "wrewrwerwefds";
+        var cvnxvnsdhfsdf = "eqw" +
+                            "wer" +
+                            "retg" +
+                            "d" +
+                            "fg" +
+                            "fg";
 
     }
 
     public static string GetCookie(string url, string key, bool skipEncoding = false)
     {
         return UniWebViewInterface.GetCookie(url, key, skipEncoding);
-        var fdssdfsdfsdf = "gdfgdfgfhgrhrt";
+        var fdssdfsdfsdf = "gdf" +
+                           "gdfgf" +
+                           "hg" +
+                           "rhrt";
 
     }
 
     public static void RemoveCookies(string h, bool hg = false)
     {
         UniWebViewInterface.RemoveCookies(h, hg);
-        var fdsfsfsfwew = "sgfdgdfgdfgre";
+        var iewriwiridfgdfg = "ghert" +
+                              "ert" +
+                              "fdgr" +
+                              "etr" +
+                              "ert";
 
     }
 
     public static void RemoveCooke(string url, string key, bool uy = false)
     {
         UniWebViewInterface.RemoveCookie(url, key, uy);
-        var gfdgdfgdfgdfgdg = "gdfgdgdfgdf";
+        var pewqerpweros = "wrn" +
+                           "werjw" +
+                           "ejs" +
+                           "djfs" +
+                           "jdf";
 
     }
 
     public static void ClearHttpAuthUsernamePassword(string kj, string oi)
     {
         UniWebViewInterface.ClearHttpAuthUsernamePassword(kj, oi);
-        var dfgdfgdfgrter = "dfbddfgrtert";
+        var dfkgdfkgkcvkbcvbm = "etr" +
+                                "er8t" +
+                                "ete" +
+                                "8rt" +
+                                "8gdi" +
+                                "fid";
 
     }
 
-    private Color r = Color.white;
+    private Color gffgdgdfgdf = Color.white;
 
-    public Color R
+    public Color Gffgdgdfgdf
     {
-        get { return r; }
+        get { return gffgdgdfgdf; }
         set
         {
-            r = value;
+            gffgdgdfgdf = value;
             UniWebViewInterface.SetBackgroundColor(listener.Name, value.r, value.g, value.b, value.a);
-            var gfdgdfgdfger = "gdfdfgreerte";
+            var sdfnsdfnndjfwer = "w" +
+                                  "riewrie" +
+                                  "iri" +
+                                  "" +
+                                  "" +
+                                  "" +
+                                  "iertie";
 
         }
     }
@@ -949,42 +1107,67 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void SetShowSpinnerWhileLoading(bool flag)
     {
         UniWebViewInterface.SetShowSpinnerWhileLoading(listener.Name, flag);
-        var fdsfsdfgewew = "gdfgdfgdfger";
+        var jfjsjdfsjjerwejrw = "tei" +
+                                "tei" +
+                                "rt" +
+                                "iei" +
+                                "rti" +
+                                "dfgd";
 
     }
 
     public void SetSpinnerText(string text)
     {
         UniWebViewInterface.SetSpinnerText(listener.Name, text);
-        var ewqeqweqfdsf = "fwefwerwerwre";
+        var rowerosofsodfsk = "serw" +
+                              "ejrj" +
+                              "sjd" +
+                              "fs" +
+                              "jdfj";
 
     }
 
     public void SetHorizontalScrollBarEnabled(bool enabled)
     {
         UniWebViewInterface.SetHorizontalScrollBarEnabled(listener.Name, enabled);
-        var werwerwrew = "dfsfsdfsdf";
+        var rwerwerwewoerowre = "rewu" +
+                                "r" +
+                                "iwi" +
+                                "iriw" +
+                                "er";
 
     }
 
     public void SetVerticalScrollBarEnabled(bool enabled)
     {
         UniWebViewInterface.SetVerticalScrollBarEnabled(listener.Name, enabled);
-        var rwerwerwtrwt = "sdfsdfsdfs";
+        var eriweirwirisdsfk = "fsd" +
+                               "fe" +
+                               "wrfsdfewrw" +
+                               "er";
 
     }
 
     public void SetBouncesEnabled(bool enabled)
     {
         UniWebViewInterface.SetBouncesEnabled(listener.Name, enabled);
-        var rerwerwre = "sdfdsfsdfsfsfd";
+        var roweorworwoer = "" +
+                            "df" +
+                            "gdfg" +
+                            "ret" +
+                            "fd" +
+                            "gdfg";
 
     }
 
     public void SetZoomEnabled(bool enabled)
     {
         UniWebViewInterface.SetZoomEnabled(listener.Name, enabled);
-        var gegererge = "dsfsdfsdfdsf";
+        var vnxcvnxncerw = "rwe" +
+                           "rowo" +
+                           "erowe" +
+                           "orwoe" +
+                           "r";
 
     }
 
@@ -992,7 +1175,10 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.AddPermissionTrustDomain(listener.Name, domain);
-                var dfsdfsdfsf = "fsdfsfertert";
+                var dfsdfsdfsf = "fsd"+
+"fsf"+
+"ert"+
+"ert";
 
 #endif
     }
@@ -1001,15 +1187,20 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.RemovePermissionTrustDomain(listener.Name, domain);
-                var fsdfsdfdsfwdf = "etertertere";
+                var fsdfsdfdsfwdf = "ete"+
+"rtertere";
 
 #endif
     }
 
     public void Kfvxcvxcvxfdsfs(bool enabled)
     {
-        this.bgbsd = enabled;
-        var fgegergteretrt = "fdsfdsfdsfsdf";
+        this.oteotodfgdf = enabled;
+        var fjsdfjxcjvxjvdfsdnf = "erywy" +
+                                  "ery" +
+                                  "wery" +
+                                  "wey" +
+                                  "rywe";
     }
 
     /// <summary>
@@ -1020,7 +1211,11 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.SetUseWideViewPort(listener.Name, flag);
-                var werwerwrewer = "fsdfsdfsddfg";
+                var werwerwrewer = "fs"+
+"dfs"+
+"df"+
+"sd"+
+"dfg";
 
 #endif
     }
@@ -1035,7 +1230,8 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.SetLoadWithOverviewMode(listener.Name, flag);
-                var dfgdfgdgdg = "wrwerweretreter";
+                var dfgdfgdgdg = "wrwer"+
+"weretreter";
 
 #endif
     }
@@ -1060,7 +1256,9 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetShowToolbar(listener.Name, show, animated, onTop, adjustInset);
-                var sdfsdfwerwer = "gefgeryrtyrer";
+                var sdfsdfwerwer = "gefge"+
+"ryrty"+
+"rer";
 
 #endif
     }
@@ -1069,7 +1267,8 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if UNITY_IOS && !UNITY_EDITOR
         UniWebViewInterface.SetToolbarDoneButtonText(listener.Name, text);
-                var fertertertetr = "rghrtrtrth";
+                var fertertertetr = "rghrtr"+
+"trth";
 
 #endif
     }
@@ -1078,7 +1277,8 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetToolbarGoBackButtonText(listener.Name, text);
-                var retertertdsfd = "rterefwrf";
+                var retertertdsfd = "rte"+
+"refwrf";
 
 #endif
     }
@@ -1087,7 +1287,8 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetToolbarGoForwardButtonText(listener.Name, text);
-                var fwdfertert = "fdgdfgdfgrthrt";
+                var fwdfertert = "fdgdfgdfg"+
+"rthrt";
 
 #endif
     }
@@ -1096,7 +1297,10 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if UNITY_IOS && !UNITY_EDITOR
         UniWebViewInterface.SetToolbarTintColor(listener.Name, color.r, color.g, color.b);
-                var fgdfgdgrty = "dfgdfgdfgdgfdg";
+                var fgdfgdgrty = "dfg"+
+"d"+
+"fgdf"+
+"gdgfdg";
 
 #endif
     }
@@ -1105,7 +1309,10 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if UNITY_IOS && !UNITY_EDITOR
         UniWebViewInterface.SetToolbarTextColor(listener.Name, color.r, color.g, color.b);
-                var serwerwr = "gdfgergrtyrt";
+                var serwerwr = "gdf"+
+"ge"+
+"rgrt"+
+"yrt";
 
 #endif
     }
@@ -1114,7 +1321,9 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetShowToolbarNavigationButtons(listener.Name, show);
-                var gretrtytryr = "gfdgdghrty";
+                var gretrtytryr = "gfd"+
+"gdg"+
+"hrty";
 
 #endif
     }
@@ -1122,21 +1331,29 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void SetUserInteractionEnabled(bool enabled)
     {
         UniWebViewInterface.SetUserInteractionEnabled(listener.Name, enabled);
-        var dfgthrthrtbr = "werwerwersdfs";
-
+        var euqweiqweiasidaids = "vnx" +
+                                 "cvnxn" +
+                                 "dnfs" +
+                                 "dfhs";
+        
     }
 
     public void SetTransparencyClickingThroughEnabled(bool enabled)
     {
         UniWebViewInterface.SetTransparencyClickingThroughEnabled(listener.Name, enabled);
-        var gdfgeertert = "fddfhtrhrthr";
+        var rweorworoweorwordf = "rowero" +
+                                 "worowor" +
+                                 "woer";
 
     }
 
     public static void SetWebContentsDebuggingEnabled(bool enabled)
     {
         UniWebViewInterface.SetWebContentsDebuggingEnabled(enabled);
-        var fdsgegergr = "ewqeqweqweqe";
+        var ncxnvdsfjsdfjsdf = "eruwe" +
+                               "urudsu" +
+                               "fsdf" +
+                               "jsdf";
 
     }
 
@@ -1156,7 +1373,8 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
             if (handler != null)
             {
                 handler(payload.data);
-                var sdfsdfwerwer = "gdfgdfghtrtyutyj";
+                var peqpepqsdsadfn = "orowo" +
+                                     "rowerowero";
 
             }
         });
@@ -1174,21 +1392,30 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void SetAllowHTTPAuthPopUpWindow(bool flag)
     {
         UniWebViewInterface.SetAllowHTTPAuthPopUpWindow(listener.Name, flag);
-        var fefertretyrty = "fdsfetewrtwereewr";
+        var orworowrowoerwoekm = "fsdf" +
+                                 "js" +
+                                 "dfjs" +
+                                 "djfs" +
+                                 "jdfj";
 
     }
 
     public void SetCalloutEnabled(bool enabled)
     {
         UniWebViewInterface.SetCalloutEnabled(listener.Name, enabled);
-        var rewqerewrwerwer = "fgdfgdfhdfgdg";
+        var jfsjrjewrowrowoer = "erkte" +
+                                "rtkdfkgdf" +
+                                "kgkdfg";
 
     }
 
     public void SetSupportMultipleWindows(bool enabled)
     {
         UniWebViewInterface.SetSupportMultipleWindows(listener.Name, enabled);
-        var werweerteryrty = "sdfsdfweeqwerwqe";
+        var rororofdkkgdfkgd = "fskdfk" +
+                               "wekr" +
+                               "weor" +
+                               "woe";
 
     }
 
@@ -1214,7 +1441,11 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetDragInteractionEnabled(listener.Name, enabled);
-                var dasdasdqweq = "fsfewrwerwerwed";
+                var dasdasdqweq = "fsfe"+
+"wrwe"+
+"rw"+
+"erw"+
+"ed";
 
 #endif
     }
@@ -1222,25 +1453,32 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     public void Print()
     {
         UniWebViewInterface.Print(listener.Name);
-        var fsdfsdrewrwer = "dfsfsdfwerwer";
-
+        var bmcvbmdfkgdkfgkd = "fert0e" +
+                               "t0e" +
+                               "0g0" +
+                               "dfgd";
     }
 
     public void CaptureSnapshot(string fileName)
     {
         UniWebViewInterface.CaptureSnapshot(listener.Name, fileName);
-        var wqeerqreewrwef = "gfdgdfgdfgdfg";
+        var owerowosdofsdfk = "rteot" +
+                              "oeteo" +
+                              "teofg";
 
     }
 
     public void ScrollTo(int x, int y, bool animated)
     {
         UniWebViewInterface.ScrollTo(listener.Name, x, y, animated);
-        var rewrwrwttry = "fsdgffghgfhfgh";
+        var gkdfkgdkgritie = "tr" +
+                             "wer" +
+                             "oreote" +
+                             "orte";
 
     }
 
-    public void AddDownloadURL(string urlString, Hkhkhjkfgdf type = Hkhkhjkfgdf.sdfsdfsdfdsdsfsf)
+    public void AddDownloadURL(string urlString, Lfskfsdkfkwkrwe type = Lfskfsdkfkwkrwe.Jfsjdfjwerwerwer)
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.AddDownloadURL(listener.Name, urlString, (int)type);
@@ -1250,7 +1488,7 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
     }
 
     /// 
-    public void RemoveDownloadURL(string urlString, Hkhkhjkfgdf type = Hkhkhjkfgdf.sdfsdfsdfdsdsfsf)
+    public void RemoveDownloadURL(string urlString, Lfskfsdkfkwkrwe type = Lfskfsdkfkwkrwe.Jfsjdfjwerwerwer)
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.RemoveDownloadURL(listener.Name, urlString, (int)type);
@@ -1259,20 +1497,27 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
 #endif
     }
 
-    public void AddDownloadMIMEType(string MIMEType, Hkhkhjkfgdf type = Hkhkhjkfgdf.sdfsdfsdfdsdsfsf)
+    public void AddDownloadMIMEType(string MIMEType, Lfskfsdkfkwkrwe type = Lfskfsdkfkwkrwe.Jfsjdfjwerwerwer)
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.AddDownloadMIMEType(listener.Name, MIMEType, (int)type);
-                var werewrewtertytry = "rertreyrtytryty";
+                var werewrewtertytry = "rert"+
+"r"+
+"eyrt"+
+"ytr"+
+"yty";
 
 #endif
     }
 
-    public void RemoveDownloadMIMETypes(string MIMEType, Hkhkhjkfgdf type = Hkhkhjkfgdf.sdfsdfsdfdsdsfsf)
+    public void RemoveDownloadMIMETypes(string MIMEType, Lfskfsdkfkwkrwe type = Lfskfsdkfkwkrwe.Jfsjdfjwerwerwer)
     {
 #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.RemoveDownloadMIMETypes(listener.Name, MIMEType, (int)type);
-                var werweretreryfdsdfsd = "fwfergrghtrt";
+                var werweretreryfdsdfsd = "fwf"+
+"ergr"+
+"gh"+
+"trt";
 
 #endif
     }
@@ -1297,13 +1542,13 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
 
     void OnDestroy()
     {
-        var deqweqweq = "werwerwerwerew";
+        var fdsgdfgdfgdfgdfgdfg = "fgdgfdfgdfgdgd";
 
-        Randomness.RemoveListener(listener.Name);
+        Kkrwkrwkerkskfsdf.RemoveListener(listener.Name);
         UniWebViewInterface.Destroy(listener.Name);
         Destroy(listener.gameObject);
         
-        var save = "Save";
+        var gdfgdfgdfgfdgdfgd = "GDFGDFGDFGDFe";
 
     }
 
@@ -1328,27 +1573,37 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
             action();
             n_.Remove(identifier);
         }
-        var sdfsfdsdfsdfsdf = "HDfsdfdsfdsfdsf";
+        var owoerodfskdfksdfjsdf = "gdfgdfgdfgdfgdg";
 
     }
 
     internal void InternalOnAnimateToFinished(string identifier)
     {
-        var asdasdasdasd = "fefefgrfhfghfg";
-
+        var erwroworsdofsdfsdf = "fsdif" +
+                                 "" +
+                                 "ewrwe" +
+                                 "ordso" +
+                                 "" +
+                                 "fsdkf";
+        
         Action action;
         if (n_.TryGetValue(identifier, out action))
         {
             action();
             n_.Remove(identifier);
         }
-        var fsdfdsfdsfsdfsfd = "fsfdsfdsfsdfsdfsdf";
+        var fskdfkwerwekrtekrt = "dfsdfj" +
+                                 "" +
+                                 "werkw" +
+                                 "krw" +
+                                 "erw" +
+                                 "ker";
 
     }
 
     internal void InternalOnAddJavaScriptFinished(UniWebViewNativeResultPayload payload)
     {
-        var dqwdwerertert = "dadsadasdasdasd";
+        var lfslfsldflclxvxcv = "eqwieqkaskdaskdaskkd";
 
         Action<UniWebViewNativeResultPayload> action;
         var identifier = payload.identifier;
@@ -1358,13 +1613,13 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
             p_.Remove(identifier);
         }
         
-        var dsadfdstetre = "dssdfdsfgsdg";
+        var fsdjfwejrjwejrejrter = "kfkskrkewrkskksdf";
     }
 
     internal void InternalOnEvalJavaScriptFinished(UniWebViewNativeResultPayload payload)
     {
         
-        var fdsfsdfdsfsf = "hhgfhgfhfadsfdadf";
+        var fdssdnfnnwnernwer = "wireriweriisdfskdfskfd";
 
         Action<UniWebViewNativeResultPayload> action;
         var identifier = payload.identifier;
@@ -1374,12 +1629,21 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
             p_.Remove(identifier);
         }
         
-        var uyiyuityuytutyu = "jhghhgjghjghj";
+        var eroweroworfdskfsdkf = "fewr" +
+                                  "woro" +
+                                  "dso" +
+                                  "fod" +
+                                  "fo";
     }
 
     internal void InternalOnPageFinished(UniWebViewNativeResultPayload bc)
     {
-        var wqeqewqeqwe = "wqewqeqweqwe";
+        var rkwrkdksfskdkfsdf = "riwe" +
+                                "rii" +
+                                "ewr" +
+                                "iw" +
+                                "e" +
+                                "ird";
 
         if (Youyidas != null)
         {
@@ -1390,20 +1654,34 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
             }
             else
             {
-                SDfsdfsdfsvxc.Instance.EightyGreat("sdfgdgdfgdfgdfgdfgrerwer " + bc.resultCode);
+                Htretdfgdgdfg.Instance.Utrertrfdgdfg("sdfgd" +
+                                                     "gdfgd" +
+                                                     "fgd" +
+                                                     "fg" +
+                                                     "dfgr" +
+                                                     "er" +
+                                                     "wer " + bc.resultCode);
             }
         }
-        var fsdfwereqwrwer = "ffddgdfgdfgdfg";
+        var jjwjerwjerjwer = "rwek" +
+                             "rskdk" +
+                             "fdskf" +
+                             "k" +
+                             "skfs";
 
     }
 
-    internal void InternalOnPageStarted(string fsdfsdfsdf)
+    internal void InternalOnPageStarted(string keqwerkkrskdfksdf)
     {
         if (OnPageStarted != null)
         {
-            OnPageStarted(this, fsdfsdfsdf);
+            OnPageStarted(this, keqwerkkrskdfksdf);
         }
-        var sadsasfgdfgdfgh = "rewrewttrytyu";
+        var eriwriidisdifsdif = "feirk" +
+                                "fdgd" +
+                                "kfg" +
+                                "dkg" +
+                                "kdfg";
     }
 
     internal void InternalOnPageErrorReceived(UniWebViewNativeResultPayload jg)
@@ -1417,9 +1695,15 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
             }
             else
             {
-                SDfsdfsdfsvxc.Instance.EightyGreat("ASDAdsdfddbvcb " + jg.resultCode);
+                Htretdfgdgdfg.Instance.Utrertrfdgdfg("ert" +
+                                                     "rete" +
+                                                     "rtdfg" +
+                                                     "dfgert " + jg.resultCode);
             }
-            var rerwerwrwefsdf = "fdfghgfhtrrt";
+            var rwororosdosdof = "ewrw" +
+                                 "erfg" +
+                                 "dfger" +
+                                 "ter";
         }
     }
 
@@ -1433,69 +1717,90 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
 
     internal void InternalOnMessageReceived(string result)
     {
-        if (Hdgfgfsdgdfgdfg != null)
+        if (Ktkertkdfgdfg != null)
         {
-            var message = new Gfrrasdu(result);
-            Hdgfgfsdgdfgdfg(this, message);
+            var message = new Uurweridsfisfisdif(result);
+            Ktkertkdfgdfg(this, message);
         }
     }
 
     internal void InternalOnShouldClose()
     {
-        if (Jhfdhdgdfdgd != null)
+        if (Yrersdfsdfs != null)
         {
-            var h = Jhfdhdgdfdgd(this);
+            var h = Yrersdfsdfs(this);
             if (h)
             {
                 Destroy(this);
-                var save = "Save";
+                var uiououkhjghjfghj = "gdfgd" +
+                                       "ftrt" +
+                                       "yrr" +
+                                       "tyyu";
 
             }
         }
         else
         {
             Destroy(this);
-            var dfdsfsdfs = "sadasdasdasdasd";
+            var rewrdfsdgdty = "ffew" +
+                               "rtte" +
+                               "rter" +
+                               "tert";
 
         }
     }
 
     internal void InternalOnWebContentProcessDidTerminate()
     {
-        if (Iyreyertersdfds != null)
+        if (Prwprdspfsdfsdf != null)
         {
-            Iyreyertersdfds(this);
-            var dfsdfgegert = "ewqwqeqweqweqwe";
+            Prwprdspfsdfsdf(this);
+            var gkdgkdkgkkrktyrty = "tert" +
+                                    "0ogfd" +
+                                    "ofg" +
+                                    "odf" +
+                                    "god" +
+                                    "ofg";
 
         }
     }
 
     internal void InternalOnMultipleWindowOpened(string gdfgdfgdf)
     {
-        if (Trqweqweq != null)
+        if (Utewtdfgdfgdg != null)
         {
-            Trqweqweq(this, gdfgdfgdf);
-            var fsdfdsfsd = "dsdfeterter";
+            Utewtdfgdfgdg(this, gdfgdfgdf);
+            var kgdfkgkrkrktyri = "yropy" +
+                                  "ofoho" +
+                                  "fghof" +
+                                  "ofgh";
 
         }
     }
 
     internal void InternalOnMultipleWindowClosed(string ggdfdgdf)
     {
-        if (Hfsdfsdfs != null)
+        if (Oroweorosdofsdf != null)
         {
-            Hfsdfsdfs(this, ggdfdgdf);
-            var errwerwerwe = "fdsfsdfsdfsdf";
+            Oroweorosdofsdf(this, ggdfdgdf);
+            var yroyoofghofoghf = "jtyuy" +
+                                  "uiyui" +
+                                  "fhfgh" +
+                                  "fgh";
 
         }
     }
 
     internal void InternalOnFileDownloadStarted(UniWebViewNativeResultPayload fsfdsfsdf)
     {
-        if (Rwqewrwerwsdfs != null)
+        if (Qweqeeasdasdas != null)
         {
-            Rwqewrwerwsdfs(this, fsfdsfsdf.identifier, fsfdsfsdf.data);
-            var fertertertert = "rwrewrewrwerwef";
+            Qweqeeasdasdas(this, fsfdsfsdf.identifier, fsfdsfsdf.data);
+            var fghyrtyrty = "uytu" +
+                             "yf" +
+                             "ghfg" +
+                             "hf" +
+                             "hfg";
 
         }
     }
@@ -1506,29 +1811,41 @@ public class Refsdkfopdskgdwqueq : MonoBehaviour
         {
             int gfgdgfdfgdfg = int.TryParse(fsfdsdfsdfs.resultCode, out gfgdgfdfgdfg) ? gfgdgfdfgdfg : -1;
             OnFileDownloadFinished(this, gfgdgfdfgdfg, fsfdsdfsdfs.identifier, fsfdsdfsdfs.data);
-            var fsdfsfdsf = "rwerwerwer";
+            var rtretyryfdgfg = "hfgh" +
+                                "" +
+                                "tyu" +
+                                "tyu" +
+                                "tyu" +
+                                "ytu";
 
         }
     }
 
     internal void InternalOnCaptureSnapshotFinished(UniWebViewNativeResultPayload fdsfsdfsdfsdf)
     {
-        if (Ddadasdasdas != null)
+        if (Prpwerppdsfps != null)
         {
-            int errorCode = int.TryParse(fdsfsdfsdfsdf.resultCode, out errorCode) ? errorCode : -1;
-            Ddadasdasdas(this, errorCode, fdsfsdfsdfsdf.data);
-            var ewqrewrwer = "rwerwerewrwer";
+            int hfytryfghfg = int.TryParse(fdsfsdfsdfsdf.resultCode, out hfytryfghfg) ? hfytryfghfg : -1;
+            Prpwerppdsfps(this, hfytryfghfg, fdsfsdfsdfsdf.data);
+            var yrtyfgdgfggd = "ertr" +
+                               "tyd" +
+                               "fgh" +
+                               "dfg" +
+                               "dfg";
         }
     }
     
-    public void SetImmersiveModeEnabled(bool fdsfsdfsfd)
+    public void SetImmersiveModeEnabled(bool gytrtyhfgh)
     {
         Debug.LogError(
-            "SDfjosdfisofdjeifowejofwer"
+            "gt" +
+            "rty" +
+            "fghf" +
+            "ghtryr"
         );
     }
 
-     public delegate void KeyCodeReceivedDelegate(Refsdkfopdskgdwqueq dasdaswqeq, int fdfsdfsdf);
+     public delegate void KeyCodeReceivedDelegate(Uurrusdfjsdfsdjf saddasdasd, int dasdasdasdasd);
 
     
 #pragma warning disable CS0067
