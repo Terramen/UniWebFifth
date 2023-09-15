@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-    public static class SamBudlo
+    public static class Jfjdsjfdsjfsjdfgxcbcvb
     {
         private const int A = 21;
 
