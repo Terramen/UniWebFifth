@@ -24,21 +24,21 @@ using System;
 /// Main class of UniWebView. Any `GameObject` instance with this script can represent a webview object in the scene. 
 /// Use this class to create, load, show and interact with a general-purpose web view.
 /// </summary>
-public class Nfshdfhsdhfshdf : MonoBehaviour
+public class Uurrusdfjsdfsdjf : MonoBehaviour
 {
     /// <summary>
     /// Delegate for page started event.
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="url">The url which the web view is about to load.</param>
-    public delegate void Sfsfsddfsdfsdf(Nfshdfhsdhfshdf webView, string url);
+    public delegate void Htwerdfsdfsdfsf(Uurrusdfjsdfsdjf webView, string url);
 
     /// <summary>
     /// Raised when the web view starts loading a url.
     /// 
     /// This event will be invoked for both url loading with `Load` method or by a link navigating from page.
     /// </summary>
-    public event Sfsfsddfsdfsdf OnPageStarted;
+    public event Htwerdfsdfsdfsf OnPageStarted;
 
     /// <summary>
     /// Delegate for page finished event.
@@ -46,7 +46,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="statusCode">HTTP status code received from response.</param>
     /// <param name="url">The url which the web view loaded.</param>
-    public delegate void SDfsdfsdffs(Nfshdfhsdhfshdf webView, int statusCode, string url);
+    public delegate void SDfsdfsdffs(Uurrusdfjsdfsdjf webView, int statusCode, string url);
 
     /// <summary>
     /// Raised when the web view finished to load a url successfully.
@@ -66,20 +66,20 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// It can be different from systems and platforms.
     /// </param>
     /// <param name="errorMessage">The error message which indicates the error.</param>
-    public delegate void Hfddfgdfgdfg(Nfshdfhsdhfshdf webView, int errorCode, string errorMessage);
+    public delegate void HDfgertdfgdfgdfg(Uurrusdfjsdfsdjf bvcbcvgdfgerte, int cvbcvggdfg, string erterteterdf);
 
     /// <summary>
     /// Raised when an error encountered during the loading process. 
     /// Such as the "host not found" error or "no Internet connection" error will raise this event.
     /// </summary>
-    public event Hfddfgdfgdfg OnPageErrorReceived;
+    public event HDfgertdfgdfgdfg OnPageErrorReceived;
 
     /// <summary>
     /// Delegate for page progress changed event.
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="progress">A value indicates the loading progress of current page. It is a value between 0.0f and 1.0f.</param>
-    public delegate void SDFsFDSdfsdfsdf(Nfshdfhsdhfshdf webView, float progress);
+    public delegate void SDFsFDSdfsdfsdf(Uurrusdfjsdfsdjf webView, float progress);
 
     /// <summary>
     /// Raised when the loading progress value changes in current web view.
@@ -91,7 +91,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="message">Message received from web view.</param>
-    public delegate void Orwersdfjsdfjsdjf(Nfshdfhsdhfshdf webView, Uurweridsfisfisdif message);
+    public delegate void Ppreewtoerodfogd(Uurrusdfjsdfsdjf webView, Uurweridsfisfisdif message);
 
     /// <summary>
     /// Raised when a message from web view is received. 
@@ -103,14 +103,14 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// "uniwebview://" scheme is default in the list, so a clicking on link starting with "uniwebview://"
     /// will raise this event, if it is not removed.
     /// </summary>
-    public event Orwersdfjsdfjsdjf Jfjsvxcnvxcnvsdjf;
+    public event Ppreewtoerodfogd Ktkertkdfgdfg;
 
     /// <summary>
     /// Delegate for should close event.
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <returns>Whether the web view should be closed and destroyed.</returns>
-    public delegate bool Urhewrhdfhsdfj(Nfshdfhsdhfshdf webView);
+    public delegate bool Memrwekrsdkfksdf(Uurrusdfjsdfsdjf dskfksfksfd);
 
     /// <summary>
     /// Raised when the web view is about to close itself.
@@ -120,33 +120,33 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// be closed and destroyed. You can also clean all related resources you created (such as a reference to
     /// the web view) in this event.
     /// </summary>
-    public event Urhewrhdfhsdfj Jhfdhdgdfdgd;
+    public event Memrwekrsdkfksdf Yrersdfsdfs;
 
     /// <summary>
     /// Delegate for orientation changed event.
     /// </summary>
     /// <param name="webView">The web view component which raises this event.</param>
     /// <param name="p">The screen orientation for current state.</param>
-    public delegate void Jfdhghdfdfg(Nfshdfhsdhfshdf webView, ScreenOrientation p);
+    public delegate void Prepwperpdsfpdsf(Uurrusdfjsdfsdjf webView, ScreenOrientation p);
 
     /// <summary>
     /// Raised when the screen orientation is changed. It is a good time to set the web view frame if you 
     /// need to support multiple orientations in your game.
     /// </summary>
-    public event Jfdhghdfdfg Hfsdfhshdfshcvxcv;
+    public event Prepwperpdsfpdsf Kfsdfcxvcvxv;
 
     /// <summary>
     /// Delegate for content loading terminated event.
     /// </summary>
     /// <param name="v">The web view component which raises this event.</param>
-    public delegate void Operwprspdfsdf(Nfshdfhsdhfshdf v);
+    public delegate void Rewqweaseadasd(Uurrusdfjsdfsdjf eqewsadads);
 
     /// <summary>
     /// Raised when on iOS, when system calls `webViewWebContentProcessDidTerminate` method. 
     /// It is usually due to a low memory when loading the web content and leave you a blank white screen. 
     /// You need to free as much as memory you could and then do a page reload.
     /// </summary>
-    public event Operwprspdfsdf Hfdnfnsdrjwer;
+    public event Rewqweaseadasd Prwprdspfsdfsdf;
 
     /// <summary>
     /// Delegate for file download task starting event.
@@ -154,12 +154,12 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// <param name="d">The web view component which raises this event.</param>
     /// <param name="f">The remote URL of this download task. This is also the download URL for the task.</param>
     /// <param name="l">The file name which user chooses to use.</param>
-    public delegate void Bdbrhwerhshdfhsdf(Nfshdfhsdhfshdf d, string f, string l);
+    public delegate void EWweqweadasdasd(Uurrusdfjsdfsdjf d, string f, string l);
 
     /// <summary>
     /// Raised when a file download task starts.
     /// </summary>
-    public event Bdbrhwerhshdfhsdf Jriwrtiwisdifsgf;
+    public event EWweqweadasdasd Qweqeeasdasdas;
 
     /// <summary>
     /// Delegate for file download task finishing event.
@@ -176,12 +176,12 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// The file path of the downloaded file. On iOS, the downloader file is in a temporary folder of your app sandbox.
     /// On Android, it is in the "Download" folder of your app.
     /// </param>
-    public delegate void Jwueruwudsfufsdf(Nfshdfhsdhfshdf b, int i, string u, string o);
+    public delegate void Trwerdfsdfsf(Uurrusdfjsdfsdjf vdfs, int trewrsdfsd, string werwrsdfsdf, string yiyuhjffgh);
 
     /// <summary>
     /// Raised when a file download task finishes with either an error or success.
     /// </summary>
-    public event Jwueruwudsfufsdf OnFileDownloadFinished;
+    public event Trwerdfsdfsf OnFileDownloadFinished;
 
     /// <summary>
     /// Delegate for capturing snapshot finished event.
@@ -195,29 +195,29 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// <param name="d">
     /// An accessible disk path to the captured snapshot image. If an error happens, it is an empty string.
     /// </param>
-    public delegate void Wsdfsdfsdfsf(Nfshdfhsdhfshdf v, int t, string d);
+    public delegate void Wqeqwesadasdasd(Uurrusdfjsdfsdjf v, int t, string d);
 
     /// <summary>
     /// Raised when an image captured and stored in a cache path on disk.
     /// </summary>
-    public event Wsdfsdfsdfsf Ddadasdasdas;
+    public event Wqeqwesadasdasd Prpwerppdsfps;
 
     /// <summary>
     /// Delegate for multiple window opening event.
     /// </summary>
     /// <param name="v">The web view component which opens the new multiple (pop-up) window.</param>
     /// <param name="m">The identifier of the opened new window.</param>
-    public delegate void Hrwerdssdf(Nfshdfhsdhfshdf v, string m);
+    public delegate void Nrjwerjsdjfsdf(Uurrusdfjsdfsdjf v, string m);
 
     /// <summary>
     /// Raised when a new window is opened. This happens when you enable the `SetSupportMultipleWindows` and open a
     /// new pop-up window.
     /// </summary>
-    public event Hrwerdssdf Trqweqweq;
+    public event Nrjwerjsdjfsdf Utewtdfgdfgdg;
 
-    public delegate void Bdsdfshfhsfhsdf(Nfshdfhsdhfshdf v, string kkjkhkfhfghk);
+    public delegate void Nshfshfshdfhsdf(Uurrusdfjsdfsdjf v, string kkjkhkfhfghk);
 
-    public event Bdsdfshfhsfhsdf Oroweorosdofsdf;
+    public event Nshfshfshdfhsdf Oroweorosdofsdf;
 
     private string id = Guid.NewGuid().ToString();
     private Kkrwkrwkerkskfsdf listener;
@@ -235,7 +235,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     [SerializeField] private bool useToolbar;
 
 
-    [SerializeField] private Hfdfgeiq toolbarPosition;
+    [SerializeField] private KKrwkrkskfsdkfsdf toolbarPosition;
 
 #pragma warning restore 0649
 
@@ -269,9 +269,9 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
         }
     }
 
-    private bool ljjgh;
+    private bool rwerwierisdfisdf;
 
-    private bool bgbsd = true;
+    private bool oteotodfgdf = true;
 
     /// <summary>
     /// The url of current loaded web page.
@@ -289,20 +289,20 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     /// </summary>
     public void BG()
     {
-        Rect rect = NextFrameRect();
-        UniWebViewInterface.SetFrame(listener.Name, (int)rect.x, (int)rect.y, (int)rect.width, (int)rect.height);
+        Rect jgdfjgjd = NextFrameRect();
+        UniWebViewInterface.SetFrame(listener.Name, (int)jgdfjgjd.x, (int)jgdfjgjd.y, (int)jgdfjgjd.width, (int)jgdfjgjd.height);
     }
 
     Rect NextFrameRect()
     {
         if (hre == null)
         {
-            Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("SADdfsfdsdfsdfsd.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("jhgjghutyutyu.");
             return y;
         }
         else
         {
-            Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("bfgdfgdsfgsdfsdfTfsdfsfsdf.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("rwerssdwerwe.");
             var worldCorners = new Vector3[4];
 
             hre.GetWorldCorners(worldCorners);
@@ -327,8 +327,8 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
                     var camera = canvas.worldCamera;
                     if (camera == null)
                     {
-                        Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd(@"adasdasdasda.");
-                        Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("dadasbvfdbdfdfgsdfsfs.");
+                        Htretdfgdgdfg.Instance.Utrertrfdgdfg(@"ddfdfgdgrtyty.");
+                        Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("tertryuyfghfghfgh.");
                     }
                     else
                     {
@@ -386,7 +386,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
             H(urlOnStart);
         }
 
-        ljjgh = true;
+        rwerwierisdfisdf = true;
         if (hre != null)
         {
             BG();
@@ -399,9 +399,9 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
         if (fnsdfnsdfsddfsj != newIsPortrait)
         {
             fnsdfnsdfsddfsj = newIsPortrait;
-            if (Hfsdfhshdfshcvxcv != null)
+            if (Kfsdfcxvcvxv != null)
             {
-                Hfsdfhshdfshcvxcv(this, Screen.orientation);
+                Kfsdfcxvcvxv(this, Screen.orientation);
             }
 
             if (hre != null)
@@ -410,9 +410,9 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
             }
         }
 
-        if (bgbsd && Input.GetKeyUp(KeyCode.Escape))
+        if (oteotodfgdf && Input.GetKeyUp(KeyCode.Escape))
         {
-            Uruwerfjdsjdjfxg.Instance.Iriwirsidfisidfsdf("fsdfsdfwerwertertedf.");
+            Htretdfgdgdfg.Instance.Terewtdfsfsdfsfd("fsdfsdfwerwertertedf.");
             if (CanGoBack)
             {
                 GoBack();
@@ -426,7 +426,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
     void OnEnable()
     {
-        if (ljjgh)
+        if (rwerwierisdfisdf)
         {
             _Show(useAsync: true);
         }
@@ -434,7 +434,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
     void OnDisable()
     {
-        if (ljjgh)
+        if (rwerwierisdfisdf)
         {
             _Hide(useAsync: true);
         }
@@ -562,7 +562,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
         if (rjewrwerisdifsdf && useToolbar)
         {
-            var top = (toolbarPosition == Hfdfgeiq.Top);
+            var top = (toolbarPosition == KKrwkrkskfsdkfsdf.Top);
             SetShowToolbar(true, false, top, fullScreen);
         }
 
@@ -614,7 +614,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
         if (hideStarted && useToolbar)
         {
-            var top = (toolbarPosition == Hfdfgeiq.Top);
+            var top = (toolbarPosition == KKrwkrkskfsdkfsdf.Top);
             SetShowToolbar(false, false, top, fullScreen);
         }
         
@@ -693,13 +693,13 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     {
         if (v == null)
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("yrtyurtuhfbbvgfh.");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("yrtyurtuhfbbvgfh.");
             return;
         }
 
         if (v.Contains("://"))
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("fghfghtryrtygfg");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("fghfghtryrtygfg");
             return;
         }
 
@@ -717,13 +717,13 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     {
         if (scheme == null)
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("Htertertdfgdbcrtertert.");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("Htertertdfgdbcrtertert.");
             return;
         }
 
         if (scheme.Contains("://"))
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("uruyutyutyutyutyfhfghfgh");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("uruyutyutyutyutyfhfghfgh");
             return;
         }
 
@@ -744,13 +744,13 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     {
         if (h == null)
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("dfgertdfgdfbcvbc");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("dfgertdfgdfbcvbc");
             return;
         }
 
         if (h.Contains("://"))
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("hryrtyrhgfhfghf");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("hryrtyrhgfhfghf");
             return;
         }
 
@@ -768,13 +768,13 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     {
         if (i == null)
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("vgdftertdfgdfgdfg");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("vgdftertdfgdfgdfg");
             return;
         }
 
         if (i.Contains("://"))
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("tertertyrtyrfhfgh");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("tertertyrtyrfhfgh");
             return;
         }
 
@@ -787,7 +787,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
     {
         if (key == null)
         {
-            Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("rerwerwerwerdfsfsdrewrw");
+            Htretdfgdgdfg.Instance.Utrertrfdgdfg("rerwerwerwerdfsfsdrewrw");
             return;
         }
 
@@ -1008,7 +1008,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
     public void Kfvxcvxcvxfdsfs(bool enabled)
     {
-        this.bgbsd = enabled;
+        this.oteotodfgdf = enabled;
         var fjsdfjxcjvxjvdfsdnf = "erywyeryweryweyrywe";
     }
 
@@ -1390,7 +1390,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
             }
             else
             {
-                Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("sdfgdgdfgdfgdfgdfgrerwer " + bc.resultCode);
+                Htretdfgdgdfg.Instance.Utrertrfdgdfg("sdfgdgdfgdfgdfgdfgrerwer " + bc.resultCode);
             }
         }
         var jjwjerwjerjwer = "rwekrskdkfdskfkskfs";
@@ -1417,7 +1417,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
             }
             else
             {
-                Uruwerfjdsjdjfxg.Instance.Oprwprpprspdfpsfd("ertretertdfgdfgert " + jg.resultCode);
+                Htretdfgdgdfg.Instance.Utrertrfdgdfg("ertretertdfgdfgert " + jg.resultCode);
             }
             var rwororosdosdof = "ewrwerfgdfgerter";
         }
@@ -1433,18 +1433,18 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
     internal void InternalOnMessageReceived(string result)
     {
-        if (Jfjsvxcnvxcnvsdjf != null)
+        if (Ktkertkdfgdfg != null)
         {
             var message = new Uurweridsfisfisdif(result);
-            Jfjsvxcnvxcnvsdjf(this, message);
+            Ktkertkdfgdfg(this, message);
         }
     }
 
     internal void InternalOnShouldClose()
     {
-        if (Jhfdhdgdfdgd != null)
+        if (Yrersdfsdfs != null)
         {
-            var h = Jhfdhdgdfdgd(this);
+            var h = Yrersdfsdfs(this);
             if (h)
             {
                 Destroy(this);
@@ -1462,9 +1462,9 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
     internal void InternalOnWebContentProcessDidTerminate()
     {
-        if (Hfdnfnsdrjwer != null)
+        if (Prwprdspfsdfsdf != null)
         {
-            Hfdnfnsdrjwer(this);
+            Prwprdspfsdfsdf(this);
             var gkdgkdkgkkrktyrty = "tert0ogfdofgodfgodofg";
 
         }
@@ -1472,9 +1472,9 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
     internal void InternalOnMultipleWindowOpened(string gdfgdfgdf)
     {
-        if (Trqweqweq != null)
+        if (Utewtdfgdfgdg != null)
         {
-            Trqweqweq(this, gdfgdfgdf);
+            Utewtdfgdfgdg(this, gdfgdfgdf);
             var kgdfkgkrkrktyri = "yropyofohofghofofgh";
 
         }
@@ -1492,9 +1492,9 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
     internal void InternalOnFileDownloadStarted(UniWebViewNativeResultPayload fsfdsfsdf)
     {
-        if (Jriwrtiwisdifsgf != null)
+        if (Qweqeeasdasdas != null)
         {
-            Jriwrtiwisdifsgf(this, fsfdsfsdf.identifier, fsfdsfsdf.data);
+            Qweqeeasdasdas(this, fsfdsfsdf.identifier, fsfdsfsdf.data);
             var fghyrtyrty = "uytuyfghfghfhfg";
 
         }
@@ -1513,10 +1513,10 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
 
     internal void InternalOnCaptureSnapshotFinished(UniWebViewNativeResultPayload fdsfsdfsdfsdf)
     {
-        if (Ddadasdasdas != null)
+        if (Prpwerppdsfps != null)
         {
             int hfytryfghfg = int.TryParse(fdsfsdfsdfsdf.resultCode, out hfytryfghfg) ? hfytryfghfg : -1;
-            Ddadasdasdas(this, hfytryfghfg, fdsfsdfsdfsdf.data);
+            Prpwerppdsfps(this, hfytryfghfg, fdsfsdfsdfsdf.data);
             var yrtyfgdgfggd = "ertrtydfghdfgdfg";
         }
     }
@@ -1528,7 +1528,7 @@ public class Nfshdfhsdhfshdf : MonoBehaviour
         );
     }
 
-     public delegate void KeyCodeReceivedDelegate(Nfshdfhsdhfshdf ertdfgdfg, int tertdfdgdf);
+     public delegate void KeyCodeReceivedDelegate(Uurrusdfjsdfsdjf ertdfgdfg, int tertdfdgdf);
 
     
 #pragma warning disable CS0067

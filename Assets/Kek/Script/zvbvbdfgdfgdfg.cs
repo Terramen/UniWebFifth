@@ -14,7 +14,7 @@ public class zvbvbdfgdfgdfg : MonoBehaviour
             Debug.LogError("ghdgertedfgdfgdfg.");
             return;
         }
-        var safeBrowsing = Uruwueruwfusdf.Lwerkwrkdskfsd(url);
+        var safeBrowsing = Hretegfdgdfbdfg.Lwerkwrkdskfsd(url);
         safeBrowsing.Orwerowfosdfsodf();
     }
 }

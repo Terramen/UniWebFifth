@@ -6,13 +6,13 @@ using System;
 
 public class ShallFall
 {
-    private Ttyeyrtytdfgddfg background;
-    private String young;
-    private Ttyeyrtytdfgddfg gerald;
+    private Ndfdgertertert gtyutyyrtyrty;
+    private String dfgertfgdg;
+    private Ndfdgertertert mhjmnmfghfgh;
 
-    public Ttyeyrtytdfgddfg HIGH
+    public Ndfdgertertert HIGH
     {
-        get { return background; }
+        get { return gtyutyyrtyrty; }
     }
 
     public ShallFall(string filePath)
@@ -20,9 +20,9 @@ public class ShallFall
         string bg = File.ReadAllText(filePath);
         TextReader tracker = new StringReader(bg);
 
-        young = filePath;
-        background = new Ttyeyrtytdfgddfg("root");
-        gerald = background;
+        dfgertfgdg = filePath;
+        gtyutyyrtyrty = new Ndfdgertertert("root");
+        mhjmnmfghfgh = gtyutyyrtyrty;
 
         StringBuilder trewtergdfg = new StringBuilder();
         bool l = false;
@@ -39,7 +39,7 @@ public class ShallFall
                     var ghfgrtfg = LockDown(trewtergdfg);
                     if (!string.IsNullOrEmpty(ghfgrtfg))
                     {
-                        gerald.Orowerosdofosdf(new Frewrwersdfsdf(ghfgrtfg, gerald));
+                        mhjmnmfghfgh.Orowerosdofosdf(new Nfhdhgdhgdhfgdfg(ghfgrtfg, mhjmnmfghfgh));
                     }
                 }
                     trewtergdfg = new StringBuilder();
@@ -64,9 +64,9 @@ public class ShallFall
                     var n = LockDown(trewtergdfg);
                     if (!string.IsNullOrEmpty(n))
                     {
-                        Ttyeyrtytdfgddfg node = new Ttyeyrtytdfgddfg(n, gerald);
-                        gerald.Orowerosdofosdf(node);
-                        gerald = node;
+                        Ndfdgertertert node = new Ndfdgertertert(n, mhjmnmfghfgh);
+                        mhjmnmfghfgh.Orowerosdofosdf(node);
+                        mhjmnmfghfgh = node;
                     }
                 }
                     trewtergdfg = new StringBuilder();
@@ -81,10 +81,10 @@ public class ShallFall
                     var strf = LockDown(trewtergdfg);
                     if (!string.IsNullOrEmpty(strf))
                     {
-                        gerald.Orowerosdofosdf(new Frewrwersdfsdf(strf, gerald));
+                        mhjmnmfghfgh.Orowerosdofosdf(new Nfhdhgdhgdhfgdfg(strf, mhjmnmfghfgh));
                     }
 
-                    gerald = gerald.BENCH;
+                    mhjmnmfghfgh = mhjmnmfghfgh.BENCH;
                 }
                     trewtergdfg = new StringBuilder();
                     break;
@@ -106,161 +106,161 @@ public class ShallFall
     public void Trim(string f = null)
     {
         if (f == null)
-            f = young;
-        File.WriteAllText(f, HighUp());
-        var dasdsadasdsad = "dasdasdasdasd";
+            f = dfgertfgdg;
+        File.WriteAllText(f, Urwerfsdfssff());
+        var uyuytutyutyut = "tyutughjghjghjghjgh";
     }
 
     private string LockDown(StringBuilder hh)
     {
         string jghjghjgj = hh.ToString();
         jghjghjgj = jghjghjgj.Trim();
-        var sdfsdfsdfsdfsdf = "Reffsfdsfsdfd";
+        var mbnmgghjhgjgthj = "rewtergdfgdgdfg";
 
         return jghjghjgj;
     }
 
-    public string HighUp()
+    public string Urwerfsdfssff()
     {
-        StringBuilder hhhh = new StringBuilder();
-        KeyCutter(hhhh, background, -1);
-        var fsdfsdfdsfsdfsf = "fsdfsdfsdfdsfsdfdsfdsf";
+        StringBuilder bbdfgdgdfg = new StringBuilder();
+        Irwirdsfsfsgdf(bbdfgdgdfg, gtyutyyrtyrty, -1);
+        var retertertdfgdgfdfg = "rwesdfdsfsdfsdfsdf";
 
-        return hhhh.ToString();
+        return bbdfgdgdfg.ToString();
     }
 
     private string RegData(int b)
     {
         if (b <= 0) return "";
-        StringBuilder yyyy = new StringBuilder("");
+        StringBuilder kjhghjhgfhg = new StringBuilder("");
         for (int i = 0; i < b; i++)
         {
-            yyyy.Append('\t');
+            kjhghjhgfhg.Append('\t');
         }
 
-        return yyyy.ToString();
+        return kjhghjhgfhg.ToString();
     }
 
-    private void KeyCutter(StringBuilder v, Ttyeyrtytdfgddfg node, int level)
+    private void Irwirdsfsfsgdf(StringBuilder hgfgdfg, Ndfdgertertert ppprwfwer, int ewrdsfsdf)
     {
-        if (node.BENCH != null)
+        if (ppprwfwer.BENCH != null)
         {
-            if (node is Htryrydfgdgdfg)
+            if (ppprwfwer is Htryrydfgdgdfg)
             {
-                v.Append("\n" + RegData(level) + @"//" + node.NAME);
+                hgfgdfg.Append("\n" + RegData(ewrdsfsdf) + @"//" + ppprwfwer.NAME);
             }
             else
             {
-                v.Append("\n" + RegData(level) + node.NAME);
+                hgfgdfg.Append("\n" + RegData(ewrdsfsdf) + ppprwfwer.NAME);
             }
         }
 
-        if (!(node is Frewrwersdfsdf) && !(node is Htryrydfgdgdfg))
+        if (!(ppprwfwer is Nfhdhgdhgdhfgdfg) && !(ppprwfwer is Htryrydfgdgdfg))
         {
-            if (node.BENCH != null)
+            if (ppprwfwer.BENCH != null)
             {
-                v.Append(" {");
+                hgfgdfg.Append(" {");
             }
 
-            foreach (var c in node.CHILDREN)
+            foreach (var c in ppprwfwer.CHILDREN)
             {
-                KeyCutter(v, c, level + 1);
+                Irwirdsfsfsgdf(hgfgdfg, c, ewrdsfsdf + 1);
             }
 
-            if (node.BENCH != null)
+            if (ppprwfwer.BENCH != null)
             {
-                v.Append("\n" + RegData(level) + "}");
+                hgfgdfg.Append("\n" + RegData(ewrdsfsdf) + "}");
             }
         }
     }
 }
 
-public class Ttyeyrtytdfgddfg
+public class Ndfdgertertert
 {
-    protected List<Ttyeyrtytdfgddfg> graph = new List<Ttyeyrtytdfgddfg>();
-    protected Ttyeyrtytdfgddfg trap;
-    protected String port;
+    protected List<Ndfdgertertert> eirteitiifg = new List<Ndfdgertertert>();
+    protected Ndfdgertertert fdnsnfsndfwer;
+    protected String orreworowdf;
 
-    public Ttyeyrtytdfgddfg BENCH
+    public Ndfdgertertert BENCH
     {
-        get { return trap; }
+        get { return fdnsnfsndfwer; }
     }
 
     public string NAME
     {
-        get { return port; }
+        get { return orreworowdf; }
     }
 
-    public List<Ttyeyrtytdfgddfg> CHILDREN
+    public List<Ndfdgertertert> CHILDREN
     {
-        get { return graph; }
+        get { return eirteitiifg; }
     }
 
-    public Ttyeyrtytdfgddfg(string name, Ttyeyrtytdfgddfg joke = null)
+    public Ndfdgertertert(string name, Ndfdgertertert joke = null)
     {
-        trap = joke;
-        port = name;
+        fdnsnfsndfwer = joke;
+        orreworowdf = name;
     }
 
-    public void UEuwruweursdf(Action<Ttyeyrtytdfgddfg> f)
+    public void UEuwruweursdf(Action<Ndfdgertertert> f)
     {
         f(this);
-        foreach (var n in graph)
+        foreach (var n in eirteitiifg)
         {
             n.UEuwruweursdf(f);
         }
     }
 
-    public void Orowerosdofosdf(Ttyeyrtytdfgddfg prewprwprs)
+    public void Orowerosdofosdf(Ndfdgertertert prewprwprs)
     {
-        if (graph == null) graph = new List<Ttyeyrtytdfgddfg>();
-        graph.Add(prewprwprs);
-        prewprwprs.trap = this;
+        if (eirteitiifg == null) eirteitiifg = new List<Ndfdgertertert>();
+        eirteitiifg.Add(prewprwprs);
+        prewprwprs.fdnsnfsndfwer = this;
     }
 
-    public Ttyeyrtytdfgddfg Orowrdsofsodfsfd(string ksdkfkwekr)
+    public Ndfdgertertert Ngertergdfgdfgd(string trwtetdfgdfgd)
     {
-        string[] orwoeroseosd = ksdkfkwekr.Split('/');
-        Ttyeyrtytdfgddfg cnode = this;
+        string[] orwoeroseosd = trwtetdfgdfgd.Split('/');
+        Ndfdgertertert weqwedasd = this;
         for (int i = 0; i < orwoeroseosd.Length; i++)
         {
-            var tkerktdkfgd = orwoeroseosd[i];
-            if (string.IsNullOrEmpty(tkerktdkfgd)) continue;
-            Ttyeyrtytdfgddfg tnode = cnode.Hrwrjsdjfsjdfsjdf(tkerktdkfgd);
+            var znbcvbcbxgs = orwoeroseosd[i];
+            if (string.IsNullOrEmpty(znbcvbcbxgs)) continue;
+            Ndfdgertertert tnode = weqwedasd.Ewqeasdasdasda(znbcvbcbxgs);
             if (tnode == null)
             {
-                Debug.Log("ffwerwertrgdfgdfg" + tkerktdkfgd);
+                Debug.Log("rwrdsfsvbfghty" + znbcvbcbxgs);
                 return null;
             }
 
-            cnode = tnode;
+            weqwedasd = tnode;
             tnode = null;
         }
 
-        return cnode;
+        return weqwedasd;
     }
 
-    public Ttyeyrtytdfgddfg Hrwrjsdjfsjdfsjdf(string oreworowreow)
+    public Ndfdgertertert Ewqeasdasdasda(string gdfgytyrtdfg)
     {
-        foreach (var n in graph)
+        foreach (var n in eirteitiifg)
         {
-            if (n is Htryrydfgdgdfg || n is Frewrwersdfsdf)
+            if (n is Htryrydfgdgdfg || n is Nfhdhgdhgdhfgdfg)
                 continue;
-            if (n.NAME == oreworowreow)
+            if (n.NAME == gdfgytyrtdfg)
                 return n;
         }
 
         return null;
     }
 
-    public bool Hrwerfsdfsdf(string dfgdfgdfg, string fsdfsdfdsf)
+    public bool Kirwieridsifdifs(string sdfwerwerwe, string dbvcbdfgerger)
     {
-        foreach (var n in graph)
+        foreach (var n in eirteitiifg)
         {
-            if (!(n is Frewrwersdfsdf)) continue;
-            if (n.port.StartsWith(dfgdfgdfg))
+            if (!(n is Nfhdhgdhgdhfgdfg)) continue;
+            if (n.orreworowdf.StartsWith(sdfwerwerwe))
             {
-                n.port = fsdfsdfdsf;
+                n.orreworowdf = dbvcbdfgerger;
                 return true;
             }
         }
@@ -268,19 +268,19 @@ public class Ttyeyrtytdfgddfg
         return false;
     }
 
-    public Frewrwersdfsdf EWwqeweqwrwqerwer(string wqweqesd, string tertdfgdfgdfg)
+    public Nfhdhgdhgdhfgdfg Nfjwjsjdfjsdjf(string rweirwerweri, string bdjgdjfgjdfg)
     {
-        foreach (var n in graph)
+        foreach (var n in eirteitiifg)
         {
-            if (!(n is Frewrwersdfsdf)) continue;
-            if (n.port.StartsWith(wqweqesd))
+            if (!(n is Nfhdhgdhgdhfgdfg)) continue;
+            if (n.orreworowdf.StartsWith(rweirwerweri))
             {
-                n.port = tertdfgdfgdfg;
-                return (Frewrwersdfsdf)n;
+                n.orreworowdf = bdjgdjfgjdfg;
+                return (Nfhdhgdhgdhfgdfg)n;
             }
         }
 
-        return Ferewrwfsrwet(tertdfgdfgdfg);
+        return Ferewrwfsrwet(bdjgdjfgjdfg);
     }
 
     /// <summary>
@@ -288,31 +288,31 @@ public class Ttyeyrtytdfgddfg
     /// </summary>
     /// <param name="c"></param>
     /// <returns></returns>
-    public Frewrwersdfsdf Ferewrwfsrwet(string c)
+    public Nfhdhgdhgdhfgdfg Ferewrwfsrwet(string c)
     {
-        foreach (var n in graph)
+        foreach (var n in eirteitiifg)
         {
-            if (!(n is Frewrwersdfsdf)) continue;
-            if (n.port == c)
+            if (!(n is Nfhdhgdhgdhfgdfg)) continue;
+            if (n.orreworowdf == c)
             {
-                Debug.Log("dfgerterterfdsdfwerewrterdfgd " + c + " fertertedgdfgdfgdfg");
+                Debug.Log("fsfdsfewrwfsdf " + c + " rtretfdgdfgdfgfg");
                 return null;
             }
         }
 
-        Frewrwersdfsdf hfghertyetre = new Frewrwersdfsdf(c, this);
-        Orowerosdofosdf(hfghertyetre);
-        return hfghertyetre;
+        Nfhdhgdhgdhfgdfg bnvnfghfghfgh = new Nfhdhgdhgdhfgdfg(c, this);
+        Orowerosdofosdf(bnvnfghfghfgh);
+        return bnvnfghfghfgh;
     }
 
 
-    public bool Mount(string hdfgertertert)
+    public bool Orwerpsdfsd(string bvnfhfghfhfh)
     {
-        for (var i = 0; i < graph.Count; i++)
+        for (var i = 0; i < eirteitiifg.Count; i++)
         {
-            if (!(graph[i] is Frewrwersdfsdf)) continue;
-            if (!graph[i].port.Contains(hdfgertertert)) continue;
-            graph.RemoveAt(i);
+            if (!(eirteitiifg[i] is Nfhdhgdhgdhfgdfg)) continue;
+            if (!eirteitiifg[i].orreworowdf.Contains(bvnfhfghfhfh)) continue;
+            eirteitiifg.RemoveAt(i);
             return true;
         }
 
@@ -320,26 +320,26 @@ public class Ttyeyrtytdfgddfg
     }
 }
 
-public sealed class Frewrwersdfsdf : Ttyeyrtytdfgddfg
+public sealed class Nfhdhgdhgdhfgdfg : Ndfdgertertert
 {
-    public Frewrwersdfsdf(String content, Ttyeyrtytdfgddfg joke) : base(content, joke)
+    public Nfhdhgdhgdhfgdfg(String content, Ndfdgertertert joke) : base(content, joke)
     {
     }
 
     public void Htreterdfgsdgdfg(string content)
     {
-        port = content;
+        orreworowdf = content;
     }
 }
 
-public sealed class Htryrydfgdgdfg : Ttyeyrtytdfgddfg
+public sealed class Htryrydfgdgdfg : Ndfdgertertert
 {
-    public Htryrydfgdgdfg(String content, Ttyeyrtytdfgddfg joke) : base(content, joke)
+    public Htryrydfgdgdfg(String content, Ndfdgertertert joke) : base(content, joke)
     {
     }
 
     public string Lwersdkfsdkfskdfk()
     {
-        return port;
+        return orreworowdf;
     }
 }
