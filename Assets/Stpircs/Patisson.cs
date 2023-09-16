@@ -4,10 +4,11 @@ using Unity.Services.Core;
 using Unity.Services.RemoteConfig;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Scripting;
 
 public class Patisson : MonoBehaviour
 {
-    [SerializeField] private GarbageCollector _f;
+    [SerializeField] private Oroewrosdfdmgdmfgd _f;
 
     private Refsdkfopdskgdwqueq n;
     private ReadSubaru _readSubaru;
@@ -73,7 +74,7 @@ public class Patisson : MonoBehaviour
 
     private void Init()
     {
-        SamBudlo.En(Color.black);
+        Jfjdsjfdsjfsjdfgxcbcvb.En(Color.black);
         n = Instantiate(_f.V);
         n.Y = _readSubaru.G(ScreenOrientation.Portrait);
         n.BG();
@@ -105,7 +106,7 @@ public class Patisson : MonoBehaviour
 
         v.G(data =>
         {
-            var vd = VanDown.Check(data);
+            var vd = Utrgdnbnvsndfnsdf.Check(data);
             if (string.IsNullOrEmpty(vd))
             {
                 IFV(v);
