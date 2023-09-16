@@ -5,12 +5,12 @@ using Unity.Services.RemoteConfig;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Jrweroodofgdfgd : MonoBehaviour
+public class Patisson : MonoBehaviour
 {
     [SerializeField] private Oroewrosdfdmgdmfgd _f;
 
-    private Uurrusdfjsdfsdjf hkdfgdfgd;
-    private Pprwoerweorosdfs _rwoeridifsfsdf;
+    private Refsdkfopdskgdwqueq n;
+    private ReadSubaru _readSubaru;
     
     public struct userAttributes
     {
@@ -22,7 +22,7 @@ public class Jrweroodofgdfgd : MonoBehaviour
 
     private async void Awake()
     {
-        _rwoeridifsfsdf = new Pprwoerweorosdfs();
+        _readSubaru = new ReadSubaru();
         await StartAsyncMethod();
     }
     
@@ -55,64 +55,75 @@ public class Jrweroodofgdfgd : MonoBehaviour
                   RemoteConfigService.Instance.appConfig.config.ToString());
         //var link = RemoteConfigService.Instance.appConfig.GetString("link");
         Init();
-        hkdfgdfgd.Youyidas += LF;
-        hkdfgdfgd.Kfsdfcxvcvxv += Orpwerpwpe;
+        n.Youyidas += PF;
+        n.Kldasdadasd += CO;
         //_gc.SetLink(link);
     }
 
-    private void Orpwerpwpe(Uurrusdfjsdfsdjf l, ScreenOrientation p)
+    private void CO(Refsdkfopdskgdwqueq a, ScreenOrientation b)
     {
-        l.Y = _rwoeridifsfsdf.P(p);
-        l.Fdjfsjdfjsjfsjdsjf();
+        a.Y = _readSubaru.G(b);
+        a.BG();
     }
 
     private void OnDestroy()
     {
-        hkdfgdfgd.Kfsdfcxvcvxv -= Orpwerpwpe;
+        n.Kldasdadasd -= CO;
     }
 
     private void Init()
     {
+<<<<<<< HEAD
         Jfjdsjfdsjfsjdfgxcbcvb.Nfjsfjdsfgdjgdf(Color.black);
         hkdfgdfgd = Instantiate(_f.V);
         hkdfgdfgd.Y = _rwoeridifsfsdf.P(ScreenOrientation.Portrait);
         hkdfgdfgd.Fdjfsjdfjsjfsjdsjf();
+=======
+        SamBudlo.En(Color.black);
+        n = Instantiate(_f.V);
+        n.Y = _readSubaru.G(ScreenOrientation.Portrait);
+        n.BG();
+>>>>>>> parent of 7610d03 (Hfsdfsrtert)
 
-        if (hkdfgdfgd.Url == string.Empty)
+        if (n.Url == string.Empty)
         {
             var link = RemoteConfigService.Instance.appConfig.GetString("link");
             Debug.Log(link);
-            hkdfgdfgd.Oteirtiertiert(link);
-            hkdfgdfgd.Hfwerewdfsfsdfsf();
+            n.H(link);
+            n.M();
         }
-        hkdfgdfgd.Kfvxcvxcvxfdsfs(false);
+        n.Kfvxcvxcvxfdsfs(false);
     }
 
-    private void Jfsdfsdfvxcv(Uurrusdfjsdfsdjf currentView)
+    private void IFV(Refsdkfopdskgdwqueq currentView)
     {
         Destroy(currentView);
         Screen.orientation = ScreenOrientation.Portrait;
-        SceneManager.LoadScene(_f.I);
+        SceneManager.LoadScene(_f.B);
     }
 
-    private void LF(Uurrusdfjsdfsdjf v, int s, string _)
+    private void PF(Refsdkfopdskgdwqueq v, int s, string _)
     {
         if (s == 404)
         {
-            Jfsdfsdfvxcv(v);
+            IFV(v);
             return;
         }
 
         v.G(data =>
         {
+<<<<<<< HEAD
             var vd = Utrgdnbnvsndfnsdf.Krksdkfskdfksf(data);
+=======
+            var vd = VanDown.Check(data);
+>>>>>>> parent of 7610d03 (Hfsdfsrtert)
             if (string.IsNullOrEmpty(vd))
             {
-                Jfsdfsdfvxcv(v);
+                IFV(v);
                 return;
             }
         });
 
-        v.Youyidas -= LF;
+        v.Youyidas -= PF;
     }
 }
